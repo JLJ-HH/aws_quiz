@@ -1,0 +1,668 @@
+[
+  {
+    "id": 1,
+    "type": "multiple",
+    "category": {
+      "de": "NIST Merkmale",
+      "en": "NIST Characteristics"
+    },
+    "question": {
+      "de": "Welche der folgenden sind NIST-Cloud-Merkmale?",
+      "en": "Which of the following are NIST Cloud characteristics?"
+    },
+    "options": {
+      "de": [
+        "On-demand Self-service",
+        "On-premise Hosting",
+        "Broad Network Access",
+        "Resource Pooling",
+        "Fixed Capacity"
+      ],
+      "en": [
+        "On-demand Self-service",
+        "On-premise Hosting",
+        "Broad Network Access",
+        "Resource Pooling",
+        "Fixed Capacity"
+      ]
+    },
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "explanation": {
+      "de": "Die 5 NIST-Merkmale sind: On-demand, Broad Network Access, Resource Pooling, Rapid Elasticity, Measured Service.",
+      "en": "The 5 NIST characteristics are: On-demand, Broad Network Access, Resource Pooling, Rapid Elasticity, Measured Service."
+    }
+  },
+  {
+    "id": 2,
+    "type": "single",
+    "category": {
+      "de": "NIST Merkmale",
+      "en": "NIST Characteristics"
+    },
+    "question": {
+      "de": "Welches NIST-Merkmal beschreibt die bedarfsgerechte Abrechnung?",
+      "en": "Which NIST characteristic describes billing based on consumption?"
+    },
+    "options": {
+      "de": [
+        "Broad Network Access",
+        "Measured Service",
+        "Resource Pooling",
+        "Rapid Elasticity"
+      ],
+      "en": [
+        "Broad Network Access",
+        "Measured Service",
+        "Resource Pooling",
+        "Rapid Elasticity"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Measured Service sorgt dafür, dass Ressourcen überwacht und nach Verbrauch abgerechnet werden.",
+      "en": "Measured Service ensures that resources are monitored and billed based on consumption."
+    }
+  },
+  {
+    "id": 3,
+    "type": "single",
+    "category": {
+      "de": "Service Modelle",
+      "en": "Service Models"
+    },
+    "question": {
+      "de": "Welches Modell bietet die meiste Kontrolle?",
+      "en": "Which model provides the most control?"
+    },
+    "options": {
+      "de": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "Serverless"
+      ],
+      "en": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "Serverless"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "IaaS (Infrastructure as a Service) bietet volle Kontrolle über VMs und Netzwerke.",
+      "en": "IaaS (Infrastructure as a Service) provides full control over VMs and networking."
+    }
+  },
+  {
+    "id": 4,
+    "type": "single",
+    "category": {
+      "de": "Service Modelle",
+      "en": "Service Models"
+    },
+    "question": {
+      "de": "Welches Modell ist 'Serverless'?",
+      "en": "Which model is 'Serverless'?"
+    },
+    "options": {
+      "de": [
+        "EC2",
+        "Lambda",
+        "EBS",
+        "RDS mit festen Instanzen"
+      ],
+      "en": [
+        "EC2",
+        "Lambda",
+        "EBS",
+        "RDS with fixed instances"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS Lambda ist ein klassischer Serverless-Dienst (FaaS).",
+      "en": "AWS Lambda is a classic serverless service (FaaS)."
+    }
+  },
+  {
+    "id": 5,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Was beschreibt OpEx?",
+      "en": "What does OpEx describe?"
+    },
+    "options": {
+      "de": [
+        "Vorab-Investitionen",
+        "Laufende Betriebskosten",
+        "Abschreibungen",
+        "Einmalkosten für Hardware"
+      ],
+      "en": [
+        "Upfront investments",
+        "Ongoing operational costs",
+        "Depreciation",
+        "One-time hardware costs"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Operating Expenses (OpEx) sind laufende Kosten, wie sie in der Cloud üblich sind.",
+      "en": "Operating Expenses (OpEx) are ongoing costs, typical for cloud usage."
+    }
+  },
+  {
+    "id": 6,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Was ist TCO?",
+      "en": "What is TCO?"
+    },
+    "options": {
+      "de": [
+        "Total Cost of Ownership",
+        "Technical Cloud Operation",
+        "Total Cloud Output",
+        "Time to Cloud Optimization"
+      ],
+      "en": [
+        "Total Cost of Ownership",
+        "Technical Cloud Operation",
+        "Total Cloud Output",
+        "Time to Cloud Optimization"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "TCO umfasst alle Kosten über den gesamten Lebenszyklus einer Ressource.",
+      "en": "TCO includes all costs over the entire lifecycle of a resource."
+    }
+  },
+  {
+    "id": 7,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Welches 'R' beschreibt 'Lift and Shift'?",
+      "en": "Which 'R' describes 'Lift and Shift'?"
+    },
+    "options": {
+      "de": [
+        "Refactor",
+        "Replatform",
+        "Rehost",
+        "Retire"
+      ],
+      "en": [
+        "Refactor",
+        "Replatform",
+        "Rehost",
+        "Retire"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Rehost verschiebt Anwendungen ohne Änderungen ('as-is') in die Cloud.",
+      "en": "Rehost moves applications to the cloud without changes ('as-is')."
+    }
+  },
+  {
+    "id": 8,
+    "type": "multiple",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Wähle zwei AWS CAF Perspektiven.",
+      "en": "Choose two AWS CAF perspectives."
+    },
+    "options": {
+      "de": [
+        "Security",
+        "Scaling",
+        "Governance",
+        "Storage"
+      ],
+      "en": [
+        "Security",
+        "Scaling",
+        "Governance",
+        "Storage"
+      ]
+    },
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": {
+      "de": "Die 6 CAF-Perspektiven sind: Business, People, Governance, Platform, Security, Operations.",
+      "en": "The 6 CAF perspectives are: Business, People, Governance, Platform, Security, Operations."
+    }
+  },
+  {
+    "id": 9,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Was ist eine 'Region'?",
+      "en": "What is a 'Region'?"
+    },
+    "options": {
+      "de": [
+        "Ein Rechenzentrum",
+        "Ein physischer Standort mit mehreren AZs",
+        "Ein einzelner Server",
+        "Ein virtuelles Netzwerk"
+      ],
+      "en": [
+        "A data center",
+        "A physical location with multiple AZs",
+        "A single server",
+        "A virtual network"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Eine Region besteht aus mindestens drei isolierten Availability Zones.",
+      "en": "A region consists of at least three isolated Availability Zones."
+    }
+  },
+  {
+    "id": 10,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Wer ist für das Patchen der Gast-Betriebssysteme zuständig? (Shared Responsibility)",
+      "en": "Who is responsible for patching guest operating systems? (Shared Responsibility)"
+    },
+    "options": {
+      "de": [
+        "AWS",
+        "Der Kunde",
+        "Beide gemeinsam",
+        "Der Hardware-Hersteller"
+      ],
+      "en": [
+        "AWS",
+        "The customer",
+        "Both together",
+        "The hardware manufacturer"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS ist 'of the cloud' verantwortlich, der Kunde 'in the cloud'.",
+      "en": "AWS is responsible 'of the cloud', the customer is 'in the cloud'."
+    }
+  },
+  {
+    "id": 11,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Welches AWS-Tool hilft dabei, die monatlichen Kosten für eine geplante Cloud-Infrastruktur im Voraus zu schätzen?",
+      "en": "Which AWS tool helps to estimate the monthly costs for a planned cloud infrastructure in advance?"
+    },
+    "options": {
+      "de": [
+        "AWS Cost Explorer",
+        "AWS Pricing Calculator",
+        "AWS Budgets",
+        "AWS Migration Hub"
+      ],
+      "en": [
+        "AWS Cost Explorer",
+        "AWS Pricing Calculator",
+        "AWS Budgets",
+        "AWS Migration Hub"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Der Pricing Calculator dient der Kostenschätzung für die Zukunft, während der Cost Explorer vergangene Kosten analysiert. [cite: 675, 753]",
+      "en": "The Pricing Calculator is for future cost estimation, while Cost Explorer analyzes past costs. [cite: 675, 753]"
+    }
+  },
+  {
+    "id": 12,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Wozu dienen AWS Edge Locations primär?",
+      "en": "What is the primary purpose of AWS Edge Locations?"
+    },
+    "options": {
+      "de": [
+        "Hosting von Datenbanken",
+        "Bereitstellung von Inhalten mit geringer Latenz",
+        "Speicherung von Backup-Daten",
+        "Ausführen von schweren Rechenlasten"
+      ],
+      "en": [
+        "Hosting databases",
+        "Delivering content with low latency",
+        "Storing backup data",
+        "Running heavy compute workloads"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Edge Locations fungieren als Caching-Punkte für Amazon CloudFront, um Latenzen weltweit zu senken. [cite: 480-482]",
+      "en": "Edge Locations act as caching points for Amazon CloudFront to reduce latency globally. [cite: 480-482]"
+    }
+  },
+  {
+    "id": 13,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Welches Preismodell bietet den höchsten Rabatt (bis zu 90%) für Workloads, die unterbrochen werden können?",
+      "en": "Which pricing model offers the highest discount (up to 90%) for workloads that can be interrupted?"
+    },
+    "options": {
+      "de": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "Savings Plans"
+      ],
+      "en": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "Savings Plans"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Spot-Instanzen nutzen freie Kapazitäten und sind extrem günstig, können aber kurzfristig zurückgefordert werden. [cite: 724-727]",
+      "en": "Spot Instances use spare capacity and are very cheap but can be reclaimed with short notice. [cite: 724-727]"
+    }
+  },
+  {
+    "id": 14,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Was ist das Hauptziel der 'Envision'-Phase im AWS Cloud Adoption Framework (CAF)?",
+      "en": "What is the main goal of the 'Envision' phase in the AWS Cloud Adoption Framework (CAF)?"
+    },
+    "options": {
+      "de": [
+        "Mitarbeiter schulen",
+        "Einen Business Case erstellen und Visionen festlegen",
+        "Erste Workloads migrieren",
+        "Cloud-Betrieb automatisieren"
+      ],
+      "en": [
+        "Train employees",
+        "Create a business case and define visions",
+        "Migrate first workloads",
+        "Automate cloud operations"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "In der Envision-Phase wird der geschäftliche Nutzen quantifiziert und Stakeholder gewonnen. [cite: 847-850]",
+      "en": "The Envision phase involves quantifying business value and gaining stakeholders. [cite: 847-850]"
+    }
+  },
+  {
+    "id": 15,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Welcher Service ermöglicht den physischen Transport von bis zu 100 Petabyte Daten in einem 45-Fuß-Container?",
+      "en": "Which service enables the physical transport of up to 100 petabytes of data in a 45-foot container?"
+    },
+    "options": {
+      "de": [
+        "AWS Snowcone",
+        "AWS Snowball Edge",
+        "AWS Snowmobile",
+        "AWS Direct Connect"
+      ],
+      "en": [
+        "AWS Snowcone",
+        "AWS Snowball Edge",
+        "AWS Snowmobile",
+        "AWS Direct Connect"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Snowmobile ist ein LKW-Container für extrem große Datenmigrationen im Exabyte-Bereich. [cite: 1038-1041]",
+      "en": "Snowmobile is a truck-based container for extremely large data migrations at exabyte scale. [cite: 1038-1041]"
+    }
+  },
+  {
+    "id": 16,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "In der Buchhaltung: Wie werden OpEx-Kosten (Cloud-Ausgaben) steuerlich behandelt?",
+      "en": "In accounting: How are OpEx costs (cloud expenses) treated for tax purposes?"
+    },
+    "options": {
+      "de": [
+        "Über 3 Jahre abschreiben",
+        "Als Anlagevermögen aktivieren",
+        "Sofort im gleichen Geschäftsjahr absetzbar",
+        "Gar nicht absetzbar"
+      ],
+      "en": [
+        "Depreciated over 3 years",
+        "Capitalized as fixed assets",
+        "Immediately deductible in the same fiscal year",
+        "Not deductible at all"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Im Gegensatz zu CapEx sind OpEx-Kosten sofort als Betriebsausgaben absetzbar. [cite: 614-616]",
+      "en": "Unlike CapEx, OpEx costs are immediately deductible as operational expenses. [cite: 614-616]"
+    }
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Welche Migrationsstrategie wird als 'Drop and Shop' bezeichnet, da man zu einem SaaS-Modell wechselt?",
+      "en": "Which migration strategy is called 'Drop and Shop' because you switch to a SaaS model?"
+    },
+    "options": {
+      "de": [
+        "Rehost",
+        "Refactor",
+        "Repurchase",
+        "Replatform"
+      ],
+      "en": [
+        "Rehost",
+        "Refactor",
+        "Repurchase",
+        "Replatform"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Repurchase bedeutet, eine bestehende Lizenz durch ein SaaS-Produkt (z.B. Salesforce) zu ersetzen. [cite: 886-888, 925-931]",
+      "en": "Repurchase means replacing an existing license with a SaaS product (e.g., Salesforce). [cite: 886-888, 925-931]"
+    }
+  },
+  {
+    "id": 18,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Was ist ein wichtiger Faktor bei der Auswahl einer AWS Region?",
+      "en": "What is an important factor when choosing an AWS Region?"
+    },
+    "options": {
+      "de": [
+        "Anzahl der Mitarbeiter vor Ort",
+        "Compliance und Datenschutz (z.B. DSGVO)",
+        "Verfügbarkeit von physischen Schlüsseln",
+        "Farbe der Rechenzentren"
+      ],
+      "en": [
+        "Number of local employees",
+        "Compliance and data protection (e.g., GDPR)",
+        "Availability of physical keys",
+        "Color of the data centers"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Compliance (Datenschutz) ist eines der vier Hauptkriterien für die Regionswahl. [cite: 486-490]",
+      "en": "Compliance (data protection) is one of the four main criteria for region selection. [cite: 486-490]"
+    }
+  },
+  {
+    "id": 19,
+    "type": "multiple",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Welche ZWEI Kostenfaktoren zählen zu den 'versteckten Kosten' (Hidden Costs) On-Premise?",
+      "en": "Which TWO cost factors are considered 'hidden costs' on-premises?"
+    },
+    "options": {
+      "de": [
+        "Server-Hardware",
+        "Strom und Kühlung",
+        "IT-Personal für Wartung",
+        "Software-Lizenzen"
+      ],
+      "en": [
+        "Server hardware",
+        "Power and cooling",
+        "IT staff for maintenance",
+        "Software licenses"
+      ]
+    },
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": {
+      "de": "Strom, Kühlung und Personalaufwand werden oft bei der TCO-Betrachtung unterschätzt. [cite: 669-671]",
+      "en": "Power, cooling, and staffing costs are often underestimated in TCO analysis. [cite: 669-671]"
+    }
+  },
+  {
+    "id": 20,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Welcher Migrationsservice hilft dabei, Datenbanken fast ohne Ausfallzeiten zu AWS zu verschieben?",
+      "en": "Which migration service helps move databases to AWS with nearly zero downtime?"
+    },
+    "options": {
+      "de": [
+        "AWS Application Migration Service (MGN)",
+        "AWS Database Migration Service (DMS)",
+        "AWS Snowcone",
+        "AWS DataSync"
+      ],
+      "en": [
+        "AWS Application Migration Service (MGN)",
+        "AWS Database Migration Service (DMS)",
+        "AWS Snowcone",
+        "AWS DataSync"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "DMS ist spezialisiert auf die Migration von Datenbanken, auch zwischen verschiedenen Engines. [cite: 988-989, 1100]",
+      "en": "DMS specializes in migrating databases, even between different engines. [cite: 988-989, 1100]"
+    }
+  }
+]

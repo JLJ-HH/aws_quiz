@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cloud Practitioner & IHK Quiz</title>
+    <!-- CSS Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 md:p-8">
+
+    <!-- App Container -->
+    <div id="app" class="w-full max-w-2xl bg-white rounded-[2rem] p-8 md:p-12 card-shadow relative overflow-hidden">
+        
+        <!-- Language Switcher -->
+        <div class="absolute top-6 right-8 flex items-center space-x-3 text-sm font-bold tracking-tight">
+            <button onclick="setLanguage('de')" id="lang-de" class="transition-all hover:text-amber-600">DE</button>
+            <div class="w-px h-3 bg-gray-200"></div>
+            <button onclick="setLanguage('en')" id="lang-en" class="transition-all hover:text-amber-600">EN</button>
+        </div>
+
+        <!-- Progress Header -->
+        <div id="progress-container" class="hidden mb-10">
+            <div class="flex justify-between items-end mb-4">
+                <div>
+                    <span id="quiz-progress-text" class="text-[0.7rem] font-black text-gray-400 uppercase tracking-[0.2em]">Question 1 OF 10</span>
+                    <h3 id="category-label" class="text-sm font-semibold text-slate-400">Loading...</h3>
+                </div>
+                <div class="text-right">
+                    <span id="timer-label" class="block text-[0.6rem] font-bold text-gray-400 uppercase tracking-widest mb-1">Time Left</span>
+                    <span id="timer" class="text-xl font-bold font-mono gold-accent bg-amber-50 px-3 py-1.5 rounded-xl border border-amber-100/50">00:00</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-50 h-2.5 rounded-full overflow-hidden border border-gray-100/50">
+                <div id="progress-bar" class="gold-bg h-full transition-all duration-700 ease-out" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <!-- Start Screen -->
+        <div id="screen-start" class="fade-in space-y-8">
+            <div class="text-center space-y-2">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-amber-50 text-amber-700 text-xs font-bold uppercase tracking-widest mb-2 border border-amber-100">Exam Prep 2024</div>
+                <h1 id="ui-title" class="text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight leading-tight">AWS Cloud<br>Practitioner</h1>
+                <p id="ui-subtitle" class="text-slate-400 font-medium italic">Certification Quiz & IHK Basics</p>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- Question Count Selection -->
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center ml-1">
+                        <label id="ui-label-questions" class="text-xs font-bold text-slate-500 uppercase tracking-widest">Questions</label>
+                        <span id="ui-question-count-display" class="text-2xl font-black gold-accent tracking-tighter">10</span>
+                    </div>
+                    
+                    <div class="flex items-center space-x-6 p-4 bg-slate-50/50 border-2 border-slate-100 rounded-2xl transition-all focus-within:border-amber-200 focus-within:bg-white">
+                        <input type="range" id="ui-slider-questions" min="1" max="10" value="10" 
+                               oninput="updateCount(this.value)"
+                               class="flex-grow h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-amber-500">
+                        <input type="number" id="ui-input-questions" min="1" max="10" value="10"
+                               oninput="updateCount(this.value)"
+                               class="w-16 bg-transparent text-center font-bold text-slate-800 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none">
+                    </div>
+                </div>
+
+                <!-- Mode -->
+                <div class="space-y-3">
+                    <label id="ui-label-mode" class="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Quiz Mode</label>
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="setConfig('mode', 'study')" class="config-btn group relative py-4 px-4 border-2 rounded-2xl text-sm font-bold transition-all overflow-hidden" data-type="mode" data-val="study">
+                            <span class="relative z-10" id="ui-mode-study">Study Mode</span>
+                        </button>
+                        <button onclick="setConfig('mode', 'exam')" class="config-btn group relative py-4 px-4 border-2 rounded-2xl text-sm font-bold transition-all overflow-hidden" data-type="mode" data-val="exam">
+                            <span class="relative z-10" id="ui-mode-exam">Exam Mode</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="startQuiz()" id="ui-btn-start" class="w-full bg-slate-900 text-white font-bold py-5 rounded-[1.5rem] shadow-xl shadow-slate-200 hover:bg-slate-800 hover:-translate-y-0.5 active:translate-y-0 transition-all text-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                Start Quiz
+            </button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="screen-quiz" class="hidden fade-in space-y-8">
+            <div id="question-box">
+                <h2 id="question-text" class="text-2xl md:text-3xl font-bold text-slate-800 leading-[1.2] mb-8">Loading question...</h2>
+                <div id="options-list" class="space-y-3">
+                    <!-- Options injected here -->
+                </div>
+            </div>
+
+            <div id="feedback-box" class="hidden p-6 rounded-2xl border-2 border-slate-50 bg-slate-50/50 backdrop-blur-sm transition-all">
+                <div class="flex items-center space-x-2 mb-2">
+                    <div id="feedback-icon" class="w-2 h-2 rounded-full"></div>
+                    <span id="feedback-text" class="text-sm font-black uppercase tracking-widest">Correct</span>
+                </div>
+                <p id="explanation-text" class="text-slate-500 text-sm leading-relaxed font-medium italic"></p>
+            </div>
+
+            <div class="pt-4">
+                <button id="btn-next" onclick="handleNext()" class="w-full gold-bg text-white font-black py-5 rounded-[1.5rem] shadow-lg shadow-amber-100 hover:opacity-90 active:scale-[0.98] transition-all uppercase tracking-widest text-sm">
+                    Next Question
+                </button>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="screen-results" class="hidden fade-in text-center space-y-8 py-4">
+            <div class="relative inline-block">
+                <div id="result-circle" class="w-40 h-40 rounded-full border-8 border-gray-100 flex items-center justify-center mx-auto transition-all duration-1000">
+                    <span id="result-score" class="text-4xl font-black text-slate-800">0%</span>
+                </div>
+            </div>
+            
+            <div class="space-y-2">
+                <h2 id="result-status" class="text-4xl font-extrabold text-slate-800">Result</h2>
+                <p id="result-details" class="text-slate-400 font-medium">You answered 0 correctly.</p>
+            </div>
+
+            <div class="pt-8 space-y-3">
+                <button onclick="location.reload()" id="ui-btn-restart" class="w-full bg-slate-900 text-white font-bold py-5 rounded-[1.5rem] shadow-xl shadow-slate-200 transition-all text-lg hover:bg-slate-800">
+                    Try Again
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS Logic -->
+    <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* AWS & IHK Quiz Custom Styles */
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #ebf4ff; /* Soft Blue */
+    color: #1e293b;
+}
+
+.gold-accent { color: #d4af37; }
+.gold-bg { background-color: #d4af37; }
+.gold-border { border-color: #d4af37; }
+
+.fade-in { animation: fadeIn 0.4s ease-out; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card-shadow {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+/* Hidden radio/checkbox logic */
+.option-input:checked + .option-card {
+    border-color: #d4af37;
+    background-color: #fffbeb;
+    transform: scale(1.01);
+}
+
+.option-input:checked + .option-card .check-circle {
+    border-color: #d4af37;
+    background-color: #d4af37;
+}
+
+.option-input:checked + .option-card .check-inner {
+    opacity: 1;
+}
+
+/* Study mode feedback colors */
+.feedback-correct {
+    border-color: #22c55e !important;
+    background-color: #f0fdf4 !important;
+}
+
+.feedback-incorrect {
+    border-color: #ef4444 !important;
+    background-color: #fef2f2 !important;
+}
+
+.icon-correct {
+    background-color: #22c55e !important;
+    border-color: #22c55e !important;
+}
+
+.icon-incorrect {
+    background-color: #ef4444 !important;
+    border-color: #ef4444 !important;
+}
+
+/* Range Slider Styling */
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #d4af37;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+input[type='range']::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #d4af37;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
