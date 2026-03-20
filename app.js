@@ -27,7 +27,16 @@ const i18n = {
         timeLeft: "Verbleibende Zeit",
         btnRestart: "Erneut versuchen",
         loading: "Fragen werden geladen...",
-        errorLoading: "Fehler beim Laden der Fragen. Bitte lade die Seite neu."
+        errorLoading: "Fehler beim Laden der Fragen. Bitte lade die Seite neu.",
+        // New Strings
+        labelPath: "Wähle deinen Pfad",
+        pathRandomTitle: "Globaler Random-Modus",
+        pathRandomDesc: "Prüfungs-Simulation (Alle Themen gemischt)",
+        pathTopicTitle: "Themen-spezifisch",
+        pathTopicDesc: "Gezieltes Lernen nach Kategorien",
+        labelTopics: "Kategorie wählen",
+        btnBack: "Zurück",
+        labelSettings: "Einstellungen"
     },
     en: {
         title: "AWS Cloud<br>Practitioner",
@@ -51,13 +60,28 @@ const i18n = {
         timeLeft: "Time Left",
         btnRestart: "Try Again",
         loading: "Loading questions...",
-        errorLoading: "Error loading questions. Please refresh the page."
+        errorLoading: "Error loading questions. Please refresh the page.",
+        // New Strings
+        labelPath: "Choose Your Path",
+        pathRandomTitle: "Global Random Mode",
+        pathRandomDesc: "Exam Simulation (All topics mixed)",
+        pathTopicTitle: "Topic-specific",
+        pathTopicDesc: "Targeted learning by category",
+        labelTopics: "Select Category",
+        btnBack: "Back",
+        labelSettings: "Settings"
     }
 };
 
 // --- State Management ---
+// --- State Management ---
 let lang = 'de';
-let config = { count: 10, mode: 'study' };
+let config = { 
+    count: 10, 
+    mode: 'study', 
+    path: 'random', // 'random' or 'topic'
+    topic: null 
+};
 let allQuestions = [];
 let activeQuestions = [];
 let currentIndex = 0;
@@ -81,6 +105,9 @@ async function loadQuestions() {
         
         allQuestions = await response.json();
         
+        // Extract Unique Topics
+        renderTopics();
+
         // Update Slider Max
         const slider = document.getElementById('ui-slider-questions');
         const input = document.getElementById('ui-input-questions');
@@ -124,13 +151,94 @@ function setLanguage(l) {
         } else {
              document.getElementById('ui-subtitle').innerText = t.subtitle;
         }
+
+        // Translation for new elements
+        document.getElementById('ui-label-path').innerText = t.labelPath;
+        document.getElementById('ui-path-random-title').innerText = t.pathRandomTitle;
+        document.getElementById('ui-path-random-desc').innerText = t.pathRandomDesc;
+        document.getElementById('ui-path-topic-title').innerText = t.pathTopicTitle;
+        document.getElementById('ui-path-topic-desc').innerText = t.pathTopicDesc;
+        document.getElementById('ui-label-topics').innerText = t.labelTopics;
+        document.querySelectorAll('[onclick="goBack(\'path\')"], [onclick="goBack(\'topics\')"]').forEach(b => b.innerText = t.btnBack);
+
         document.getElementById('ui-label-questions').innerText = t.labelQuestions;
         document.getElementById('ui-label-mode').innerText = t.labelMode;
         document.getElementById('ui-btn-start').innerText = t.btnStart;
         document.getElementById('ui-mode-study').innerText = t.modeStudy;
         document.getElementById('ui-mode-exam').innerText = t.modeExam;
         document.getElementById('ui-btn-restart').innerText = t.btnRestart;
+
+        // Re-render topics to update language
+        if(allQuestions.length) renderTopics();
     }
+}
+
+/**
+ * Path Selection Logic
+ */
+function selectPath(path) {
+    config.path = path;
+    document.getElementById('step-path').classList.add('hidden');
+    
+    if (path === 'topic') {
+        document.getElementById('step-topics').classList.remove('hidden');
+    } else {
+        config.topic = null;
+        const max = allQuestions.length;
+        updateSliderLimits(max);
+        document.getElementById('btn-back-to-topics').onclick = () => goBack('path');
+        document.getElementById('step-settings').classList.remove('hidden');
+    }
+}
+
+function selectTopic(topicName) {
+    config.topic = topicName;
+    const filteredCount = allQuestions.filter(q => q.category['de'] === topicName || q.category['en'] === topicName).length;
+    updateSliderLimits(filteredCount);
+    
+    document.getElementById('step-topics').classList.add('hidden');
+    document.getElementById('btn-back-to-topics').onclick = () => goBack('topics');
+    document.getElementById('step-settings').classList.remove('hidden');
+}
+
+function goBack(step) {
+    document.getElementById('step-topics').classList.add('hidden');
+    document.getElementById('step-settings').classList.add('hidden');
+    
+    if (step === 'path') {
+        document.getElementById('step-path').classList.remove('hidden');
+    } else if (step === 'topics') {
+        document.getElementById('step-topics').classList.remove('hidden');
+    }
+}
+
+function updateSliderLimits(max) {
+    const slider = document.getElementById('ui-slider-questions');
+    const input = document.getElementById('ui-input-questions');
+    slider.max = max;
+    input.max = max;
+    updateCount(Math.min(config.count, max));
+}
+
+function renderTopics() {
+    const container = document.getElementById('topics-list');
+    if (!container) return;
+
+    // Get unique categories (using 'de' as key, but could be 'en')
+    const categories = [...new Set(allQuestions.map(q => q.category['de']))];
+    
+    container.innerHTML = '';
+    categories.forEach(cat => {
+        // Find the category object to get both languages
+        const q = allQuestions.find(q => q.category['de'] === cat);
+        const displayLabel = q.category[lang];
+        
+        const btn = document.createElement('button');
+        btn.onclick = () => selectTopic(cat);
+        btn.className = "p-4 border-2 border-slate-100 rounded-2xl bg-white hover:border-amber-200 transition-all text-left font-bold text-slate-700 text-sm";
+        btn.innerText = displayLabel;
+        container.appendChild(btn);
+    });
 }
 
 /**
@@ -178,8 +286,17 @@ function startQuiz() {
     if (!allQuestions.length) return;
 
     // Prep questions
-    let qPool = [...allQuestions].sort(() => 0.5 - Math.random());
-    const limit = config.count === 'all' ? qPool.length : config.count;
+    let qPool = [...allQuestions];
+
+    // Filter by Topic if needed
+    if (config.path === 'topic' && config.topic) {
+        qPool = qPool.filter(q => q.category['de'] === config.topic || q.category['en'] === config.topic);
+    }
+
+    // Shuffle
+    qPool.sort(() => 0.5 - Math.random());
+
+    const limit = config.count;
     activeQuestions = qPool.slice(0, limit);
     
     currentIndex = 0;
@@ -345,6 +462,9 @@ window.setConfig = setConfig;
 window.updateCount = updateCount;
 window.startQuiz = startQuiz;
 window.handleNext = handleNext;
+window.selectPath = selectPath;
+window.selectTopic = selectTopic;
+window.goBack = goBack;
 
 // Init
 document.addEventListener('DOMContentLoaded', () => {

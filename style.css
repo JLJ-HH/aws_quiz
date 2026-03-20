@@ -58,6 +58,31 @@ body {
     border-color: #ef4444 !important;
 }
 
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f8fafc;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #cbd5e1;
+}
+
+/* Button & Card Animations */
+button:active {
+    transform: scale(0.98);
+}
+
+.config-btn:hover {
+    border-color: #fde68a;
+}
+
 /* Range Slider Styling */
 input[type='range']::-webkit-slider-thumb {
     -webkit-appearance: none;

@@ -46,11 +46,61 @@
                 <p id="ui-subtitle" class="text-slate-400 font-medium italic">Certification Quiz & IHK Basics</p>
             </div>
             
-            <div class="space-y-6">
+            <!-- Step 1: Path Selection -->
+            <div id="step-path" class="space-y-6">
+                <label id="ui-label-path" class="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1 text-center block">Wähle deinen Pfad</label>
+                <div class="grid grid-cols-1 gap-4">
+                    <button onclick="selectPath('random')" class="group relative p-6 border-2 border-slate-100 rounded-[1.5rem] bg-white hover:border-amber-200 transition-all text-left">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 id="ui-path-random-title" class="text-lg font-bold text-slate-800">Globaler Random-Modus</h3>
+                                <p id="ui-path-random-desc" class="text-sm text-slate-400">Prüfungs-Simulation (Alle Themen gemischt)</p>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                    <button onclick="selectPath('topic')" class="group relative p-6 border-2 border-slate-100 rounded-[1.5rem] bg-white hover:border-amber-200 transition-all text-left">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 id="ui-path-topic-title" class="text-lg font-bold text-slate-800">Themen-spezifisch</h3>
+                                <p id="ui-path-topic-desc" class="text-sm text-slate-400">Gezieltes Lernen nach Kategorien</p>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 2: Topic Selection (Hidden by default) -->
+            <div id="step-topics" class="hidden space-y-6">
+                <div class="flex items-center justify-between ml-1">
+                    <label id="ui-label-topics" class="text-xs font-bold text-slate-500 uppercase tracking-widest">Kategorie wählen</label>
+                    <button onclick="goBack('path')" class="text-xs font-bold text-amber-600 hover:underline">Zurück</button>
+                </div>
+                <div id="topics-list" class="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
+                    <!-- Topics injected here -->
+                </div>
+            </div>
+
+            <!-- Step 3: Quiz Settings (Hidden by default) -->
+            <div id="step-settings" class="hidden space-y-6">
+                <div class="flex items-center justify-between ml-1">
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-widest">Einstellungen</label>
+                    <button id="btn-back-to-topics" onclick="goBack('topics')" class="text-xs font-bold text-amber-600 hover:underline">Zurück</button>
+                </div>
+                
                 <!-- Question Count Selection -->
                 <div class="space-y-4">
                     <div class="flex justify-between items-center ml-1">
-                        <label id="ui-label-questions" class="text-xs font-bold text-slate-500 uppercase tracking-widest">Questions</label>
+                        <label id="ui-label-questions" class="text-xs font-bold text-slate-500 uppercase tracking-widest">Fragenanzahl</label>
                         <span id="ui-question-count-display" class="text-2xl font-black gold-accent tracking-tighter">10</span>
                     </div>
                     
@@ -64,23 +114,23 @@
                     </div>
                 </div>
 
-                <!-- Mode -->
+                <!-- Mode Selection -->
                 <div class="space-y-3">
-                    <label id="ui-label-mode" class="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Quiz Mode</label>
+                    <label id="ui-label-mode" class="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Quiz Modus</label>
                     <div class="grid grid-cols-2 gap-3">
                         <button onclick="setConfig('mode', 'study')" class="config-btn group relative py-4 px-4 border-2 rounded-2xl text-sm font-bold transition-all overflow-hidden" data-type="mode" data-val="study">
-                            <span class="relative z-10" id="ui-mode-study">Study Mode</span>
+                            <span class="relative z-10" id="ui-mode-study">Lernmodus</span>
                         </button>
                         <button onclick="setConfig('mode', 'exam')" class="config-btn group relative py-4 px-4 border-2 rounded-2xl text-sm font-bold transition-all overflow-hidden" data-type="mode" data-val="exam">
-                            <span class="relative z-10" id="ui-mode-exam">Exam Mode</span>
+                            <span class="relative z-10" id="ui-mode-exam">Prüfungsmodus</span>
                         </button>
                     </div>
                 </div>
-            </div>
 
-            <button onclick="startQuiz()" id="ui-btn-start" class="w-full bg-slate-900 text-white font-bold py-5 rounded-[1.5rem] shadow-xl shadow-slate-200 hover:bg-slate-800 hover:-translate-y-0.5 active:translate-y-0 transition-all text-lg disabled:opacity-50 disabled:cursor-not-allowed">
-                Start Quiz
-            </button>
+                <button onclick="startQuiz()" id="ui-btn-start" class="w-full bg-slate-900 text-white font-bold py-5 rounded-[1.5rem] shadow-xl shadow-slate-200 hover:bg-slate-800 hover:-translate-y-0.5 active:translate-y-0 transition-all text-lg disabled:opacity-50 disabled:cursor-not-allowed">
+                    Quiz starten
+                </button>
+            </div>
         </div>
 
         <!-- Quiz Screen -->
