@@ -4,11 +4,16 @@ A modern, responsive web application designed for AWS Certified Cloud Practition
 
 ## Features
 
-- **Bilingual Interface**: Seamlessly switch between German (DE) and English (EN).
+- **Two Selection Paths**:
+  - **Global Random Mode (Exam Simulation)**: Mixes all available questions from the entire database for a comprehensive review.
+  - **Topic-specific Learning**: Allows users to focus on specific categories (e.g., 'Security', 'Economics', 'NIST Merkmale').
+- **Dynamic Category Extraction**: The app automatically identifies all unique categories from the `questions.json` file and generates selection buttons, ensuring future-proof scalability.
+- **Bilingual Interface**: Seamlessly switch between German (DE) and English (EN) at any time.
 - **Customizable Question Count**: Choose how many questions you want to answer via a slider or manual input.
 - **Two Quiz Modes**:
   - **Study Mode**: Receive immediate feedback and detailed explanations for each question.
   - **Exam Mode**: Test your knowledge under exam-like conditions with results revealed at the end.
+- **Robust Shuffle Logic**: Questions are shuffled once at the start of each session to ensure variety.
 - **Timed Challenges**: Each question is allocated 1.5 minutes to help you manage your time effectively.
 - **Real-time Progress Tracking**: Visualize your progress with a dynamic progress bar and question counter.
 - **Comprehensive Results**: View your final score percentage and pass/fail status (70% passing threshold).
