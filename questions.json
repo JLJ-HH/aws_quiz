@@ -26,7 +26,11 @@
         "Fixed Capacity"
       ]
     },
-    "correct": [0, 2, 3],
+    "correct": [
+      0,
+      2,
+      3
+    ],
     "explanation": {
       "de": "Die 5 NIST-Merkmale sind: On-demand, Broad Network Access, Resource Pooling, Rapid Elasticity, Measured Service.",
       "en": "The 5 NIST characteristics are: On-demand, Broad Network Access, Resource Pooling, Rapid Elasticity, Measured Service."
@@ -57,7 +61,9 @@
         "Rapid Elasticity"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Measured Service sorgt dafür, dass Ressourcen überwacht und nach Verbrauch abgerechnet werden.",
       "en": "Measured Service ensures that resources are monitored and billed based on consumption."
@@ -75,10 +81,22 @@
       "en": "Which model provides the most control?"
     },
     "options": {
-      "de": ["SaaS", "PaaS", "IaaS", "Serverless"],
-      "en": ["SaaS", "PaaS", "IaaS", "Serverless"]
+      "de": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "Serverless"
+      ],
+      "en": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "Serverless"
+      ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "IaaS (Infrastructure as a Service) bietet volle Kontrolle über VMs und Netzwerke.",
       "en": "IaaS (Infrastructure as a Service) provides full control over VMs and networking."
@@ -96,10 +114,22 @@
       "en": "Which model is 'Serverless'?"
     },
     "options": {
-      "de": ["EC2", "Lambda", "EBS", "RDS mit festen Instanzen"],
-      "en": ["EC2", "Lambda", "EBS", "RDS with fixed instances"]
+      "de": [
+        "EC2",
+        "Lambda",
+        "EBS",
+        "RDS mit festen Instanzen"
+      ],
+      "en": [
+        "EC2",
+        "Lambda",
+        "EBS",
+        "RDS with fixed instances"
+      ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "AWS Lambda ist ein klassischer Serverless-Dienst (FaaS).",
       "en": "AWS Lambda is a classic serverless service (FaaS)."
@@ -130,7 +160,9 @@
         "One-time hardware costs"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Operating Expenses (OpEx) sind laufende Kosten, wie sie in der Cloud üblich sind.",
       "en": "Operating Expenses (OpEx) are ongoing costs, typical for cloud usage."
@@ -161,7 +193,9 @@
         "Time to Cloud Optimization"
       ]
     },
-    "correct": [0],
+    "correct": [
+      0
+    ],
     "explanation": {
       "de": "TCO umfasst alle Kosten über den gesamten Lebenszyklus einer Ressource.",
       "en": "TCO includes all costs over the entire lifecycle of a resource."
@@ -179,10 +213,22 @@
       "en": "Which 'R' describes 'Lift and Shift'?"
     },
     "options": {
-      "de": ["Refactor", "Replatform", "Rehost", "Retire"],
-      "en": ["Refactor", "Replatform", "Rehost", "Retire"]
+      "de": [
+        "Refactor",
+        "Replatform",
+        "Rehost",
+        "Retire"
+      ],
+      "en": [
+        "Refactor",
+        "Replatform",
+        "Rehost",
+        "Retire"
+      ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Rehost verschiebt Anwendungen ohne Änderungen ('as-is') in die Cloud.",
       "en": "Rehost moves applications to the cloud without changes ('as-is')."
@@ -200,10 +246,23 @@
       "en": "Choose two AWS CAF perspectives."
     },
     "options": {
-      "de": ["Security", "Scaling", "Governance", "Storage"],
-      "en": ["Security", "Scaling", "Governance", "Storage"]
+      "de": [
+        "Security",
+        "Scaling",
+        "Governance",
+        "Storage"
+      ],
+      "en": [
+        "Security",
+        "Scaling",
+        "Governance",
+        "Storage"
+      ]
     },
-    "correct": [0, 2],
+    "correct": [
+      0,
+      2
+    ],
     "explanation": {
       "de": "Die 6 CAF-Perspektiven sind: Business, People, Governance, Platform, Security, Operations.",
       "en": "The 6 CAF perspectives are: Business, People, Governance, Platform, Security, Operations."
@@ -234,7 +293,9 @@
         "A virtual network"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Eine Region besteht aus mindestens drei isolierten Availability Zones.",
       "en": "A region consists of at least three isolated Availability Zones."
@@ -252,7 +313,12 @@
       "en": "Who is responsible for patching guest operating systems? (Shared Responsibility)"
     },
     "options": {
-      "de": ["AWS", "Der Kunde", "Beide gemeinsam", "Der Hardware-Hersteller"],
+      "de": [
+        "AWS",
+        "Der Kunde",
+        "Beide gemeinsam",
+        "Der Hardware-Hersteller"
+      ],
       "en": [
         "AWS",
         "The customer",
@@ -260,7 +326,9 @@
         "The hardware manufacturer"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "AWS ist 'of the cloud' verantwortlich, der Kunde 'in the cloud'.",
       "en": "AWS is responsible 'of the cloud', the customer is 'in the cloud'."
@@ -291,7 +359,9 @@
         "AWS Migration Hub"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Der Pricing Calculator dient der Kostenschätzung für die Zukunft, während der Cost Explorer vergangene Kosten analysiert. [cite: 675, 753]",
       "en": "The Pricing Calculator is for future cost estimation, while Cost Explorer analyzes past costs. [cite: 675, 753]"
@@ -322,7 +392,9 @@
         "Running heavy compute workloads"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Edge Locations fungieren als Caching-Punkte für Amazon CloudFront, um Latenzen weltweit zu senken. [cite: 480-482]",
       "en": "Edge Locations act as caching points for Amazon CloudFront to reduce latency globally. [cite: 480-482]"
@@ -353,7 +425,9 @@
         "Savings Plans"
       ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Spot-Instanzen nutzen freie Kapazitäten und sind extrem günstig, können aber kurzfristig zurückgefordert werden. [cite: 724-727]",
       "en": "Spot Instances use spare capacity and are very cheap but can be reclaimed with short notice. [cite: 724-727]"
@@ -384,7 +458,9 @@
         "Automate cloud operations"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "In der Envision-Phase wird der geschäftliche Nutzen quantifiziert und Stakeholder gewonnen. [cite: 847-850]",
       "en": "The Envision phase involves quantifying business value and gaining stakeholders. [cite: 847-850]"
@@ -415,7 +491,9 @@
         "AWS Direct Connect"
       ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Snowmobile ist ein LKW-Container für extrem große Datenmigrationen im Exabyte-Bereich. [cite: 1038-1041]",
       "en": "Snowmobile is a truck-based container for extremely large data migrations at exabyte scale. [cite: 1038-1041]"
@@ -446,7 +524,9 @@
         "Not deductible at all"
       ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Im Gegensatz zu CapEx sind OpEx-Kosten sofort als Betriebsausgaben absetzbar. [cite: 614-616]",
       "en": "Unlike CapEx, OpEx costs are immediately deductible as operational expenses. [cite: 614-616]"
@@ -464,10 +544,22 @@
       "en": "Which migration strategy is called 'Drop and Shop' because you switch to a SaaS model?"
     },
     "options": {
-      "de": ["Rehost", "Refactor", "Repurchase", "Replatform"],
-      "en": ["Rehost", "Refactor", "Repurchase", "Replatform"]
+      "de": [
+        "Rehost",
+        "Refactor",
+        "Repurchase",
+        "Replatform"
+      ],
+      "en": [
+        "Rehost",
+        "Refactor",
+        "Repurchase",
+        "Replatform"
+      ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Repurchase bedeutet, eine bestehende Lizenz durch ein SaaS-Produkt (z.B. Salesforce) zu ersetzen. [cite: 886-888, 925-931]",
       "en": "Repurchase means replacing an existing license with a SaaS product (e.g., Salesforce). [cite: 886-888, 925-931]"
@@ -498,7 +590,9 @@
         "Color of the data centers"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Compliance (Datenschutz) ist eines der vier Hauptkriterien für die Regionswahl. [cite: 486-490]",
       "en": "Compliance (data protection) is one of the four main criteria for region selection. [cite: 486-490]"
@@ -529,7 +623,10 @@
         "Software licenses"
       ]
     },
-    "correct": [1, 2],
+    "correct": [
+      1,
+      2
+    ],
     "explanation": {
       "de": "Strom, Kühlung und Personalaufwand werden oft bei der TCO-Betrachtung unterschätzt. [cite: 669-671]",
       "en": "Power, cooling, and staffing costs are often underestimated in TCO analysis. [cite: 669-671]"
@@ -560,7 +657,9 @@
         "AWS DataSync"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "DMS ist spezialisiert auf die Migration von Datenbanken, auch zwischen verschiedenen Engines. [cite: 988-989, 1100]",
       "en": "DMS specializes in migrating databases, even between different engines. [cite: 988-989, 1100]"
@@ -593,7 +692,11 @@
         "Network Isolation"
       ]
     },
-    "correct": [0, 1, 3],
+    "correct": [
+      0,
+      1,
+      3
+    ],
     "explanation": {
       "de": "Das Framework besteht aus 6 Säulen: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization und Sustainability. [cite: 52, 67-90]",
       "en": "The framework consists of 6 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. [cite: 52, 67-90]"
@@ -624,7 +727,9 @@
         "Cost Optimization"
       ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Operational Excellence betont das Ausführen von Operationen als Code (IaC), um Fehler zu minimieren und Prozesse zu automatisieren. [cite: 102, 118]",
       "en": "Operational Excellence emphasizes performing operations as code (IaC) to minimize errors and automate processes. [cite: 102, 118]"
@@ -655,7 +760,9 @@
         "Planning manual restarts for every error"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Reliability bedeutet, Ausfälle einzuplanen (Design for Failure) und Multi-AZ-Architekturen zur automatischen Heilung zu nutzen. [cite: 78, 220, 225]",
       "en": "Reliability means planning for failures (Design for Failure) and using Multi-AZ architectures for self-healing. [cite: 78, 220, 225]"
@@ -686,7 +793,9 @@
         "General Purpose (t-series)"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Memory Optimized Instanzen (z. B. r5, x2) bieten extrem viel RAM für speicherintensive Anwendungen. [cite: 325-329]",
       "en": "Memory Optimized instances (e.g., r5, x2) provide a huge amount of RAM for memory-intensive applications. [cite: 325-329]"
@@ -717,7 +826,9 @@
         "AWS Nitro System"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "AWS Graviton (ARM-basiert) ist effizienter und bietet ein besseres Preis-Leistungs-Verhältnis bei geringerem Energiebedarf. [cite: 414, 424-427]",
       "en": "AWS Graviton (ARM-based) is more efficient and provides a better price-performance ratio with lower energy consumption. [cite: 414, 424-427]"
@@ -748,7 +859,9 @@
         "Generating invoices"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Das Tool hilft Kunden, ihre Workloads anhand eines Fragebogens zu bewerten und Risiken zu identifizieren. [cite: 489-494]",
       "en": "The tool helps customers assess their workloads using a questionnaire and identify risks. [cite: 489-494]"
@@ -779,7 +892,10 @@
         "Management of IAM users"
       ]
     },
-    "correct": [0, 2],
+    "correct": [
+      0,
+      2
+    ],
     "explanation": {
       "de": "AWS ist für die Sicherheit 'of the cloud' (Hardware, globale Infrastruktur) verantwortlich. [cite: 163-168, 537-538]",
       "en": "AWS is responsible for security 'of the cloud' (hardware, global infrastructure). [cite: 163-168, 537-538]"
@@ -810,7 +926,9 @@
         "Using manual scaling instead of Auto Scaling"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Right-Sizing vermeidet Verschwendung, indem Instanzen weder zu groß noch zu klein gewählt werden. [cite: 372, 380-382]",
       "en": "Right-sizing avoids waste by ensuring instances are neither over-provisioned nor under-provisioned. [cite: 372, 380-382]"
@@ -841,7 +959,9 @@
         "Compliance with local laws"
       ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Multi-AZ bedeutet die Verteilung über mehrere Availability Zones, um die Ausfallsicherheit zu erhöhen. [cite: 236, 266, 286]",
       "en": "Multi-AZ means distributing across multiple Availability Zones to increase fault tolerance. [cite: 236, 266, 286]"
@@ -872,7 +992,9 @@
         "Performance Efficiency"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Die Säule Security befasst sich mit dem Schutz von Daten und Systemen, unter anderem durch IAM und Least Privilege. [cite: 71-74, 152]",
       "en": "The Security pillar deals with protecting data and systems, including through IAM and Least Privilege. [cite: 71-74, 152]"
@@ -903,7 +1025,9 @@
         "Improve through game days"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "In der Cloud können Sie on-demand eine Umgebung in Produktionsgröße erstellen, testen und dann wieder löschen, um reale Ergebnisse zu erhalten. [cite: 452, 459]",
       "en": "In the cloud, you can create a production-scale environment on demand, test it, and then delete it to get real-world results. [cite: 452, 459]"
@@ -934,7 +1058,9 @@
         "AWS Transit Gateway"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "ELB (z. B. ALB oder NLB) sorgt für Hochverfügbarkeit, indem es Traffic nur an gesunde Instanzen weiterleitet. [cite: 237-242, 274-275]",
       "en": "ELB (e.g., ALB or NLB) ensures high availability by routing traffic only to healthy instances. [cite: 237-242, 274-275]"
@@ -965,7 +1091,9 @@
         "Replacing an instance with a Spot instance"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Horizontale Skalierung (Scaling Out) bedeutet das Hinzufügen weiterer Ressourcen (Instanzen) und ist ein Cloud-Best-Practice. [cite: 216, 248]",
       "en": "Horizontal scaling (scaling out) means adding more resources (instances) and is a cloud best practice. [cite: 216, 248]"
@@ -996,7 +1124,9 @@
         "Less reliability for more sustainability"
       ]
     },
-    "correct": [0],
+    "correct": [
+      0
+    ],
     "explanation": {
       "de": "Multi-AZ-Setups sind teurer als Single-AZ, bieten aber Schutz gegen den Ausfall eines gesamten Rechenzentrums. [cite: 473-477]",
       "en": "Multi-AZ setups are more expensive than single-AZ but provide protection against the failure of an entire data center. [cite: 473-477]"
@@ -1027,7 +1157,9 @@
         "I-family (Storage Optimized)"
       ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Die C-Familie (z. B. c5, c6g) bietet ein hohes Verhältnis von CPU zu Speicher. [cite: 320-324]",
       "en": "The C-family (e.g., c5, c6g) provides a high ratio of CPU to memory. [cite: 320-324]"
@@ -1058,7 +1190,9 @@
         "AWS Systems Manager"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "AWS Config trackt Konfigurationsänderungen und hilft bei der Compliance-Überprüfung. [cite: 131-132]",
       "en": "AWS Config tracks configuration changes and helps with compliance auditing. [cite: 131-132]"
@@ -1089,7 +1223,9 @@
         "Third-party auditors"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "AWS ist für die Sicherheit 'of the cloud' verantwortlich, wozu auch die globale Infrastruktur (Regionen, AZs, Edge) gehört. [cite: 163-168, 537-538]",
       "en": "AWS is responsible for security 'of the cloud', which includes the global infrastructure (Regions, AZs, Edge). [cite: 163-168, 537-538]"
@@ -1120,7 +1256,10 @@
         "Manual provisioning of servers"
       ]
     },
-    "correct": [1, 2],
+    "correct": [
+      1,
+      2
+    ],
     "explanation": {
       "de": "Effiziente Datenspeicherung und hohe Auslastung reduzieren den Energieverbrauch pro Nutzeinheit. [cite: 409, 416, 435]",
       "en": "Efficient data storage and high utilization reduce energy consumption per unit of utility. [cite: 409, 416, 435]"
@@ -1151,7 +1290,9 @@
         "Making all data publicly accessible"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Reliability fokussiert sich darauf, Ausfälle zu überstehen und die Verfügbarkeit sicherzustellen. [cite: 206-207, 212]",
       "en": "Reliability focuses on surviving outages and ensuring availability. [cite: 206-207, 212]"
@@ -1182,7 +1323,9 @@
         "AWS Artifact"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Trusted Advisor prüft die Umgebung auf Best Practices in den Bereichen Kosten, Sicherheit, Toleranz und Performance. [cite: 391, 526]",
       "en": "Trusted Advisor checks the environment for best practices in cost, security, fault tolerance, and performance. [cite: 391, 526]"
@@ -1191,7 +1334,10 @@
   {
     "id": 41,
     "type": "single",
-    "category": { "de": "WAF & Services", "en": "WAF & Services" },
+    "category": {
+      "de": "WAF & Services",
+      "en": "WAF & Services"
+    },
     "question": {
       "de": "Welcher AWS-Service unterstützt die Säule 'Operational Excellence', indem er Infrastruktur über Vorlagen (Templates) bereitstellt?",
       "en": "Which AWS service supports the 'Operational Excellence' pillar by providing infrastructure via templates?"
@@ -1210,7 +1356,9 @@
         "Amazon CloudWatch"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "CloudFormation ermöglicht 'Infrastructure as Code' (IaC), ein Kernprinzip der Operational Excellence. [cite: 102, 119]",
       "en": "CloudFormation enables 'Infrastructure as Code' (IaC), a core principle of Operational Excellence. [cite: 102, 119]"
@@ -1219,7 +1367,10 @@
   {
     "id": 42,
     "type": "single",
-    "category": { "de": "Vorteile der Cloud", "en": "Cloud Benefits" },
+    "category": {
+      "de": "Vorteile der Cloud",
+      "en": "Cloud Benefits"
+    },
     "question": {
       "de": "Welcher Vorteil der AWS Cloud wird realisiert, wenn ein Startup innerhalb weniger Minuten eine globale Präsenz aufbaut?",
       "en": "Which AWS Cloud benefit is realized when a startup establishes a global presence within minutes?"
@@ -1238,7 +1389,9 @@
         "Economies of scale"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "AWS ermöglicht die weltweite Bereitstellung von Anwendungen in Minuten durch seine globale Infrastruktur. [cite: 575]",
       "en": "AWS enables worldwide application deployment in minutes through its global infrastructure. [cite: 575]"
@@ -1247,7 +1400,10 @@
   {
     "id": 43,
     "type": "single",
-    "category": { "de": "Wirtschaftlichkeit", "en": "Economics" },
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
     "question": {
       "de": "Wie profitieren Kunden von 'Economies of Scale' bei AWS?",
       "en": "How do customers benefit from 'Economies of Scale' at AWS?"
@@ -1266,7 +1422,9 @@
         "Data transfers between regions are always free"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Durch die enorme Größe von AWS sinken die variablen Kosten, was als Preisvorteil weitergegeben wird. [cite: 568, 571]",
       "en": "Due to the massive scale of AWS, variable costs decrease, which is passed on as a price advantage. [cite: 568, 571]"
@@ -1275,13 +1433,21 @@
   {
     "id": 44,
     "type": "single",
-    "category": { "de": "Sicherheit", "en": "Security" },
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
     "question": {
       "de": "In den Bereich welcher Verantwortlichkeit fällt das Verschlüsseln von Kundendaten 'at rest'?",
       "en": "Under whose responsibility does encrypting customer data 'at rest' fall?"
     },
     "options": {
-      "de": ["AWS", "Der Kunde", "Beide (Shared)", "Der Hardware-Hersteller"],
+      "de": [
+        "AWS",
+        "Der Kunde",
+        "Beide (Shared)",
+        "Der Hardware-Hersteller"
+      ],
       "en": [
         "AWS",
         "The customer",
@@ -1289,7 +1455,9 @@
         "The hardware manufacturer"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Der Kunde ist für die Sicherheit 'IN der Cloud' verantwortlich, wozu die Verschlüsselung seiner Daten gehört. [cite: 171, 175, 544]",
       "en": "The customer is responsible for security 'IN the cloud,' which includes encrypting their data. [cite: 171, 175, 544]"
@@ -1298,7 +1466,10 @@
   {
     "id": 45,
     "type": "single",
-    "category": { "de": "Reliability", "en": "Reliability" },
+    "category": {
+      "de": "Reliability",
+      "en": "Reliability"
+    },
     "question": {
       "de": "Welches Architektur-Konzept beschreibt die Fähigkeit eines Systems, einen Teilausfall ohne Unterbrechung zu überstehen?",
       "en": "Which architectural concept describes a system's ability to survive a partial failure without interruption?"
@@ -1310,9 +1481,16 @@
         "Skalierbarkeit",
         "Elastizität"
       ],
-      "en": ["Agility", "High Availability", "Scalability", "Elasticity"]
+      "en": [
+        "Agility",
+        "High Availability",
+        "Scalability",
+        "Elasticity"
+      ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Hochverfügbarkeit (oft durch Multi-AZ erreicht) stellt sicher, dass das System bei Ausfällen weiterläuft. [cite: 236, 266]",
       "en": "High availability (often achieved through Multi-AZ) ensures the system continues to function during failures. [cite: 236, 266]"
@@ -1321,7 +1499,10 @@
   {
     "id": 46,
     "type": "single",
-    "category": { "de": "WAF - Cost", "en": "WAF - Cost" },
+    "category": {
+      "de": "WAF - Cost",
+      "en": "WAF - Cost"
+    },
     "question": {
       "de": "Welches Design-Prinzip der Säule 'Cost Optimization' empfiehlt, für ungenutzte Ressourcen nicht mehr zu bezahlen?",
       "en": "Which design principle of the 'Cost Optimization' pillar recommends not paying for unused resources?"
@@ -1340,7 +1521,9 @@
         "Stop guessing capacity"
       ]
     },
-    "correct": [0],
+    "correct": [
+      0
+    ],
     "explanation": {
       "de": "Ein Verbrauchsmodell (Pay-as-you-go) stellt sicher, dass man nur für tatsächlich genutzte Ressourcen zahlt. [cite: 367, 561]",
       "en": "A consumption model (Pay-as-you-go) ensures you only pay for resources actually used. [cite: 367, 561]"
@@ -1349,7 +1532,10 @@
   {
     "id": 47,
     "type": "single",
-    "category": { "de": "Nachhaltigkeit", "en": "Sustainability" },
+    "category": {
+      "de": "Nachhaltigkeit",
+      "en": "Sustainability"
+    },
     "question": {
       "de": "Wie trägt die Nutzung von 'Managed Services' zur Nachhaltigkeit bei?",
       "en": "How does using 'Managed Services' contribute to sustainability?"
@@ -1368,7 +1554,9 @@
         "The customer must take care of hardware cooling"
       ]
     },
-    "correct": [0],
+    "correct": [
+      0
+    ],
     "explanation": {
       "de": "Managed Services erlauben es AWS, Ressourcen für viele Kunden zu bündeln und die Hardware-Effizienz zu maximieren. [cite: 411, 541]",
       "en": "Managed services allow AWS to pool resources for many customers and maximize hardware efficiency. [cite: 411, 541]"
@@ -1377,16 +1565,31 @@
   {
     "id": 48,
     "type": "single",
-    "category": { "de": "Migration", "en": "Migration" },
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
     "question": {
       "de": "Ein Unternehmen möchte eine Anwendung ohne jegliche Code-Änderung in die Cloud verschieben. Welche Strategie ist das?",
       "en": "A company wants to move an application to the cloud without any code changes. Which strategy is this?"
     },
     "options": {
-      "de": ["Refactor", "Replatform", "Rehost", "Repurchase"],
-      "en": ["Refactor", "Replatform", "Rehost", "Repurchase"]
+      "de": [
+        "Refactor",
+        "Replatform",
+        "Rehost",
+        "Repurchase"
+      ],
+      "en": [
+        "Refactor",
+        "Replatform",
+        "Rehost",
+        "Repurchase"
+      ]
     },
-    "correct": [2],
+    "correct": [
+      2
+    ],
     "explanation": {
       "de": "Rehost (auch Lift-and-Shift) ist der 1:1 Umzug ohne Code-Änderungen. [cite: 598]",
       "en": "Rehost (also known as Lift-and-Shift) is a 1:1 move without code changes. [cite: 598]"
@@ -1395,7 +1598,10 @@
   {
     "id": 49,
     "type": "single",
-    "category": { "de": "Infrastruktur", "en": "Infrastructure" },
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
     "question": {
       "de": "Was ist der Vorteil der Verteilung einer Datenbank über mehrere 'Availability Zones'?",
       "en": "What is the benefit of distributing a database across multiple 'Availability Zones'?"
@@ -1414,7 +1620,9 @@
         "Increasing the CPU performance of the primary database"
       ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "AZs sind physisch getrennt. Fällt eine AZ aus, bleibt die Datenbank in der anderen AZ verfügbar. [cite: 232-236, 605]",
       "en": "AZs are physically isolated. If one AZ fails, the database remains available in the other AZ. [cite: 232-236, 605]"
@@ -1423,19 +1631,695 @@
   {
     "id": 50,
     "type": "single",
-    "category": { "de": "CAF", "en": "CAF" },
+    "category": {
+      "de": "CAF",
+      "en": "CAF"
+    },
     "question": {
       "de": "Welche Perspektive des AWS Cloud Adoption Framework (CAF) konzentriert sich auf die Schulung von Mitarbeitern?",
       "en": "Which perspective of the AWS Cloud Adoption Framework (CAF) focuses on employee training?"
     },
     "options": {
-      "de": ["Business", "People", "Governance", "Platform"],
-      "en": ["Business", "People", "Governance", "Platform"]
+      "de": [
+        "Business",
+        "People",
+        "Governance",
+        "Platform"
+      ],
+      "en": [
+        "Business",
+        "People",
+        "Governance",
+        "Platform"
+      ]
     },
-    "correct": [1],
+    "correct": [
+      1
+    ],
     "explanation": {
       "de": "Die People-Perspektive befasst sich mit Kompetenzentwicklung, Training und Kulturwandel. [cite: 590]",
       "en": "The People perspective deals with skills development, training, and cultural change. [cite: 590]"
+    }
+  },
+  {
+    "id": 51,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Welches Kriterium hat bei der Auswahl einer AWS-Region die höchste Priorität?",
+      "en": "Which criterion has the highest priority when choosing an AWS region?"
+    },
+    "options": {
+      "de": [
+        "Niedrige Latenz",
+        "Geringe Kosten",
+        "Compliance und Datensicherheit (z. B. DSGVO)",
+        "Verfügbarkeit neuester Features"
+      ],
+      "en": [
+        "Low latency",
+        "Low costs",
+        "Compliance and data security (e.g., GDPR)",
+        "Availability of latest features"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Compliance schlägt alles andere: Rechtliche Anforderungen überstimmen Performance und Kosten. [cite: 178, 191]",
+      "en": "Compliance beats everything else: Legal requirements override performance and costs. [cite: 178, 191]"
+    }
+  },
+  {
+    "id": 52,
+    "type": "single",
+    "category": {
+      "de": "Compute",
+      "en": "Compute"
+    },
+    "question": {
+      "de": "Welches EC2-Preismodell ist am besten für eine stabile Grundlast über 1 bis 3 Jahre geeignet?",
+      "en": "Which EC2 pricing model is best suited for a stable baseline load over 1 to 3 years?"
+    },
+    "options": {
+      "de": [
+        "On-Demand Instances",
+        "Spot Instances",
+        "Reserved Instances",
+        "Dedicated Hosts"
+      ],
+      "en": [
+        "On-Demand Instances",
+        "Spot Instances",
+        "Reserved Instances",
+        "Dedicated Hosts"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Reserved Instances bieten hohe Rabatte (bis zu 72 %) bei einer langfristigen Bindung für stabile Workloads. [cite: 311-315]",
+      "en": "Reserved Instances offer high discounts (up to 72%) for long-term commitments for stable workloads. [cite: 311-315]"
+    }
+  },
+  {
+    "id": 53,
+    "type": "single",
+    "category": {
+      "de": "Well-Architected Framework",
+      "en": "Well-Architected Framework"
+    },
+    "question": {
+      "de": "In welche Säule des Well-Architected Frameworks fällt das Prinzip 'Operations as Code'?",
+      "en": "In which pillar of the Well-Architected Framework does the principle 'Operations as Code' fall?"
+    },
+    "options": {
+      "de": [
+        "Security",
+        "Operational Excellence",
+        "Reliability",
+        "Performance Efficiency"
+      ],
+      "en": [
+        "Security",
+        "Operational Excellence",
+        "Reliability",
+        "Performance Efficiency"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Operational Excellence konzentriert sich auf effizienten Betrieb und kontinuierliche Verbesserung durch Automatisierung (IaC). [cite: 65-66]",
+      "en": "Operational Excellence focuses on efficient operations and continuous improvement through automation (IaC). [cite: 65-66]"
+    }
+  },
+  {
+    "id": 54,
+    "type": "single",
+    "category": {
+      "de": "Compute",
+      "en": "Compute"
+    },
+    "question": {
+      "de": "Was bedeutet das Suffix 'g' in einem EC2-Instanznamen wie 'c7g.2xlarge'?",
+      "en": "What does the suffix 'g' in an EC2 instance name like 'c7g.2xlarge' stand for?"
+    },
+    "options": {
+      "de": [
+        "General Purpose",
+        "GPU-beschleunigt",
+        "AWS Graviton Prozessor (ARM)",
+        "Global verfügbar"
+      ],
+      "en": [
+        "General Purpose",
+        "GPU accelerated",
+        "AWS Graviton processor (ARM)",
+        "Globally available"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Das 'g' steht für AWS Graviton Prozessoren (ARM), die bis zu 40 % günstiger sein können. [cite: 291-294]",
+      "en": "The 'g' stands for AWS Graviton processors (ARM), which can be up to 40% cheaper. [cite: 291-294]"
+    }
+  },
+  {
+    "id": 55,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Welcher Service ermöglicht ultra-niedrige Latenzen für mobile Anwendungen durch Integration in 5G-Netze?",
+      "en": "Which service enables ultra-low latencies for mobile applications by integrating into 5G networks?"
+    },
+    "options": {
+      "de": [
+        "AWS Local Zones",
+        "AWS Wavelength",
+        "AWS Outposts",
+        "Amazon CloudFront"
+      ],
+      "en": [
+        "AWS Local Zones",
+        "AWS Wavelength",
+        "AWS Outposts",
+        "Amazon CloudFront"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Wavelength Zones platzieren AWS-Infrastruktur direkt in den Rechenzentren von Mobilfunkanbietern für AR/VR oder autonomes Fahren. [cite: 201-205]",
+      "en": "Wavelength Zones place AWS infrastructure directly within telecommunications providers' data centers for AR/VR or autonomous driving. [cite: 201-205]"
+    }
+  },
+  {
+    "id": 56,
+    "type": "single",
+    "category": {
+      "de": "Compute",
+      "en": "Compute"
+    },
+    "question": {
+      "de": "Welcher Dienst bietet eine 'Serverless'-Lösung für das Ausführen von Docker-Containern ohne EC2-Management?",
+      "en": "Which service provides a 'serverless' solution for running Docker containers without EC2 management?"
+    },
+    "options": {
+      "de": [
+        "Amazon ECS",
+        "Amazon EKS",
+        "AWS Fargate",
+        "AWS Lambda"
+      ],
+      "en": [
+        "Amazon ECS",
+        "Amazon EKS",
+        "AWS Fargate",
+        "AWS Lambda"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Fargate ist die serverlose Engine für ECS und EKS; der Kunde zahlt nur für vCPU und RAM. [cite: 453, 456-458]",
+      "en": "Fargate is the serverless engine for ECS and EKS; the customer only pays for vCPU and RAM. [cite: 453, 456-458]"
+    }
+  },
+  {
+    "id": 57,
+    "type": "single",
+    "category": {
+      "de": "Deployment",
+      "en": "Deployment"
+    },
+    "question": {
+      "de": "Welcher AWS-Service wird als 'PaaS' (Platform as a Service) klassifiziert, bei dem man nur Code hochlädt?",
+      "en": "Which AWS service is classified as 'PaaS' (Platform as a Service), where you only upload code?"
+    },
+    "options": {
+      "de": [
+        "Amazon EC2",
+        "AWS CloudFormation",
+        "AWS Elastic Beanstalk",
+        "AWS Batch"
+      ],
+      "en": [
+        "Amazon EC2",
+        "AWS CloudFormation",
+        "AWS Elastic Beanstalk",
+        "AWS Batch"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Elastic Beanstalk übernimmt das Deployment und Management (EC2, ELB, ASG) automatisch. [cite: 28, 255-257]",
+      "en": "Elastic Beanstalk automatically handles the deployment and management (EC2, ELB, ASG). [cite: 28, 255-257]"
+    }
+  },
+  {
+    "id": 58,
+    "type": "single",
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
+    "question": {
+      "de": "Welche Aussage über Security Groups ist korrekt?",
+      "en": "Which statement about Security Groups is correct?"
+    },
+    "options": {
+      "de": [
+        "Sie sind stateless.",
+        "Sie unterstützen sowohl Allow- als auch Deny-Regeln.",
+        "Sie fungieren als virtuelle Firewall auf Instanz-Ebene.",
+        "Sie schützen das gesamte Subnetz."
+      ],
+      "en": [
+        "They are stateless.",
+        "They support both Allow and Deny rules.",
+        "They act as a virtual firewall at the instance level.",
+        "They protect the entire subnet."
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Security Groups sind stateful und erlauben nur Allow-Regeln (Standard: eingehend blockiert). [cite: 348-353]",
+      "en": "Security Groups are stateful and only allow 'Allow' rules (Default: inbound blocked). [cite: 348-353]"
+    }
+  },
+  {
+    "id": 59,
+    "type": "single",
+    "category": {
+      "de": "Compute",
+      "en": "Compute"
+    },
+    "question": {
+      "de": "Was passiert mit den Daten auf einem EBS-Volume, wenn eine EC2-Instanz 'gestoppt' (Stopped) wird?",
+      "en": "What happens to the data on an EBS volume when an EC2 instance is 'stopped'?"
+    },
+    "options": {
+      "de": [
+        "Die Daten werden gelöscht.",
+        "Die Daten bleiben erhalten.",
+        "Die Daten werden in S3 archiviert.",
+        "Die Daten werden verschlüsselt."
+      ],
+      "en": [
+        "Data is deleted.",
+        "Data remains intact.",
+        "Data is archived in S3.",
+        "Data is encrypted."
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Bei 'Stop' bleiben EBS-Daten erhalten, es fallen keine Compute-Kosten an, aber Storage-Kosten. [cite: 342-343]",
+      "en": "In 'Stop' state, EBS data remains intact; no compute costs are incurred, but storage costs apply. [cite: 342-343]"
+    }
+  },
+  {
+    "id": 60,
+    "type": "single",
+    "category": {
+      "de": "Networking",
+      "en": "Networking"
+    },
+    "question": {
+      "de": "Welcher Load Balancer-Typ ist für Layer 7 (HTTP/HTTPS) und pfadbasiertes Routing optimiert?",
+      "en": "Which Load Balancer type is optimized for Layer 7 (HTTP/HTTPS) and path-based routing?"
+    },
+    "options": {
+      "de": [
+        "Network Load Balancer (NLB)",
+        "Classic Load Balancer (CLB)",
+        "Application Load Balancer (ALB)",
+        "Gateway Load Balancer (GWLB)"
+      ],
+      "en": [
+        "Network Load Balancer (NLB)",
+        "Classic Load Balancer (CLB)",
+        "Application Load Balancer (ALB)",
+        "Gateway Load Balancer (GWLB)"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "ALB arbeitet auf Layer 7 und ist ideal für Web-Apps und Microservices. [cite: 550-554]",
+      "en": "ALB operates at Layer 7 and is ideal for web apps and microservices. [cite: 550-554]"
+    }
+  },
+  {
+    "id": 61,
+    "type": "single",
+    "category": {
+      "de": "Compute",
+      "en": "Compute"
+    },
+    "question": {
+      "de": "Welcher EC2-Instanztyp ist für hohen RAM-Bedarf (z. B. In-Memory-Datenbanken wie SAP HANA) optimiert?",
+      "en": "Which EC2 instance type is optimized for high RAM requirements (e.g., in-memory databases like SAP HANA)?"
+    },
+    "options": {
+      "de": [
+        "Compute Optimized (c5)",
+        "Memory Optimized (r5/x2)",
+        "Storage Optimized (i3)",
+        "General Purpose (m5)"
+      ],
+      "en": [
+        "Compute Optimized (c5)",
+        "Memory Optimized (r5/x2)",
+        "Storage Optimized (i3)",
+        "General Purpose (m5)"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Die R- und X-Familien (Memory Optimized) bieten den höchsten RAM pro vCPU. [cite: 97, 280]",
+      "en": "The R and X families (Memory Optimized) provide the highest RAM per vCPU. [cite: 97, 280]"
+    }
+  },
+  {
+    "id": 62,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Wofür wird das 'AWS Well-Architected Tool' primär genutzt?",
+      "en": "What is the primary use of the 'AWS Well-Architected Tool'?"
+    },
+    "options": {
+      "de": [
+        "Zum automatischen Skalieren von Instanzen",
+        "Zum Bewerten von Architekturen gegen Best Practices",
+        "Zum Berechnen der monatlichen Kosten",
+        "Zum Überwachen von CPU-Metriken"
+      ],
+      "en": [
+        "For automatic scaling of instances",
+        "For assessing architectures against best practices",
+        "For calculating monthly costs",
+        "For monitoring CPU metrics"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Das Tool hilft, Workloads systematisch zu bewerten und basierend auf den 6 Säulen zu verbessern. [cite: 62-63]",
+      "en": "The tool helps systematically evaluate workloads and improve them based on the 6 pillars. [cite: 62-63]"
+    }
+  },
+  {
+    "id": 63,
+    "type": "single",
+    "category": {
+      "de": "Well-Architected Framework",
+      "en": "Well-Architected Framework"
+    },
+    "question": {
+      "de": "Welche Säule des Frameworks betont das 'Design for Failure'?",
+      "en": "Which pillar of the framework emphasizes 'Design for Failure'?"
+    },
+    "options": {
+      "de": [
+        "Security",
+        "Reliability",
+        "Cost Optimization",
+        "Sustainability"
+      ],
+      "en": [
+        "Security",
+        "Reliability",
+        "Cost Optimization",
+        "Sustainability"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Zuverlässigkeit (Reliability) bedeutet, dass Systeme Ausfälle überstehen und sich automatisch erholen. [cite: 71-72]",
+      "en": "Reliability means that systems survive outages and recover automatically. [cite: 71-72]"
+    }
+  },
+  {
+    "id": 64,
+    "type": "single",
+    "category": {
+      "de": "Compute",
+      "en": "Compute"
+    },
+    "question": {
+      "de": "Was ist die maximale Laufzeit einer AWS Lambda-Funktion pro Aufruf?",
+      "en": "What is the maximum execution time of an AWS Lambda function per call?"
+    },
+    "options": {
+      "de": [
+        "1 Minute",
+        "5 Minuten",
+        "15 Minuten",
+        "Unbegrenzt"
+      ],
+      "en": [
+        "1 minute",
+        "5 minutes",
+        "15 minutes",
+        "Unlimited"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Lambda ist für kurze, event-getriebene Aufgaben gedacht (Limit: 15 Minuten). [cite: 394, 416]",
+      "en": "Lambda is intended for short, event-driven tasks (Limit: 15 minutes). [cite: 394, 416]"
+    }
+  },
+  {
+    "id": 65,
+    "type": "single",
+    "category": {
+      "de": "Compute",
+      "en": "Compute"
+    },
+    "question": {
+      "de": "Welcher Service eignet sich am besten für einfache Webseiten mit festen monatlichen Preisen (Simple Hosting)?",
+      "en": "Which service is best suited for simple websites with fixed monthly prices (Simple Hosting)?"
+    },
+    "options": {
+      "de": [
+        "Amazon EC2",
+        "AWS Batch",
+        "Amazon Lightsail",
+        "AWS App Runner"
+      ],
+      "en": [
+        "Amazon EC2",
+        "AWS Batch",
+        "Amazon Lightsail",
+        "AWS App Runner"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Lightsail ist die einfachste Cloud-Plattform mit vorhersehbaren Kosten für Einsteiger. [cite: 492, 508]",
+      "en": "Lightsail is the simplest cloud platform with predictable costs for beginners. [cite: 492, 508]"
+    }
+  },
+  {
+    "id": 66,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Was ist der Hauptzweck einer 'Availability Zone' (AZ)?",
+      "en": "What is the primary purpose of an 'Availability Zone' (AZ)?"
+    },
+    "options": {
+      "de": [
+        "Weltweite Verteilung von Inhalten",
+        "Bereitstellung von Fehlertoleranz innerhalb einer Region",
+        "Einhaltung von nationalen Datenschutzgesetzen",
+        "Verbindung von On-Premise-Hardware mit der Cloud"
+      ],
+      "en": [
+        "Global content distribution",
+        "Providing fault tolerance within a region",
+        "Compliance with national data protection laws",
+        "Connecting on-premise hardware to the cloud"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AZs sind physisch getrennte Rechenzentren innerhalb einer Region zur Absicherung gegen lokale Ausfälle. [cite: 158-162, 90]",
+      "en": "AZs are physically separate data centers within a region for protection against local outages. [cite: 158-162, 90]"
+    }
+  },
+  {
+    "id": 67,
+    "type": "multiple",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Welche zwei Kostenmodelle bieten Rabatte für die Verpflichtung zu einer bestimmten Nutzung (1 oder 3 Jahre)?",
+      "en": "Which two pricing models offer discounts for committing to a specific usage (1 or 3 years)?"
+    },
+    "options": {
+      "de": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "Savings Plans"
+      ],
+      "en": [
+        "On-Demand Instances",
+        "Reserved Instances",
+        "Spot Instances",
+        "Savings Plans"
+      ]
+    },
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": {
+      "de": "Sowohl RI als auch Savings Plans erfordern eine 1- oder 3-jährige Bindung im Austausch für Rabatte. [cite: 311-315, 321-325]",
+      "en": "Both RI and Savings Plans require a 1- or 3-year commitment in exchange for discounts. [cite: 311-315, 321-325]"
+    }
+  },
+  {
+    "id": 68,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Was beschreibt das Prinzip 'Right-Sizing'?",
+      "en": "What does the 'Right-Sizing' principle describe?"
+    },
+    "options": {
+      "de": [
+        "Immer die größte Instanz wählen, um Ausfälle zu vermeiden.",
+        "Die Instanzgröße exakt an den Bedarf des Workloads anpassen.",
+        "Instanzen in der richtigen geografischen Region platzieren.",
+        "Nur reservierte Instanzen nutzen."
+      ],
+      "en": [
+        "Always choosing the largest instance to avoid failures.",
+        "Matching the instance size exactly to the workload requirements.",
+        "Placing instances in the correct geographical region.",
+        "Only using reserved instances."
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Right-Sizing ist ein Kernprinzip der Kostenoptimierung, um Ressourcenverschwendung zu vermeiden. [cite: 78]",
+      "en": "Right-sizing is a core principle of cost optimization to avoid wasting resources. [cite: 78]"
+    }
+  },
+  {
+    "id": 69,
+    "type": "single",
+    "category": {
+      "de": "Infrastruktur",
+      "en": "Infrastructure"
+    },
+    "question": {
+      "de": "Welcher AWS-Dienst wird an 'Edge Locations' betrieben, um statische Inhalte weltweit schnell bereitzustellen?",
+      "en": "Which AWS service is operated at 'Edge Locations' to quickly deliver static content worldwide?"
+    },
+    "options": {
+      "de": [
+        "Amazon EBS",
+        "AWS Shield",
+        "Amazon CloudFront",
+        "AWS Config"
+      ],
+      "en": [
+        "Amazon EBS",
+        "AWS Shield",
+        "Amazon CloudFront",
+        "AWS Config"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "CloudFront ist das CDN (Content Delivery Network) von AWS und nutzt Edge Locations für Caching. [cite: 55, 166]",
+      "en": "CloudFront is the AWS CDN (Content Delivery Network) and uses Edge Locations for caching. [cite: 55, 166]"
+    }
+  },
+  {
+    "id": 70,
+    "type": "single",
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
+    "question": {
+      "de": "Was ist der Unterschied zwischen AWS WAF und dem Well-Architected Framework (WAF)?",
+      "en": "What is the difference between AWS WAF and the Well-Architected Framework (WAF)?"
+    },
+    "options": {
+      "de": [
+        "Es gibt keinen Unterschied.",
+        "AWS WAF ist ein Sicherheitsdienst für Web-Traffic; das Framework ist eine Sammlung von Best Practices.",
+        "AWS WAF dient der Kostenkontrolle; das Framework der Sicherheit.",
+        "Das Framework ist ein physischer Dienst; AWS WAF ist nur Dokumentation."
+      ],
+      "en": [
+        "There is no difference.",
+        "AWS WAF is a security service for web traffic; the framework is a set of best practices.",
+        "AWS WAF is for cost control; the framework is for security.",
+        "The framework is a physical service; AWS WAF is documentation only."
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Vorsicht vor der Abkürzung: AWS WAF (Web Application Firewall) vs. Well-Architected Framework (Architektur-Bewertung). [cite: 617-631]",
+      "en": "Watch out for the acronym: AWS WAF (Web Application Firewall) vs. Well-Architected Framework (architecture assessment). [cite: 617-631]"
     }
   }
 ]
