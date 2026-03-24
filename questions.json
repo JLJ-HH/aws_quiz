@@ -3808,5 +3808,335 @@
       "de": "Serverless erlaubt es, Ressourcen optimal und ohne Leerlauf für die Performance zu nutzen. [cite: 651-653]",
       "en": "Serverless allows for optimal resource use for performance without idle time. [cite: 651-653]"
     }
+  },
+  {
+    "id": 116,
+    "type": "single",
+    "category": {
+      "de": "Betrieb",
+      "en": "Operations"
+    },
+    "question": {
+      "de": "Welcher AWS-Service fungiert als zentrales Logbuch und zeichnet alle API-Aufrufe innerhalb eines AWS-Accounts für Revisionszwecke auf?",
+      "en": "Which AWS service acts as a central logbook and records all API calls within an AWS account for auditing purposes?"
+    },
+    "options": {
+      "de": [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "AWS Config",
+        "AWS Trusted Advisor"
+      ],
+      "en": [
+        "Amazon CloudWatch",
+        "AWS CloudTrail",
+        "AWS Config",
+        "AWS Trusted Advisor"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "CloudTrail zeichnet auf, WER, WANN und von WO eine Aktion (API-Aufruf) durchgeführt hat. ",
+      "en": "CloudTrail records WHO, WHEN, and from WHERE an action (API call) was performed. "
+    }
+  },
+  {
+    "id": 117,
+    "type": "single",
+    "category": {
+      "de": "WAF & Services",
+      "en": "WAF & Services"
+    },
+    "question": {
+      "de": "Welcher Service unterstützt die Säule 'Operational Excellence', indem er die gesamte Infrastruktur über JSON- oder YAML-Vorlagen automatisiert bereitstellt?",
+      "en": "Which service supports the 'Operational Excellence' pillar by automatically providing the entire infrastructure via JSON or YAML templates?"
+    },
+    "options": {
+      "de": [
+        "AWS Elastic Beanstalk",
+        "AWS CloudFormation",
+        "AWS Systems Manager",
+        "Amazon EC2 Auto Scaling"
+      ],
+      "en": [
+        "AWS Elastic Beanstalk",
+        "AWS CloudFormation",
+        "AWS Systems Manager",
+        "Amazon EC2 Auto Scaling"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "CloudFormation setzt das Prinzip 'Operations as Code' (IaC) um. [cite: 643-644, 697]",
+      "en": "CloudFormation implements the principle of 'Operations as Code' (IaC). [cite: 643-644, 697]"
+    }
+  },
+  {
+    "id": 118,
+    "type": "single",
+    "category": {
+      "de": "Betrieb",
+      "en": "Operations"
+    },
+    "question": {
+      "de": "Ein Unternehmen möchte Alarme einrichten, wenn die CPU-Auslastung einer Instanz 80 % überschreitet. Welchen Service nutzen sie?",
+      "en": "A company wants to set up alarms when the CPU utilization of an instance exceeds 80%. Which service do they use?"
+    },
+    "options": {
+      "de": [
+        "AWS CloudTrail",
+        "AWS Config",
+        "Amazon CloudWatch",
+        "AWS Trusted Advisor"
+      ],
+      "en": [
+        "AWS CloudTrail",
+        "AWS Config",
+        "Amazon CloudWatch",
+        "AWS Trusted Advisor"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "CloudWatch ist der zentrale Monitoring-Service für Metriken und Alarme. ",
+      "en": "CloudWatch is the central monitoring service for metrics and alarms. "
+    }
+  },
+  {
+    "id": 119,
+    "type": "single",
+    "category": {
+      "de": "WAF & Services",
+      "en": "WAF & Services"
+    },
+    "question": {
+      "de": "Welches Tool hilft dabei, die eigene Architektur anhand eines Fragenkatalogs gegen die 6 Säulen von AWS zu bewerten?",
+      "en": "Which tool helps to evaluate your own architecture against the 6 pillars of AWS using a questionnaire?"
+    },
+    "options": {
+      "de": [
+        "AWS Trusted Advisor",
+        "AWS Well-Architected Tool",
+        "AWS Config",
+        "AWS Budgets"
+      ],
+      "en": [
+        "AWS Trusted Advisor",
+        "AWS Well-Architected Tool",
+        "AWS Config",
+        "AWS Budgets"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Das Well-Architected Tool ist kostenlos in der Konsole verfügbar und dient der systematischen Bewertung. [cite: 639-640]",
+      "en": "The Well-Architected Tool is available for free in the console and is used for systematic assessment. [cite: 639-640]"
+    }
+  },
+  {
+    "id": 120,
+    "type": "single",
+    "category": {
+      "de": "Betrieb",
+      "en": "Operations"
+    },
+    "question": {
+      "de": "Welcher Service ermöglicht es, Patches auf einer großen Anzahl von EC2-Instanzen gleichzeitig und automatisiert zu installieren?",
+      "en": "Which service allows patches to be installed on a large number of EC2 instances simultaneously and automatically?"
+    },
+    "options": {
+      "de": [
+        "AWS Systems Manager",
+        "AWS CloudFormation",
+        "AWS CloudTrail",
+        "AWS Artifact"
+      ],
+      "en": [
+        "AWS Systems Manager",
+        "AWS CloudFormation",
+        "AWS CloudTrail",
+        "AWS Artifact"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "Systems Manager (besonders der Patch Manager) hilft beim operativen Management von Instanzen. [cite: 620]",
+      "en": "Systems Manager (especially Patch Manager) helps with the operational management of instances. [cite: 620]"
+    }
+  },
+  {
+    "id": 121,
+    "type": "single",
+    "category": {
+      "de": "WAF & Services",
+      "en": "WAF & Services"
+    },
+    "question": {
+      "de": "Welche Säule des Frameworks wird durch den Einsatz von 'Amazon GuardDuty' zur Bedrohungserkennung am stärksten unterstützt?",
+      "en": "Which pillar of the framework is most strongly supported by the use of 'Amazon GuardDuty' for threat detection?"
+    },
+    "options": {
+      "de": [
+        "Reliability",
+        "Security",
+        "Operational Excellence",
+        "Performance Efficiency"
+      ],
+      "en": [
+        "Reliability",
+        "Security",
+        "Operational Excellence",
+        "Performance Efficiency"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "GuardDuty ist ein Security-Service, der nach verdächtigen Aktivitäten sucht. [cite: 645-647]",
+      "en": "GuardDuty is a security service that looks for suspicious activities. [cite: 645-647]"
+    }
+  },
+  {
+    "id": 122,
+    "type": "single",
+    "category": {
+      "de": "Betrieb",
+      "en": "Operations"
+    },
+    "question": {
+      "de": "Welcher Dienst bietet eine personalisierte Ansicht auf die Verfügbarkeit von AWS-Services, die die eigenen Ressourcen betreffen (z.B. geplante Wartungen)?",
+      "en": "Which service provides a personalized view of the availability of AWS services affecting your own resources (e.g., scheduled maintenance)?"
+    },
+    "options": {
+      "de": [
+        "AWS Service Health Dashboard",
+        "AWS Personal Health Dashboard (AWS Health Dashboard)",
+        "AWS Trusted Advisor",
+        "AWS Config"
+      ],
+      "en": [
+        "AWS Service Health Dashboard",
+        "AWS Personal Health Dashboard (AWS Health Dashboard)",
+        "AWS Trusted Advisor",
+        "AWS Config"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Das Personal Health Dashboard zeigt Ereignisse an, die spezifisch den eigenen Account betreffen.",
+      "en": "The Personal Health Dashboard shows events specifically affecting your own account."
+    }
+  },
+  {
+    "id": 123,
+    "type": "single",
+    "category": {
+      "de": "WAF & Services",
+      "en": "WAF & Services"
+    },
+    "question": {
+      "de": "Ein Unternehmen optimiert seine Kosten, indem es ungenutzte EBS-Volumes löscht, die vom 'AWS Trusted Advisor' gefunden wurden. Welche Säule wird hier bedient?",
+      "en": "A company optimizes its costs by deleting unused EBS volumes found by 'AWS Trusted Advisor'. Which pillar is being served here?"
+    },
+    "options": {
+      "de": [
+        "Sustainability",
+        "Operational Excellence",
+        "Cost Optimization",
+        "Reliability"
+      ],
+      "en": [
+        "Sustainability",
+        "Operational Excellence",
+        "Cost Optimization",
+        "Reliability"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Das Finden und Löschen ungenutzter Ressourcen ist ein Kernprinzip der Kostenoptimierung. [cite: 654-656]",
+      "en": "Finding and deleting unused resources is a core principle of cost optimization. [cite: 654-656]"
+    }
+  },
+  {
+    "id": 124,
+    "type": "single",
+    "category": {
+      "de": "Betrieb",
+      "en": "Operations"
+    },
+    "question": {
+      "de": "Welcher Service trackt die Konfigurationshistorie von AWS-Ressourcen und prüft diese gegen definierte Compliance-Regeln?",
+      "en": "Which service tracks the configuration history of AWS resources and checks them against defined compliance rules?"
+    },
+    "options": {
+      "de": [
+        "AWS CloudTrail",
+        "AWS Config",
+        "Amazon CloudWatch",
+        "AWS Trusted Advisor"
+      ],
+      "en": [
+        "AWS CloudTrail",
+        "AWS Config",
+        "Amazon CloudWatch",
+        "AWS Trusted Advisor"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS Config überwacht die Einhaltung von Richtlinien und Änderungen an Ressourcen. ",
+      "en": "AWS Config monitors compliance with policies and changes to resources. "
+    }
+  },
+  {
+    "id": 125,
+    "type": "single",
+    "category": {
+      "de": "WAF & Services",
+      "en": "WAF & Services"
+    },
+    "question": {
+      "de": "Welches Prinzip der 'Sustainability' Säule wird durch die Nutzung von S3 Intelligent-Tiering unterstützt?",
+      "en": "Which principle of the 'Sustainability' pillar is supported by using S3 Intelligent-Tiering?"
+    },
+    "options": {
+      "de": [
+        "Maximizing resource utilization",
+        "Reducing energy consumption by efficient data storage",
+        "Operations as Code",
+        "Going global in minutes"
+      ],
+      "en": [
+        "Maximizing resource utilization",
+        "Reducing energy consumption by efficient data storage",
+        "Operations as Code",
+        "Going global in minutes"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Effizientes Speichern reduziert den physischen Platz- und Energiebedarf. [cite: 657-659]",
+      "en": "Efficient storage reduces physical space and energy requirements. [cite: 657-659]"
+    }
   }
 ]
