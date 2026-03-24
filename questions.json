@@ -5594,5 +5594,485 @@
     "explanation": {
       "de": "Aurora ist voll kompatibel zu Open-Source-MySQL und PostgreSQL. [cite: 370, 753]"
     }
+  },
+  {
+    "id": 156,
+    "type": "single",
+    "category": {
+      "de": "DynamoDB",
+      "en": "DynamoDB"
+    },
+    "question": {
+      "de": "Welches Feature von Amazon DynamoDB ermöglicht eine einstellige Mikrosekunden-Latenz durch In-Memory-Caching?",
+      "en": "Which Amazon DynamoDB feature enables single-digit microsecond latency through in-memory caching?"
+    },
+    "options": {
+      "de": [
+        "DynamoDB Streams",
+        "DynamoDB Accelerator (DAX)",
+        "Global Tables",
+        "TTL"
+      ],
+      "en": [
+        "DynamoDB Streams",
+        "DynamoDB Accelerator (DAX)",
+        "Global Tables",
+        "TTL"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "DAX ist ein verwalteter In-Memory-Cache speziell für DynamoDB, um die Performance massiv zu steigern. [cite: 434]"
+    }
+  },
+  {
+    "id": 157,
+    "type": "single",
+    "category": {
+      "de": "Redshift",
+      "en": "Redshift"
+    },
+    "question": {
+      "de": "Warum nutzt man Amazon Redshift anstelle von Amazon RDS für Business Intelligence?",
+      "en": "Why use Amazon Redshift instead of Amazon RDS for business intelligence?"
+    },
+    "options": {
+      "de": [
+        "Es ist billiger für kleine Daten",
+        "Es ist für analytische Abfragen (OLAP) und riesige Datenmengen optimiert",
+        "Es unterstützt keine SQL-Abfragen",
+        "Es ist eine NoSQL-Datenbank"
+      ],
+      "en": [
+        "It is cheaper for small data",
+        "It is optimized for analytical queries (OLAP) and huge data volumes",
+        "It does not support SQL queries",
+        "It is a NoSQL database"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Redshift ist ein Data Warehouse, das für komplexe Analysen (OLAP) im Petabyte-Bereich gebaut wurde. [cite: 469-472, 761]"
+    }
+  },
+  {
+    "id": 158,
+    "type": "single",
+    "category": {
+      "de": "ElastiCache",
+      "en": "ElastiCache"
+    },
+    "question": {
+      "de": "Welche zwei Open-Source-Engines werden von Amazon ElastiCache unterstützt?",
+      "en": "Which two open-source engines are supported by Amazon ElastiCache?"
+    },
+    "options": {
+      "de": [
+        "MySQL und PostgreSQL",
+        "Redis und Memcached",
+        "MongoDB und Cassandra",
+        "Oracle und MariaDB"
+      ],
+      "en": [
+        "MySQL and PostgreSQL",
+        "Redis and Memcached",
+        "MongoDB and Cassandra",
+        "Oracle and MariaDB"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "ElastiCache bietet verwaltete Redis- und Memcached-Umgebungen für In-Memory-Caching an. [cite: 487, 762]"
+    }
+  },
+  {
+    "id": 159,
+    "type": "single",
+    "category": {
+      "de": "Neptune",
+      "en": "Neptune"
+    },
+    "question": {
+      "de": "Ein Unternehmen möchte ein Empfehlungssystem basierend auf komplexen Beziehungen zwischen Nutzern bauen. Welcher Dienst ist ideal?",
+      "en": "A company wants to build a recommendation system based on complex relationships between users. Which service is ideal?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon Neptune",
+        "Amazon DocumentDB",
+        "Amazon Redshift"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon Neptune",
+        "Amazon DocumentDB",
+        "Amazon Redshift"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Neptune ist eine Graph-Datenbank, die speziell für hochvernetzte Datensätze entwickelt wurde. "
+    }
+  },
+  {
+    "id": 160,
+    "type": "single",
+    "category": {
+      "de": "QLDB",
+      "en": "QLDB"
+    },
+    "question": {
+      "de": "Was ist das Hauptmerkmal von Amazon QLDB (Quantum Ledger Database)?",
+      "en": "What is the main feature of Amazon QLDB (Quantum Ledger Database)?"
+    },
+    "options": {
+      "de": [
+        "Es ist eine Graph-Datenbank",
+        "Es bietet ein unveränderliches und kryptographisch prüfbares Transaktionsprotokoll",
+        "Es ist ein Ersatz für S3",
+        "Es dient dem Caching von Webseiten"
+      ],
+      "en": [
+        "It is a graph database",
+        "It provides an immutable and cryptographically verifiable transaction log",
+        "It is a replacement for S3",
+        "It is used for caching websites"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "QLDB fungiert als Ledger (Hauptbuch), bei dem Historien nicht gelöscht oder manipuliert werden können. "
+    }
+  },
+  {
+    "id": 161,
+    "type": "single",
+    "category": {
+      "de": "DynamoDB",
+      "en": "DynamoDB"
+    },
+    "question": {
+      "de": "Welches Feature ermöglicht es DynamoDB, Daten automatisch über mehrere AWS-Regionen hinweg zu replizieren?",
+      "en": "Which feature allows DynamoDB to automatically replicate data across multiple AWS regions?"
+    },
+    "options": {
+      "de": [
+        "DAX",
+        "Global Tables",
+        "DynamoDB Streams",
+        "Partition Keys"
+      ],
+      "en": [
+        "DAX",
+        "Global Tables",
+        "DynamoDB Streams",
+        "Partition Keys"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Global Tables ermöglichen Multi-Region-Replikation für global verfügbare Anwendungen. [cite: 433]"
+    }
+  },
+  {
+    "id": 162,
+    "type": "single",
+    "category": {
+      "de": "Redshift",
+      "en": "Redshift"
+    },
+    "question": {
+      "de": "Amazon Redshift nutzt welche Speicherarchitektur, um analytische Abfragen zu beschleunigen?",
+      "en": "Amazon Redshift uses which storage architecture to speed up analytical queries?"
+    },
+    "options": {
+      "de": [
+        "Zeilenorientierte Speicherung",
+        "Spaltenorientierte Speicherung (Columnar Storage)",
+        "Objektspeicherung",
+        "Block-Speicherung"
+      ],
+      "en": [
+        "Row-based storage",
+        "Columnar storage",
+        "Object storage",
+        "Block storage"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Spaltenorientierte Speicherung reduziert den I/O-Aufwand bei Analysen massiv, da nur relevante Spalten gelesen werden. [cite: 471-472]"
+    }
+  },
+  {
+    "id": 163,
+    "type": "single",
+    "category": {
+      "de": "ElastiCache",
+      "en": "ElastiCache"
+    },
+    "question": {
+      "de": "Wo werden die Daten in Amazon ElastiCache primär gespeichert?",
+      "en": "Where is data primarily stored in Amazon ElastiCache?"
+    },
+    "options": {
+      "de": [
+        "Auf SSDs",
+        "Auf Magnetfestplatten",
+        "Im Arbeitsspeicher (RAM)",
+        "In S3-Buckets"
+      ],
+      "en": [
+        "On SSDs",
+        "On magnetic disks",
+        "In memory (RAM)",
+        "In S3 buckets"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Als In-Memory-Datenbank nutzt ElastiCache den RAM für extrem schnelle Zugriffe. [cite: 486-491, 762]"
+    }
+  },
+  {
+    "id": 164,
+    "type": "single",
+    "category": {
+      "de": "Neptune",
+      "en": "Neptune"
+    },
+    "question": {
+      "de": "Ein Betrugserkennungssystem muss Milliarden von Beziehungen in Echtzeit prüfen. Welche Datenbank-Engine ist hierfür geeignet?",
+      "en": "A fraud detection system needs to check billions of relationships in real time. Which database engine is suitable for this?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS MySQL",
+        "Amazon Neptune",
+        "Amazon Redshift",
+        "Amazon DynamoDB"
+      ],
+      "en": [
+        "Amazon RDS MySQL",
+        "Amazon Neptune",
+        "Amazon Redshift",
+        "Amazon DynamoDB"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Graph-Datenbanken wie Neptune sind ideal, um Muster in komplexen Beziehungsnetzwerken zu finden. "
+    }
+  },
+  {
+    "id": 165,
+    "type": "single",
+    "category": {
+      "de": "QLDB",
+      "en": "QLDB"
+    },
+    "question": {
+      "de": "Welcher Begriff beschreibt Amazon QLDB am besten?",
+      "en": "Which term best describes Amazon QLDB?"
+    },
+    "options": {
+      "de": [
+        "Fully managed Ledger Database",
+        "Serverless NoSQL",
+        "Relational Warehouse",
+        "Graph Processing Engine"
+      ],
+      "en": [
+        "Fully managed Ledger Database",
+        "Serverless NoSQL",
+        "Relational Warehouse",
+        "Graph Processing Engine"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "QLDB ist eine Ledger-Datenbank, die speziell für Audit-Logs und Transaktionshistorien entwickelt wurde. "
+    }
+  },
+  {
+    "id": 166,
+    "type": "single",
+    "category": {
+      "de": "DynamoDB",
+      "en": "DynamoDB"
+    },
+    "question": {
+      "de": "In DynamoDB kann man Daten automatisch löschen lassen, wenn eine bestimmte Zeit abgelaufen ist. Wie heißt dieses Feature?",
+      "en": "In DynamoDB, data can be automatically deleted after a certain period of time. What is this feature called?"
+    },
+    "options": {
+      "de": [
+        "Time to Live (TTL)",
+        "Auto-Delete",
+        "Lifecycle Policy",
+        "Expiration Date"
+      ],
+      "en": [
+        "Time to Live (TTL)",
+        "Auto-Delete",
+        "Lifecycle Policy",
+        "Expiration Date"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "TTL ermöglicht es, Items ohne zusätzliche Kosten automatisch nach Ablauf eines Timestamps zu entfernen. [cite: 436]"
+    }
+  },
+  {
+    "id": 167,
+    "type": "single",
+    "category": {
+      "de": "Redshift",
+      "en": "Redshift"
+    },
+    "question": {
+      "de": "Wie skaliert man Amazon Redshift für Petabyte-Workloads?",
+      "en": "How do you scale Amazon Redshift for petabyte workloads?"
+    },
+    "options": {
+      "de": [
+        "Durch Vergrößerung einer einzelnen Instanz",
+        "Durch Hinzufügen von mehr Knoten zu einem Cluster (MPP-Architektur)",
+        "Durch Verschieben von Daten in S3",
+        "Redshift skaliert nicht"
+      ],
+      "en": [
+        "By increasing the size of a single instance",
+        "By adding more nodes to a cluster (MPP architecture)",
+        "By moving data to S3",
+        "Redshift does not scale"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Redshift nutzt Massively Parallel Processing (MPP), um Abfragen über viele Knoten hinweg zu verteilen. [cite: 473]"
+    }
+  },
+  {
+    "id": 168,
+    "type": "single",
+    "category": {
+      "de": "ElastiCache",
+      "en": "ElastiCache"
+    },
+    "question": {
+      "de": "Wozu dient ElastiCache primär in einer Multi-Tier-Architektur?",
+      "en": "What is the primary purpose of ElastiCache in a multi-tier architecture?"
+    },
+    "options": {
+      "de": [
+        "Zur dauerhaften Datenspeicherung",
+        "Zur Entlastung der Hauptdatenbank (Offloading Reads)",
+        "Zum Hosting der Webseite",
+        "Zur Analyse von Big Data"
+      ],
+      "en": [
+        "For permanent data storage",
+        "To offload the main database (offloading reads)",
+        "For hosting the website",
+        "For big data analysis"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Durch das Cachen häufiger Abfragen sinkt die Last auf der relationalen Datenbank (RDS). [cite: 490, 762]"
+    }
+  },
+  {
+    "id": 169,
+    "type": "single",
+    "category": {
+      "de": "Neptune",
+      "en": "Neptune"
+    },
+    "question": {
+      "de": "Welche Abfragesprachen unterstützt Amazon Neptune?",
+      "en": "Which query languages does Amazon Neptune support?"
+    },
+    "options": {
+      "de": [
+        "SQL und NoSQL",
+        "Gremlin und SPARQL",
+        "Python und Java",
+        "JSON und XML"
+      ],
+      "en": [
+        "SQL and NoSQL",
+        "Gremlin and SPARQL",
+        "Python and Java",
+        "JSON and XML"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Neptune ist kompatibel mit den gängigen Graph-Standards Gremlin und SPARQL."
+    }
+  },
+  {
+    "id": 170,
+    "type": "single",
+    "category": {
+      "de": "QLDB",
+      "en": "QLDB"
+    },
+    "question": {
+      "de": "In welchem Szenario ist Amazon QLDB besser geeignet als eine Blockchain?",
+      "en": "In what scenario is Amazon QLDB better suited than a blockchain?"
+    },
+    "options": {
+      "de": [
+        "Wenn Dezentralisierung wichtig ist",
+        "Wenn eine zentrale vertrauenswürdige Instanz (AWS) akzeptabel ist und hohe Performance benötigt wird",
+        "Wenn jeder am Netzwerk teilnehmen können soll",
+        "Gar nicht, Blockchain ist immer besser"
+      ],
+      "en": [
+        "When decentralization is important",
+        "When a central trusted entity (AWS) is acceptable and high performance is required",
+        "When everyone should be able to participate in the network",
+        "Not at all, blockchain is always better"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "QLDB bietet die Unveränderbarkeit eines Ledgers ohne die Komplexität und Langsamkeit dezentraler Blockchains. [cite: 507-511]"
+    }
   }
 ]
