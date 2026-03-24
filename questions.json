@@ -2981,5 +2981,336 @@
       "de": "Aurora Serverless ermöglicht automatisches Skalieren und pausiert sogar bei Nichtnutzung, um Kosten zu sparen. [cite: 376-377]",
       "en": "Aurora Serverless enables automatic scaling and even pauses during non-use to save costs. [cite: 376-377]"
     }
+  },
+  {
+    "id": 91,
+    "type": "single",
+    "category": {
+      "de": "NIST Merkmale",
+      "en": "NIST Characteristics"
+    },
+    "question": {
+      "de": "Welches NIST-Merkmal erlaubt es Cloud-Anbietern, Ressourcen wie CPU und RAM dynamisch vielen verschiedenen Kunden zuzuweisen?",
+      "en": "Which NIST characteristic allows cloud providers to dynamically assign resources like CPU and RAM to many different customers?"
+    },
+    "options": {
+      "de": [
+        "Broad Network Access",
+        "Resource Pooling",
+        "On-demand Self-service",
+        "Measured Service"
+      ],
+      "en": [
+        "Broad Network Access",
+        "Resource Pooling",
+        "On-demand Self-service",
+        "Measured Service"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Resource Pooling (Multi-Tenancy) bedeutet, dass sich viele Kunden dieselbe physische Infrastruktur teilen. [cite: 581, 582, 585]",
+      "en": "Resource Pooling (multi-tenancy) means that many customers share the same physical infrastructure. [cite: 581, 582, 585]"
+    }
+  },
+  {
+    "id": 92,
+    "type": "single",
+    "category": {
+      "de": "NIST Merkmale",
+      "en": "NIST Characteristics"
+    },
+    "question": {
+      "de": "Ein Unternehmen benötigt plötzlich die doppelte Serverkapazität für eine Marketing-Aktion und erhält diese innerhalb von Minuten. Welches Merkmal ist das?",
+      "en": "A company suddenly needs double the server capacity for a marketing campaign and receives it within minutes. Which characteristic is this?"
+    },
+    "options": {
+      "de": [
+        "Measured Service",
+        "Rapid Elasticity",
+        "Resource Pooling",
+        "Broad Network Access"
+      ],
+      "en": [
+        "Measured Service",
+        "Rapid Elasticity",
+        "Resource Pooling",
+        "Broad Network Access"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Rapid Elasticity beschreibt die Fähigkeit, Ressourcen schnell nach oben oder unten zu skalieren. [cite: 581, 582, 586]",
+      "en": "Rapid Elasticity describes the ability to scale resources up or down quickly. [cite: 581, 582, 586]"
+    }
+  },
+  {
+    "id": 93,
+    "type": "single",
+    "category": {
+      "de": "NIST Merkmale",
+      "en": "NIST Characteristics"
+    },
+    "question": {
+      "de": "Was ist eine Voraussetzung für 'Broad Network Access' laut NIST?",
+      "en": "What is a requirement for 'Broad Network Access' according to NIST?"
+    },
+    "options": {
+      "de": [
+        "Zugriff nur über ein privates VPN",
+        "Zugriff über Standard-Protokolle von verschiedenen Geräten (Handy, Laptop, PC)",
+        "Nutzung von AWS Direct Connect",
+        "Physische Anwesenheit im Rechenzentrum"
+      ],
+      "en": [
+        "Access only via a private VPN",
+        "Access via standard protocols from various devices (mobile, laptop, PC)",
+        "Use of AWS Direct Connect",
+        "Physical presence in the data center"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Broad Network Access bedeutet, dass Dienste über das Netzwerk mit Standardmechanismen für verschiedene Client-Plattformen verfügbar sind. [cite: 581, 582, 584]",
+      "en": "Broad Network Access means services are available over the network using standard mechanisms for various client platforms. [cite: 581, 582, 584]"
+    }
+  },
+  {
+    "id": 94,
+    "type": "single",
+    "category": {
+      "de": "Service Modelle",
+      "en": "Service Models"
+    },
+    "question": {
+      "de": "In welchem Service-Modell ist der Kunde für das Patchen des Betriebssystems verantwortlich?",
+      "en": "In which service model is the customer responsible for patching the operating system?"
+    },
+    "options": {
+      "de": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "FaaS (Serverless)"
+      ],
+      "en": [
+        "SaaS",
+        "PaaS",
+        "IaaS",
+        "FaaS (Serverless)"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "In IaaS (z.B. EC2) hat der Kunde die Kontrolle über das Betriebssystem und muss es selbst warten. [cite: 603, 604, 663]",
+      "en": "In IaaS (e.g., EC2), the customer has control over the operating system and must maintain it themselves. [cite: 603, 604, 663]"
+    }
+  },
+  {
+    "id": 95,
+    "type": "single",
+    "category": {
+      "de": "Service Modelle",
+      "en": "Service Models"
+    },
+    "question": {
+      "de": "Ein Unternehmen nutzt Microsoft 365 oder Salesforce. Welches Cloud-Modell ist das?",
+      "en": "A company uses Microsoft 365 or Salesforce. Which cloud model is this?"
+    },
+    "options": {
+      "de": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "On-Premise"
+      ],
+      "en": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "On-Premise"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "SaaS bietet fertige Anwendungen, bei denen der Anbieter die gesamte Infrastruktur verwaltet. [cite: 603, 606]",
+      "en": "SaaS provides ready-to-use applications where the provider manages the entire infrastructure. [cite: 603, 606]"
+    }
+  },
+  {
+    "id": 96,
+    "type": "single",
+    "category": {
+      "de": "Service Modelle",
+      "en": "Service Models"
+    },
+    "question": {
+      "de": "Welches Modell beschreibt AWS Elastic Beanstalk am besten?",
+      "en": "Which model best describes AWS Elastic Beanstalk?"
+    },
+    "options": {
+      "de": [
+        "Infrastructure as a Service",
+        "Platform as a Service",
+        "Software as a Service",
+        "Hardware as a Service"
+      ],
+      "en": [
+        "Infrastructure as a Service",
+        "Platform as a Service",
+        "Software as a Service",
+        "Hardware as a Service"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "PaaS nimmt dem Kunden das Management von Infrastruktur und OS ab, lässt aber Kontrolle über den Code. [cite: 603, 605, 700]",
+      "en": "PaaS relieves the customer of infrastructure and OS management but allows control over the code. [cite: 603, 605, 700]"
+    }
+  },
+  {
+    "id": 97,
+    "type": "single",
+    "category": {
+      "de": "Service Modelle",
+      "en": "Service Models"
+    },
+    "question": {
+      "de": "Was ist ein Hauptvorteil von 'Serverless' (FaaS) gegenüber IaaS?",
+      "en": "What is a main advantage of 'Serverless' (FaaS) compared to IaaS?"
+    },
+    "options": {
+      "de": [
+        "Man hat volle Kontrolle über die CPU-Architektur",
+        "Es gibt keine Skalierungslimits",
+        "Man zahlt nur für die tatsächliche Ausführungszeit, nicht für Leerlauf",
+        "Man muss keine Sicherheitsgruppen konfigurieren"
+      ],
+      "en": [
+        "You have full control over the CPU architecture",
+        "There are no scaling limits",
+        "You only pay for actual execution time, not for idle time",
+        "You don't need to configure security groups"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Serverless-Dienste wie Lambda rechnen exakt nach tatsächlicher Nutzungszeit ab. [cite: 603, 607, 717]",
+      "en": "Serverless services like Lambda bill exactly based on actual usage time. [cite: 603, 607, 717]"
+    }
+  },
+  {
+    "id": 98,
+    "type": "multiple",
+    "category": {
+      "de": "NIST Merkmale",
+      "en": "NIST Characteristics"
+    },
+    "question": {
+      "de": "Welche ZWEI Aspekte gehören zum NIST-Merkmal 'On-demand Self-service'?",
+      "en": "Which TWO aspects belong to the NIST characteristic 'On-demand Self-service'?"
+    },
+    "options": {
+      "de": [
+        "Ressourcen können ohne menschliche Interaktion mit dem Provider gebucht werden",
+        "Man muss ein Support-Ticket öffnen, um Server zu starten",
+        "Dienste sind rund um die Uhr automatisch verfügbar",
+        "Man teilt sich die Kosten mit anderen Firmen"
+      ],
+      "en": [
+        "Resources can be provisioned without human interaction with the provider",
+        "You must open a support ticket to start servers",
+        "Services are automatically available 24/7",
+        "Costs are shared with other companies"
+      ]
+    },
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": {
+      "de": "On-demand Self-service bedeutet: Ressourcen auf Abruf buchen, ohne dass ein Mitarbeiter des Anbieters eingreifen muss. [cite: 581, 582, 583]",
+      "en": "On-demand Self-service means: provision resources on demand without a provider employee needing to intervene. [cite: 581, 582, 583]"
+    }
+  },
+  {
+    "id": 99,
+    "type": "single",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "Wer ist bei einem SaaS-Modell für die Sicherheit der zugrunde liegenden Infrastruktur und der Anwendung zuständig?",
+      "en": "In a SaaS model, who is responsible for the security of the underlying infrastructure and the application?"
+    },
+    "options": {
+      "de": [
+        "Der Kunde",
+        "AWS / Der Software-Anbieter",
+        "Beide zu gleichen Teilen",
+        "Niemand"
+      ],
+      "en": [
+        "The customer",
+        "AWS / The software provider",
+        "Both equally",
+        "Nobody"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Bei SaaS übernimmt der Anbieter fast die gesamte Verantwortung für Infrastruktur und App. [cite: 603, 606, 660, 663]",
+      "en": "In SaaS, the provider takes almost all responsibility for the infrastructure and app. [cite: 603, 606, 660, 663]"
+    }
+  },
+  {
+    "id": 100,
+    "type": "single",
+    "category": {
+      "de": "NIST Merkmale",
+      "en": "NIST Characteristics"
+    },
+    "question": {
+      "de": "Welches NIST-Merkmal ist die technische Basis für das 'Pay-as-you-go'-Preismodell?",
+      "en": "Which NIST characteristic is the technical basis for the 'Pay-as-you-go' pricing model?"
+    },
+    "options": {
+      "de": [
+        "Rapid Elasticity",
+        "Resource Pooling",
+        "Measured Service",
+        "Broad Network Access"
+      ],
+      "en": [
+        "Rapid Elasticity",
+        "Resource Pooling",
+        "Measured Service",
+        "Broad Network Access"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Measured Service bedeutet, dass die Cloud-Systeme die Nutzung automatisch messen und transparent abrechnen. [cite: 581, 582, 587]",
+      "en": "Measured Service means cloud systems automatically measure usage and provide transparent billing. [cite: 581, 582, 587]"
+    }
   }
 ]
