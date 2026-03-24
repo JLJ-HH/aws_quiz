@@ -4634,5 +4634,485 @@
       "de": "Trusted Advisor gibt proaktive Empfehlungen zur Kostenoptimierung. [cite: 656]",
       "en": "Trusted Advisor provides proactive recommendations for cost optimization. [cite: 656]"
     }
+  },
+  {
+    "id": 141,
+    "type": "single",
+    "category": {
+      "de": "Deployment",
+      "en": "Deployment"
+    },
+    "question": {
+      "de": "Welcher Service wird als 'Infrastructure as Code' (IaC) bezeichnet und nutzt Vorlagen zur Automatisierung?",
+      "en": "Which service is referred to as 'Infrastructure as Code' (IaC) and uses templates for automation?"
+    },
+    "options": {
+      "de": [
+        "AWS Elastic Beanstalk",
+        "AWS CloudFormation",
+        "AWS OpsWorks",
+        "AWS CodeDeploy"
+      ],
+      "en": [
+        "AWS Elastic Beanstalk",
+        "AWS CloudFormation",
+        "AWS OpsWorks",
+        "AWS CodeDeploy"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "CloudFormation ermöglicht die Bereitstellung von Ressourcen über YAML/JSON-Templates. [cite: 697]"
+    }
+  },
+  {
+    "id": 142,
+    "type": "single",
+    "category": {
+      "de": "Networking",
+      "en": "Networking"
+    },
+    "question": {
+      "de": "Welcher Load Balancer-Typ ist am besten für ultra-niedrige Latenz und die Verarbeitung von Millionen von Anfragen pro Sekunde auf Layer 4 (TCP/UDP) geeignet?",
+      "en": "Which load balancer type is best suited for ultra-low latency and handling millions of requests per second at Layer 4 (TCP/UDP)?"
+    },
+    "options": {
+      "de": [
+        "Application Load Balancer (ALB)",
+        "Network Load Balancer (NLB)",
+        "Classic Load Balancer (CLB)",
+        "Gateway Load Balancer (GWLB)"
+      ],
+      "en": [
+        "Application Load Balancer (ALB)",
+        "Network Load Balancer (NLB)",
+        "Classic Load Balancer (CLB)",
+        "Gateway Load Balancer (GWLB)"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Der NLB ist für Performance und statische IPs auf Netzwerk-Ebene optimiert. [cite: 726]"
+    }
+  },
+  {
+    "id": 143,
+    "type": "single",
+    "category": {
+      "de": "EBS-Storage",
+      "en": "EBS-Storage"
+    },
+    "question": {
+      "de": "Was ist ein wesentliches Merkmal von Amazon EBS-Volumes?",
+      "en": "What is a key characteristic of Amazon EBS volumes?"
+    },
+    "options": {
+      "de": [
+        "Sie sind regional verfügbar",
+        "Sie sind an eine spezifische Availability Zone (AZ) gebunden",
+        "Sie sind unbegrenzt skalierbar wie S3",
+        "Sie können nur für Backups genutzt werden"
+      ],
+      "en": [
+        "They are regionally available",
+        "They are tied to a specific Availability Zone (AZ)",
+        "They are infinitely scalable like S3",
+        "They can only be used for backups"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "EBS-Volumes verhalten sich wie physische Festplatten und existieren innerhalb einer AZ. [cite: 738-739, 769]"
+    }
+  },
+  {
+    "id": 144,
+    "type": "single",
+    "category": {
+      "de": "File-Storage",
+      "en": "File-Storage"
+    },
+    "question": {
+      "de": "Welches Protokoll nutzt Amazon EFS, um Dateizugriffe für Linux-basierte EC2-Instanzen bereitzustellen?",
+      "en": "Which protocol does Amazon EFS use to provide file access for Linux-based EC2 instances?"
+    },
+    "options": {
+      "de": [
+        "SMB",
+        "iSCSI",
+        "NFS (Network File System)",
+        "HTTP/HTTPS"
+      ],
+      "en": [
+        "SMB",
+        "iSCSI",
+        "NFS (Network File System)",
+        "HTTP/HTTPS"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "EFS ist ein verwaltetes NFS-Dateisystem für Linux-Workloads. [cite: 742, 770]"
+    }
+  },
+  {
+    "id": 145,
+    "type": "single",
+    "category": {
+      "de": "Aurora",
+      "en": "Aurora"
+    },
+    "question": {
+      "de": "Wie viele Kopien deiner Daten speichert Amazon Aurora standardmäßig über wie viele Availability Zones?",
+      "en": "How many copies of your data does Amazon Aurora store by default across how many Availability Zones?"
+    },
+    "options": {
+      "de": [
+        "2 Kopien in 1 AZ",
+        "3 Kopien in 3 AZs",
+        "6 Kopien in 3 AZs",
+        "11 Kopien in 3 AZs"
+      ],
+      "en": [
+        "2 copies in 1 AZ",
+        "3 copies in 3 AZs",
+        "6 copies in 3 AZs",
+        "11 copies in 3 AZs"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Aurora bietet extreme Fehlertoleranz durch 6-fache Replikation über 3 AZs hinweg. [cite: 753]"
+    }
+  },
+  {
+    "id": 146,
+    "type": "single",
+    "category": {
+      "de": "Deployment",
+      "en": "Deployment"
+    },
+    "question": {
+      "de": "Welcher AWS-Service wird als Platform-as-a-Service (PaaS) eingestuft und automatisiert das Provisioning von EC2, ASG und ELB?",
+      "en": "Which AWS service is categorized as Platform-as-a-Service (PaaS) and automates the provisioning of EC2, ASG, and ELB?"
+    },
+    "options": {
+      "de": [
+        "AWS CloudFormation",
+        "AWS Elastic Beanstalk",
+        "AWS Lambda",
+        "AWS Amplify"
+      ],
+      "en": [
+        "AWS CloudFormation",
+        "AWS Elastic Beanstalk",
+        "AWS Lambda",
+        "AWS Amplify"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Elastic Beanstalk übernimmt das Management der Infrastruktur, während der Kunde nur den Code hochlädt. [cite: 605, 700]"
+    }
+  },
+  {
+    "id": 147,
+    "type": "single",
+    "category": {
+      "de": "Networking",
+      "en": "Networking"
+    },
+    "question": {
+      "de": "Welcher Dienst ermöglicht eine private, dedizierte Netzwerkverbindung zwischen einem eigenen Rechenzentrum und AWS?",
+      "en": "Which service enables a private, dedicated network connection between an on-premise data center and AWS?"
+    },
+    "options": {
+      "de": [
+        "AWS Client VPN",
+        "AWS Site-to-Site VPN",
+        "AWS Direct Connect",
+        "Amazon Route 53"
+      ],
+      "en": [
+        "AWS Client VPN",
+        "AWS Site-to-Site VPN",
+        "AWS Direct Connect",
+        "Amazon Route 53"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Direct Connect umgeht das öffentliche Internet für stabilere Performance und Sicherheit. [cite: 177]"
+    }
+  },
+  {
+    "id": 148,
+    "type": "single",
+    "category": {
+      "de": "EBS-Storage",
+      "en": "EBS-Storage"
+    },
+    "question": {
+      "de": "Was passiert standardmäßig mit den Daten auf einem EBS-Volume, wenn die zugehörige EC2-Instanz nur 'gestoppt' (Stopped) wird?",
+      "en": "What happens by default to the data on an EBS volume when the associated EC2 instance is only 'stopped'?"
+    },
+    "options": {
+      "de": [
+        "Die Daten werden gelöscht",
+        "Die Daten bleiben erhalten",
+        "Die Daten werden nach S3 verschoben",
+        "Das Volume wird automatisch terminiert"
+      ],
+      "en": [
+        "Data is deleted",
+        "Data is preserved",
+        "Data is moved to S3",
+        "The volume is automatically terminated"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Bei einem 'Stop' bleiben EBS-Daten erhalten, während nur die Compute-Kosten pausiert werden. [cite: 707]"
+    }
+  },
+  {
+    "id": 149,
+    "type": "single",
+    "category": {
+      "de": "File-Storage",
+      "en": "File-Storage"
+    },
+    "question": {
+      "de": "Ein Unternehmen benötigt ein verwaltetes Windows-Dateisystem mit voller Unterstützung des SMB-Protokolls. Welchen Service sollten sie wählen?",
+      "en": "A company needs a managed Windows file system with full support for the SMB protocol. Which service should they choose?"
+    },
+    "options": {
+      "de": [
+        "Amazon EFS",
+        "Amazon FSx for Windows File Server",
+        "Amazon S3",
+        "AWS Storage Gateway"
+      ],
+      "en": [
+        "Amazon EFS",
+        "Amazon FSx for Windows File Server",
+        "Amazon S3",
+        "AWS Storage Gateway"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "FSx for Windows ist die Lösung für Windows-spezifische Protokolle (SMB). [cite: 231-234]"
+    }
+  },
+  {
+    "id": 150,
+    "type": "single",
+    "category": {
+      "de": "Aurora",
+      "en": "Aurora"
+    },
+    "question": {
+      "de": "Wie viele Read Replicas kann Amazon Aurora maximal bereitstellen, um die Leseperformance zu skalieren?",
+      "en": "How many read replicas can Amazon Aurora provide at maximum to scale read performance?"
+    },
+    "options": {
+      "de": [
+        "Bis zu 5",
+        "Bis zu 10",
+        "Bis zu 15",
+        "Unbegrenzt"
+      ],
+      "en": [
+        "Up to 5",
+        "Up to 10",
+        "Up to 15",
+        "Unlimited"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Im Gegensatz zu Standard-RDS (5) erlaubt Aurora bis zu 15 Read Replicas. [cite: 378]"
+    }
+  },
+  {
+    "id": 151,
+    "type": "single",
+    "category": {
+      "de": "Networking",
+      "en": "Networking"
+    },
+    "question": {
+      "de": "Welcher Service wird genutzt, um Traffic auf Layer 7 basierend auf Inhalten wie URL-Pfaden zu verteilen?",
+      "en": "Which service is used to distribute traffic at Layer 7 based on content such as URL paths?"
+    },
+    "options": {
+      "de": [
+        "Network Load Balancer (NLB)",
+        "Application Load Balancer (ALB)",
+        "Amazon Route 53",
+        "AWS Global Accelerator"
+      ],
+      "en": [
+        "Network Load Balancer (NLB)",
+        "Application Load Balancer (ALB)",
+        "Amazon Route 53",
+        "AWS Global Accelerator"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Der ALB ist für pfadbasiertes Routing auf Applikations-Ebene (Layer 7) zuständig. [cite: 725]"
+    }
+  },
+  {
+    "id": 152,
+    "type": "single",
+    "category": {
+      "de": "Deployment",
+      "en": "Deployment"
+    },
+    "question": {
+      "de": "Welches Tool erlaubt es Entwicklern, Cloud-Infrastruktur in bekannten Programmiersprachen wie Python oder TypeScript zu definieren?",
+      "en": "Which tool allows developers to define cloud infrastructure in familiar programming languages such as Python or TypeScript?"
+    },
+    "options": {
+      "de": [
+        "AWS CLI",
+        "AWS SDK",
+        "AWS Cloud Development Kit (CDK)",
+        "AWS CloudFormation"
+      ],
+      "en": [
+        "AWS CLI",
+        "AWS SDK",
+        "AWS Cloud Development Kit (CDK)",
+        "AWS CloudFormation"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Das CDK wandelt Code in CloudFormation-Templates um. [cite: 699]"
+    }
+  },
+  {
+    "id": 153,
+    "type": "single",
+    "category": {
+      "de": "EBS-Storage",
+      "en": "EBS-Storage"
+    },
+    "question": {
+      "de": "Welcher EBS-Volume-Typ ist die Standardwahl (General Purpose) für die meisten Workloads?",
+      "en": "Which EBS volume type is the default choice (General Purpose) for most workloads?"
+    },
+    "options": {
+      "de": [
+        "io2 (Provisioned IOPS SSD)",
+        "st1 (Throughput Optimized HDD)",
+        "gp3 (General Purpose SSD)",
+        "sc1 (Cold HDD)"
+      ],
+      "en": [
+        "io2 (Provisioned IOPS SSD)",
+        "st1 (Throughput Optimized HDD)",
+        "gp3 (General Purpose SSD)",
+        "sc1 (Cold HDD)"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "gp3 bietet ein ausgewogenes Verhältnis von Preis und Leistung für SSD-Speicher. [cite: 195, 199]"
+    }
+  },
+  {
+    "id": 154,
+    "type": "single",
+    "category": {
+      "de": "File-Storage",
+      "en": "File-Storage"
+    },
+    "question": {
+      "de": "Was ist ein Hauptvorteil von Amazon EFS gegenüber Amazon EBS?",
+      "en": "What is a main advantage of Amazon EFS compared to Amazon EBS?"
+    },
+    "options": {
+      "de": [
+        "Es ist billiger für kleine Datenmengen",
+        "Es kann von vielen Instanzen gleichzeitig über mehrere AZs genutzt werden",
+        "Es bietet höhere Latenz als EBS",
+        "Es benötigt keine Internetverbindung"
+      ],
+      "en": [
+        "It is cheaper for small amounts of data",
+        "It can be used by many instances simultaneously across multiple AZs",
+        "It offers higher latency than EBS",
+        "It does not require an internet connection"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "EFS ermöglicht gemeinsamen Dateizugriff über die gesamte Region hinweg. [cite: 742, 770]"
+    }
+  },
+  {
+    "id": 155,
+    "type": "single",
+    "category": {
+      "de": "Aurora",
+      "en": "Aurora"
+    },
+    "question": {
+      "de": "Amazon Aurora ist kompatibel zu welchen zwei Datenbank-Engines?",
+      "en": "Amazon Aurora is compatible with which two database engines?"
+    },
+    "options": {
+      "de": [
+        "MySQL und Oracle",
+        "PostgreSQL und SQL Server",
+        "MySQL und PostgreSQL",
+        "MariaDB und MySQL"
+      ],
+      "en": [
+        "MySQL and Oracle",
+        "PostgreSQL and SQL Server",
+        "MySQL and PostgreSQL",
+        "MariaDB and MySQL"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Aurora ist voll kompatibel zu Open-Source-MySQL und PostgreSQL. [cite: 370, 753]"
+    }
   }
 ]
