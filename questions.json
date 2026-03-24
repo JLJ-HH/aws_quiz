@@ -6074,5 +6074,485 @@
     "explanation": {
       "de": "QLDB bietet die Unveränderbarkeit eines Ledgers ohne die Komplexität und Langsamkeit dezentraler Blockchains. [cite: 507-511]"
     }
+  },
+  {
+    "id": 171,
+    "type": "single",
+    "category": {
+      "de": "Timestream",
+      "en": "Timestream"
+    },
+    "question": {
+      "de": "Welcher AWS-Service ist speziell für das Speichern und Analysieren von Milliarden von Ereignissen pro Tag optimiert, die über die Zeit sortiert sind (z. B. IoT-Sensordaten)?",
+      "en": "Which AWS service is specifically optimized for storing and analyzing billions of events per day sorted over time (e.g., IoT sensor data)?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon Timestream",
+        "Amazon Redshift",
+        "Amazon Neptune"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon Timestream",
+        "Amazon Redshift",
+        "Amazon Neptune"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Timestream ist eine Zeitreihen-Datenbank (Time-Series), die automatisch Daten nach Alter sortiert und komprimiert. [cite: 517-521, 760]"
+    }
+  },
+  {
+    "id": 172,
+    "type": "single",
+    "category": {
+      "de": "Datenbank-Wahl",
+      "en": "Database Choice"
+    },
+    "question": {
+      "de": "Ein Unternehmen möchte eine SQL-Datenbank migrieren, benötigt aber 'höchste Verfügbarkeit' und eine automatische Skalierung des Speichers bis zu 128 TB. Welchen Dienst wählen sie?",
+      "en": "A company wants to migrate a SQL database but needs 'highest availability' and automatic storage scaling up to 128 TB. Which service do they choose?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS MySQL",
+        "Amazon Aurora",
+        "Amazon DynamoDB",
+        "Amazon Redshift"
+      ],
+      "en": [
+        "Amazon RDS MySQL",
+        "Amazon Aurora",
+        "Amazon DynamoDB",
+        "Amazon Redshift"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Aurora bietet eine höhere Performance als Standard-RDS und skaliert den Speicher automatisch. [cite: 368-374, 381]"
+    }
+  },
+  {
+    "id": 173,
+    "type": "single",
+    "category": {
+      "de": "EFS",
+      "en": "EFS"
+    },
+    "question": {
+      "de": "Was ist ein Hauptmerkmal von Amazon EFS im Vergleich zu EBS?",
+      "en": "What is a key feature of Amazon EFS compared to EBS?"
+    },
+    "options": {
+      "de": [
+        "EFS ist an eine AZ gebunden",
+        "EFS ist ein regionaler Service und über mehrere AZs hinweg erreichbar",
+        "EFS ist nur für Windows verfügbar",
+        "EFS bietet Block-Storage"
+      ],
+      "en": [
+        "EFS is tied to an AZ",
+        "EFS is a regional service and accessible across multiple AZs",
+        "EFS is only available for Windows",
+        "EFS provides block storage"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "EFS ist regional und erlaubt den gleichzeitigen Zugriff von hunderten Instanzen aus verschiedenen AZs. [cite: 226, 742, 770]"
+    }
+  },
+  {
+    "id": 174,
+    "type": "single",
+    "category": {
+      "de": "Timestream",
+      "en": "Timestream"
+    },
+    "question": {
+      "de": "Wie spart Amazon Timestream Kosten bei der Speicherung von alten Daten?",
+      "en": "How does Amazon Timestream save costs when storing old data?"
+    },
+    "options": {
+      "de": [
+        "Durch automatisches Löschen nach 24 Stunden",
+        "Durch automatisches Tiering (Verschieben von RAM auf kostengünstigen Magnet-Speicher)",
+        "Durch Kompression in S3-Buckets",
+        "Gar nicht, der Preis ist immer gleich"
+      ],
+      "en": [
+        "By automatically deleting after 24 hours",
+        "Through automatic tiering (moving from RAM to low-cost magnetic storage)",
+        "By compression in S3 buckets",
+        "Not at all, the price is always the same"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Timestream verschiebt ältere Daten automatisch in eine günstigere Speicherebene. [cite: 521]"
+    }
+  },
+  {
+    "id": 175,
+    "type": "single",
+    "category": {
+      "de": "Datenbank-Wahl",
+      "en": "Database Choice"
+    },
+    "question": {
+      "de": "Welche Datenbank ist die beste Wahl für eine Anwendung, die ein flexibles Schema (Schema-less) und eine Latenz im einstelligen Millisekundenbereich bei massiver Skalierung erfordert?",
+      "en": "Which database is the best choice for an application that requires a flexible schema (schema-less) and single-digit millisecond latency at massive scale?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon Redshift",
+        "Amazon DynamoDB",
+        "Amazon Neptune"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon Redshift",
+        "Amazon DynamoDB",
+        "Amazon Neptune"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "DynamoDB ist eine NoSQL-Datenbank, die für Geschwindigkeit und Flexibilität ohne festes Schema optimiert ist. [cite: 409-412, 756-757]"
+    }
+  },
+  {
+    "id": 176,
+    "type": "single",
+    "category": {
+      "de": "EFS",
+      "en": "EFS"
+    },
+    "question": {
+      "de": "Für welchen Anwendungsfall ist Amazon EFS am besten geeignet?",
+      "en": "For which use case is Amazon EFS best suited?"
+    },
+    "options": {
+      "de": [
+        "Hosting einer relationalen Datenbank",
+        "Shared Content Management (z. B. WordPress-Media-Dateien für mehrere Webserver)",
+        "Temporäres Caching von Daten",
+        "Backup von lokalen Festplatten"
+      ],
+      "en": [
+        "Hosting a relational database",
+        "Shared content management (e.g., WordPress media files for multiple web servers)",
+        "Temporary caching of data",
+        "Backup of local hard drives"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Da viele Server gleichzeitig zugreifen können, ist EFS ideal für Shared Content oder CMS-Systeme. [cite: 259, 742]"
+    }
+  },
+  {
+    "id": 177,
+    "type": "single",
+    "category": {
+      "de": "Datenbank-Wahl",
+      "en": "Database Choice"
+    },
+    "question": {
+      "de": "Ein Unternehmen möchte Daten aus verschiedenen Quellen für jährliche Geschäftsberichte analysieren. Welchen Dienst sollten sie nutzen?",
+      "en": "A company wants to analyze data from various sources for annual business reports. Which service should they use?"
+    },
+    "options": {
+      "de": [
+        "Amazon ElastiCache",
+        "Amazon Redshift",
+        "Amazon RDS",
+        "Amazon Timestream"
+      ],
+      "en": [
+        "Amazon ElastiCache",
+        "Amazon Redshift",
+        "Amazon RDS",
+        "Amazon Timestream"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Redshift ist das Data Warehouse für komplexe, langfristige Analysen. [cite: 466-474, 575, 761]"
+    }
+  },
+  {
+    "id": 178,
+    "type": "single",
+    "category": {
+      "de": "EFS",
+      "en": "EFS"
+    },
+    "question": {
+      "de": "Amazon EFS skaliert seine Speicherkapazität wie?",
+      "en": "How does Amazon EFS scale its storage capacity?"
+    },
+    "options": {
+      "de": [
+        "Man muss die Größe manuell festlegen",
+        "Es skaliert automatisch nach oben oder unten, wenn Dateien hinzugefügt oder gelöscht werden",
+        "Man muss ein Support-Ticket eröffnen",
+        "Es skaliert nur durch Snapshots"
+      ],
+      "en": [
+        "You must set the size manually",
+        "It scales automatically up or down as files are added or deleted",
+        "You must open a support ticket",
+        "It only scales through snapshots"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "EFS ist elastisch und passt die Größe (und Abrechnung) automatisch an den Inhalt an. [cite: 224, 256]"
+    }
+  },
+  {
+    "id": 179,
+    "type": "single",
+    "category": {
+      "de": "Timestream",
+      "en": "Timestream"
+    },
+    "question": {
+      "de": "In welchem Sektor wird Amazon Timestream am häufigsten eingesetzt?",
+      "en": "In which sector is Amazon Timestream most commonly used?"
+    },
+    "options": {
+      "de": [
+        "E-Commerce (Bestellungen)",
+        "IoT und DevOps (Überwachung von Metriken)",
+        "Soziale Netzwerke",
+        "Dokumentenverwaltung"
+      ],
+      "en": [
+        "E-commerce (orders)",
+        "IoT and DevOps (monitoring metrics)",
+        "Social networks",
+        "Document management"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Überall dort, wo Daten mit einem Zeitstempel (Time-Series) anfallen, wie Sensoren oder Log-Metriken. [cite: 519-520, 756]"
+    }
+  },
+  {
+    "id": 180,
+    "type": "single",
+    "category": {
+      "de": "Datenbank-Wahl",
+      "en": "Database Choice"
+    },
+    "question": {
+      "de": "Welche Datenbank-Engine gehört NICHT zu den sechs Standard-Engines von Amazon RDS?",
+      "en": "Which database engine is NOT one of the six standard engines of Amazon RDS?"
+    },
+    "options": {
+      "de": [
+        "MySQL",
+        "Oracle",
+        "IBM DB2",
+        "PostgreSQL"
+      ],
+      "en": [
+        "MySQL",
+        "Oracle",
+        "IBM DB2",
+        "PostgreSQL"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "RDS unterstützt MySQL, PostgreSQL, MariaDB, Oracle, SQL Server und Aurora. [cite: 338-344, 751]"
+    }
+  },
+  {
+    "id": 181,
+    "type": "single",
+    "category": {
+      "de": "EFS",
+      "en": "EFS"
+    },
+    "question": {
+      "de": "Welcher Speichertyp wird Amazon EFS zugeordnet?",
+      "en": "Which storage type is Amazon EFS assigned to?"
+    },
+    "options": {
+      "de": [
+        "Block Storage",
+        "Object Storage",
+        "File Storage",
+        "Archiv Storage"
+      ],
+      "en": [
+        "Block storage",
+        "Object storage",
+        "File storage",
+        "Archive storage"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "EFS ist ein klassischer File Storage (NFS). [cite: 44, 238, 742]"
+    }
+  },
+  {
+    "id": 182,
+    "type": "single",
+    "category": {
+      "de": "Datenbank-Wahl",
+      "en": "Database Choice"
+    },
+    "question": {
+      "de": "Ein Startup benötigt eine NoSQL-Datenbank, möchte aber keine Server verwalten und nur für tatsächliche Lese-/Schreibanfragen bezahlen. Was ist die beste Option?",
+      "en": "A startup needs a NoSQL database but doesn't want to manage servers and only pay for actual read/write requests. What is the best option?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon Aurora Serverless",
+        "Amazon DynamoDB (On-Demand Mode)",
+        "Amazon ElastiCache"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon Aurora Serverless",
+        "Amazon DynamoDB (On-Demand Mode)",
+        "Amazon ElastiCache"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "DynamoDB im On-Demand Modus ist serverlos und rechnet nach Anfragen ab. [cite: 427-429, 758]"
+    }
+  },
+  {
+    "id": 183,
+    "type": "single",
+    "category": {
+      "de": "Timestream",
+      "en": "Timestream"
+    },
+    "question": {
+      "de": "Kann Amazon Timestream SQL-ähnliche Abfragen verarbeiten?",
+      "en": "Can Amazon Timestream handle SQL-like queries?"
+    },
+    "options": {
+      "de": [
+        "Nein, nur über eine eigene API",
+        "Ja, es unterstützt SQL-Abfragen für die Datenanalyse",
+        "Nur über Amazon Redshift",
+        "Nur wenn die Daten in S3 liegen"
+      ],
+      "en": [
+        "No, only via its own API",
+        "Yes, it supports SQL queries for data analysis",
+        "Only via Amazon Redshift",
+        "Only if the data is in S3"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Trotz Zeitreihen-Fokus können Nutzer vertrautes SQL für die Analyse in Timestream verwenden."
+    }
+  },
+  {
+    "id": 184,
+    "type": "single",
+    "category": {
+      "de": "Datenbank-Wahl",
+      "en": "Database Choice"
+    },
+    "question": {
+      "de": "Für eine einfache Webanwendung mit wenig Budget und ohne komplexe Anforderungen an die Skalierung – welcher Service bietet 'all-in-one' Compute, Storage und Datenbank?",
+      "en": "For a simple web application with a low budget and no complex scaling requirements – which service provides 'all-in-one' compute, storage, and database?"
+    },
+    "options": {
+      "de": [
+        "AWS Elastic Beanstalk",
+        "Amazon Lightsail",
+        "Amazon EC2",
+        "AWS Lambda"
+      ],
+      "en": [
+        "AWS Elastic Beanstalk",
+        "Amazon Lightsail",
+        "Amazon EC2",
+        "AWS Lambda"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Lightsail ist das einfachste Paket für Einsteiger mit vorhersehbaren Preisen. [cite: 65, 730]"
+    }
+  },
+  {
+    "id": 185,
+    "type": "single",
+    "category": {
+      "de": "EFS",
+      "en": "EFS"
+    },
+    "question": {
+      "de": "Wie wird der Zugriff auf Amazon EFS-Dateisysteme gesteuert?",
+      "en": "How is access to Amazon EFS file systems controlled?"
+    },
+    "options": {
+      "de": [
+        "Nur über S3-Buckets",
+        "Über Security Groups und POSIX-Berechtigungen",
+        "Nur über physische Schlüssel",
+        "Über IAM-Benutzerpasswörter direkt im Code"
+      ],
+      "en": [
+        "Only via S3 buckets",
+        "Through security groups and POSIX permissions",
+        "Only via physical keys",
+        "Via IAM user passwords directly in code"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Wie bei EC2 nutzen EFS-Mount-Targets Security Groups, um den Netzwerkzugriff zu regeln."
+    }
   }
 ]
