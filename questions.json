@@ -2321,5 +2321,665 @@
       "de": "Vorsicht vor der Abkürzung: AWS WAF (Web Application Firewall) vs. Well-Architected Framework (Architektur-Bewertung). [cite: 617-631]",
       "en": "Watch out for the acronym: AWS WAF (Web Application Firewall) vs. Well-Architected Framework (architecture assessment). [cite: 617-631]"
     }
+  },
+  {
+    "id": 71,
+    "type": "single",
+    "category": {
+      "de": "S3 Storage",
+      "en": "S3 Storage"
+    },
+    "question": {
+      "de": "Wie hoch ist die versprochene Haltbarkeit (Durability) von Daten in Amazon S3 Standard?",
+      "en": "What is the promised durability of data in Amazon S3 Standard?"
+    },
+    "options": {
+      "de": [
+        "99,9 %",
+        "99,99 %",
+        "99,999999999 % (11 Neunen)",
+        "100 %"
+      ],
+      "en": [
+        "99.9%",
+        "99.99%",
+        "99.999999999% (11 nines)",
+        "100%"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "S3 ist auf eine extrem hohe Haltbarkeit von 11 Neunen ausgelegt, indem Daten über mindestens 3 AZs repliziert werden. [cite: 85-86]",
+      "en": "S3 is designed for extremely high durability of 11 nines by replicating data across at least 3 AZs. [cite: 85-86]"
+    }
+  },
+  {
+    "id": 72,
+    "type": "single",
+    "category": {
+      "de": "S3 Storage",
+      "en": "S3 Storage"
+    },
+    "question": {
+      "de": "Welche S3-Speicherklasse ist am günstigsten für Daten, die jahrelang aufbewahrt werden müssen und eine Abrufzeit von bis zu 12 Stunden erlauben?",
+      "en": "Which S3 storage class is the cheapest for data that must be kept for years and allows a retrieval time of up to 12 hours?"
+    },
+    "options": {
+      "de": [
+        "S3 Standard",
+        "S3 Standard-IA",
+        "S3 Glacier Flexible Retrieval",
+        "S3 Glacier Deep Archive"
+      ],
+      "en": [
+        "S3 Standard",
+        "S3 Standard-IA",
+        "S3 Glacier Flexible Retrieval",
+        "S3 Glacier Deep Archive"
+      ]
+    },
+    "correct": [
+      3
+    ],
+    "explanation": {
+      "de": "Glacier Deep Archive ist die günstigste Klasse für Langzeitarchive mit Abrufzeiten bis zu 12 Stunden. [cite: 110-113]",
+      "en": "Glacier Deep Archive is the cheapest class for long-term archives with retrieval times up to 12 hours. [cite: 110-113]"
+    }
+  },
+  {
+    "id": 73,
+    "type": "single",
+    "category": {
+      "de": "S3 Storage",
+      "en": "S3 Storage"
+    },
+    "question": {
+      "de": "Welches Feature verschiebt S3-Objekte automatisch in günstigere Speicherklassen basierend auf ihrem Alter?",
+      "en": "Which feature automatically moves S3 objects to cheaper storage classes based on their age?"
+    },
+    "options": {
+      "de": [
+        "S3 Versioning",
+        "S3 Lifecycle Policies",
+        "S3 Replication",
+        "S3 Object Lock"
+      ],
+      "en": [
+        "S3 Versioning",
+        "S3 Lifecycle Policies",
+        "S3 Replication",
+        "S3 Object Lock"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Lifecycle Policies ermöglichen automatisierte Regeln zum Verschieben oder Löschen von Daten nach X Tagen. [cite: 142-147]",
+      "en": "Lifecycle Policies enable automated rules for moving or deleting data after X days. [cite: 142-147]"
+    }
+  },
+  {
+    "id": 74,
+    "type": "single",
+    "category": {
+      "de": "EBS Storage",
+      "en": "EBS Storage"
+    },
+    "question": {
+      "de": "Wie kann man ein EBS-Volume von einer Availability Zone in eine andere verschieben?",
+      "en": "How can you move an EBS volume from one Availability Zone to another?"
+    },
+    "options": {
+      "de": [
+        "Einfach in der Konsole umhängen",
+        "Einen Snapshot erstellen und daraus ein neues Volume in der Ziel-AZ erzeugen",
+        "EBS-Volumes sind regional und brauchen keinen Umzug",
+        "Über ein S3-Bucket kopieren"
+      ],
+      "en": [
+        "Simply reattach it in the console",
+        "Create a snapshot and use it to create a new volume in the target AZ",
+        "EBS volumes are regional and don't need moving",
+        "Copy it via an S3 bucket"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "EBS ist an eine AZ gebunden. Ein Snapshot ist nötig, um die Daten AZ-übergreifend oder regional zu bewegen. [cite: 202-209, 216]",
+      "en": "EBS is tied to an AZ. A snapshot is required to move data across AZs or regions. [cite: 202-209, 216]"
+    }
+  },
+  {
+    "id": 75,
+    "type": "single",
+    "category": {
+      "de": "File Storage",
+      "en": "File Storage"
+    },
+    "question": {
+      "de": "Welcher Service bietet ein verwaltetes Dateisystem (NFS), auf das hunderte EC2-Instanzen gleichzeitig zugreifen können?",
+      "en": "Which service provides a managed file system (NFS) that hundreds of EC2 instances can access simultaneously?"
+    },
+    "options": {
+      "de": [
+        "Amazon EBS",
+        "Amazon S3",
+        "Amazon EFS",
+        "Amazon FSx for Windows"
+      ],
+      "en": [
+        "Amazon EBS",
+        "Amazon S3",
+        "Amazon EFS",
+        "Amazon FSx for Windows"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "EFS ist ein regionaler Service für Linux-Instanzen, der parallelen Zugriff über das NFS-Protokoll erlaubt. [cite: 222-227, 235]",
+      "en": "EFS is a regional service for Linux instances that allows parallel access via the NFS protocol. [cite: 222-227, 235]"
+    }
+  },
+  {
+    "id": 76,
+    "type": "single",
+    "category": {
+      "de": "Storage Gateway",
+      "en": "Storage Gateway"
+    },
+    "question": {
+      "de": "Welcher Dienst dient als Hybrid-Brücke, um lokalen Speicher (On-Premise) nahtlos mit AWS Cloud-Speicher zu verbinden?",
+      "en": "Which service acts as a hybrid bridge to seamlessly connect on-premise storage with AWS cloud storage?"
+    },
+    "options": {
+      "de": [
+        "AWS Direct Connect",
+        "AWS Snowball",
+        "AWS Storage Gateway",
+        "AWS DataSync"
+      ],
+      "en": [
+        "AWS Direct Connect",
+        "AWS Snowball",
+        "AWS Storage Gateway",
+        "AWS DataSync"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Storage Gateway verbindet lokale Anwendungen über Standard-Protokolle mit S3, EBS oder Glacier. [cite: 264-276]",
+      "en": "Storage Gateway connects local applications to S3, EBS, or Glacier via standard protocols. [cite: 264-276]"
+    }
+  },
+  {
+    "id": 77,
+    "type": "single",
+    "category": {
+      "de": "RDS",
+      "en": "RDS"
+    },
+    "question": {
+      "de": "Was ist der Hauptzweck von RDS 'Read Replicas'?",
+      "en": "What is the primary purpose of RDS 'Read Replicas'?"
+    },
+    "options": {
+      "de": [
+        "Erhöhung der Hochverfügbarkeit",
+        "Skalierung der Lese-Performance",
+        "Automatisches Backup",
+        "Verschlüsselung der Daten"
+      ],
+      "en": [
+        "Increasing high availability",
+        "Scaling read performance",
+        "Automatic backup",
+        "Data encryption"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Read Replicas dienen der Entlastung der Primärdatenbank bei leseintensiven Workloads. [cite: 356-363]",
+      "en": "Read Replicas are used to offload the primary database for read-intensive workloads. [cite: 356-363]"
+    }
+  },
+  {
+    "id": 78,
+    "type": "single",
+    "category": {
+      "de": "RDS",
+      "en": "RDS"
+    },
+    "question": {
+      "de": "Welches RDS-Feature bietet eine synchrone Standby-Kopie in einer anderen AZ für den Katastrophenschutz?",
+      "en": "Which RDS feature provides a synchronous standby copy in another AZ for disaster recovery?"
+    },
+    "options": {
+      "de": [
+        "Read Replica",
+        "Multi-AZ Deployment",
+        "DB Snapshot",
+        "Storage Auto-Scaling"
+      ],
+      "en": [
+        "Read Replica",
+        "Multi-AZ Deployment",
+        "DB Snapshot",
+        "Storage Auto-Scaling"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Multi-AZ sorgt für Hochverfügbarkeit durch automatisches Failover auf eine synchrone Kopie in einer anderen AZ. [cite: 349-355]",
+      "en": "Multi-AZ ensures high availability through automatic failover to a synchronous copy in another AZ. [cite: 349-355]"
+    }
+  },
+  {
+    "id": 79,
+    "type": "single",
+    "category": {
+      "de": "Aurora",
+      "en": "Aurora"
+    },
+    "question": {
+      "de": "Wie oft repliziert Amazon Aurora Daten standardmäßig?",
+      "en": "How many times does Amazon Aurora replicate data by default?"
+    },
+    "options": {
+      "de": [
+        "2-mal in einer AZ",
+        "3-mal über 2 AZs",
+        "6-mal über 3 AZs",
+        "11-mal global"
+      ],
+      "en": [
+        "2 times in one AZ",
+        "3 times across 2 AZs",
+        "6 times across 3 AZs",
+        "11 times globally"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Aurora speichert 6 Kopien der Daten verteilt über 3 Availability Zones für maximale Fehlertoleranz. [cite: 374]",
+      "en": "Aurora stores 6 copies of data distributed across 3 Availability Zones for maximum fault tolerance. [cite: 374]"
+    }
+  },
+  {
+    "id": 80,
+    "type": "single",
+    "category": {
+      "de": "DynamoDB",
+      "en": "DynamoDB"
+    },
+    "question": {
+      "de": "Welcher Datenbanktyp ist Amazon DynamoDB?",
+      "en": "What type of database is Amazon DynamoDB?"
+    },
+    "options": {
+      "de": [
+        "Relational (SQL)",
+        "NoSQL Key-Value / Document",
+        "Graph-Datenbank",
+        "Data Warehouse"
+      ],
+      "en": [
+        "Relational (SQL)",
+        "NoSQL Key-Value / Document",
+        "Graph database",
+        "Data Warehouse"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "DynamoDB ist eine serverlose NoSQL-Datenbank für Key-Value- und Dokumenten-Datenmodelle. [cite: 406-409]",
+      "en": "DynamoDB is a serverless NoSQL database for key-value and document data models. [cite: 406-409]"
+    }
+  },
+  {
+    "id": 81,
+    "type": "single",
+    "category": {
+      "de": "Redshift",
+      "en": "Redshift"
+    },
+    "question": {
+      "de": "Welcher Service ist ein verwaltetes Data Warehouse für komplexe analytische Abfragen (OLAP) im Petabyte-Bereich?",
+      "en": "Which service is a managed data warehouse for complex analytical queries (OLAP) at petabyte scale?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon Redshift",
+        "Amazon Aurora"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon Redshift",
+        "Amazon Aurora"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Redshift ist für Business Intelligence und analytische Abfragen optimiert, nicht für Transaktionen. [cite: 466-474, 480]",
+      "en": "Redshift is optimized for business intelligence and analytical queries, not for transactions. [cite: 466-474, 480]"
+    }
+  },
+  {
+    "id": 82,
+    "type": "single",
+    "category": {
+      "de": "ElastiCache",
+      "en": "ElastiCache"
+    },
+    "question": {
+      "de": "Welcher Dienst wird verwendet, um die Lese-Latenz von Datenbanken durch In-Memory-Caching zu verringern?",
+      "en": "Which service is used to reduce database read latency through in-memory caching?"
+    },
+    "options": {
+      "de": [
+        "Amazon ElastiCache",
+        "Amazon Redshift",
+        "AWS Config",
+        "Amazon DocumentDB"
+      ],
+      "en": [
+        "Amazon ElastiCache",
+        "Amazon Redshift",
+        "AWS Config",
+        "Amazon DocumentDB"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "ElastiCache unterstützt Redis und Memcached, um häufige Abfragen blitzschnell aus dem RAM zu beantworten. [cite: 485-491]",
+      "en": "ElastiCache supports Redis and Memcached to answer frequent queries at lightning speed from RAM. [cite: 485-491]"
+    }
+  },
+  {
+    "id": 83,
+    "type": "single",
+    "category": {
+      "de": "Neptune",
+      "en": "Neptune"
+    },
+    "question": {
+      "de": "Welcher AWS-Datenbankservice ist speziell für hochvernetzte Daten wie soziale Netzwerke oder Empfehlungsmaschinen (Graph) gedacht?",
+      "en": "Which AWS database service is specifically designed for highly connected data like social networks or recommendation engines (Graph)?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon Neptune",
+        "Amazon QLDB",
+        "Amazon Timestream"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon Neptune",
+        "Amazon QLDB",
+        "Amazon Timestream"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Neptune ist eine Graph-Datenbank für komplexe Beziehungsstrukturen. [cite: 502-506]",
+      "en": "Neptune is a graph database for complex relationship structures. [cite: 502-506]"
+    }
+  },
+  {
+    "id": 84,
+    "type": "single",
+    "category": {
+      "de": "QLDB",
+      "en": "QLDB"
+    },
+    "question": {
+      "de": "Welche Datenbank bietet ein unveränderliches, kryptographisch verifizierbares Transaktionsprotokoll (Ledger)?",
+      "en": "Which database provides an immutable, cryptographically verifiable transaction log (ledger)?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon QLDB",
+        "Amazon DocumentDB"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon QLDB",
+        "Amazon DocumentDB"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "QLDB (Quantum Ledger Database) wird für Audit-Trails genutzt, wo Daten niemals gelöscht werden dürfen. [cite: 507-511]",
+      "en": "QLDB (Quantum Ledger Database) is used for audit trails where data must never be deleted. [cite: 507-511]"
+    }
+  },
+  {
+    "id": 85,
+    "type": "single",
+    "category": {
+      "de": "Timestream",
+      "en": "Timestream"
+    },
+    "question": {
+      "de": "Für welchen Anwendungsfall ist Amazon Timestream optimiert?",
+      "en": "For which use case is Amazon Timestream optimized?"
+    },
+    "options": {
+      "de": [
+        "Speichern von Videos",
+        "IoT-Sensordaten und Metriken (Zeitreihen)",
+        "SQL-Transaktionen",
+        "Graph-Daten"
+      ],
+      "en": [
+        "Storing videos",
+        "IoT sensor data and metrics (time series)",
+        "SQL transactions",
+        "Graph data"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Timestream ist eine Zeitreihen-Datenbank für Milliarden von Events pro Tag, z.B. von IoT-Geräten. [cite: 517-521]",
+      "en": "Timestream is a time-series database for billions of events per day, e.g., from IoT devices. [cite: 517-521]"
+    }
+  },
+  {
+    "id": 86,
+    "type": "single",
+    "category": {
+      "de": "S3 Storage",
+      "en": "S3 Storage"
+    },
+    "question": {
+      "de": "Welche S3-Speicherklasse eignet sich am besten, wenn das Zugriffsmuster auf Daten unbekannt oder schwankend ist?",
+      "en": "Which S3 storage class is best suited when the data access pattern is unknown or fluctuating?"
+    },
+    "options": {
+      "de": [
+        "S3 Standard",
+        "S3 Intelligent-Tiering",
+        "S3 One Zone-IA",
+        "S3 Glacier"
+      ],
+      "en": [
+        "S3 Standard",
+        "S3 Intelligent-Tiering",
+        "S3 One Zone-IA",
+        "S3 Glacier"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Intelligent-Tiering verschiebt Daten automatisch zwischen Ebenen, um Kosten ohne Performance-Verlust zu sparen. [cite: 120-125]",
+      "en": "Intelligent-Tiering automatically moves data between tiers to save costs without performance loss. [cite: 120-125]"
+    }
+  },
+  {
+    "id": 87,
+    "type": "single",
+    "category": {
+      "de": "DynamoDB",
+      "en": "DynamoDB"
+    },
+    "question": {
+      "de": "Was ist der Vorteil des 'On-Demand' Kapazitätsmodus in DynamoDB?",
+      "en": "What is the advantage of the 'On-Demand' capacity mode in DynamoDB?"
+    },
+    "options": {
+      "de": [
+        "Niedrigere Kosten bei stabiler Last",
+        "Keine Kapazitätsplanung nötig (Pay-per-Request)",
+        "Höhere Sicherheit",
+        "Manuelle Skalierung möglich"
+      ],
+      "en": [
+        "Lower costs for stable load",
+        "No capacity planning required (pay-per-request)",
+        "Higher security",
+        "Manual scaling possible"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "On-Demand skaliert sofort auf Millionen Anfragen ohne Vorab-Konfiguration. [cite: 426-429]",
+      "en": "On-demand scales instantly to millions of requests without upfront configuration. [cite: 426-429]"
+    }
+  },
+  {
+    "id": 88,
+    "type": "single",
+    "category": {
+      "de": "Datenbank-Wahl",
+      "en": "Database Choice"
+    },
+    "question": {
+      "de": "Ein Unternehmen benötigt eine Datenbank für hochtransaktionale ERP-Daten mit komplexen Tabellenbeziehungen. Was sollte gewählt werden?",
+      "en": "A company needs a database for highly transactional ERP data with complex table relationships. What should be chosen?"
+    },
+    "options": {
+      "de": [
+        "Amazon Redshift",
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon ElastiCache"
+      ],
+      "en": [
+        "Amazon Redshift",
+        "Amazon RDS",
+        "Amazon DynamoDB",
+        "Amazon ElastiCache"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Für strukturierte Daten mit Beziehungen (SQL) ist RDS oder Aurora die richtige Wahl. [cite: 288-294, 527-528]",
+      "en": "For structured data with relationships (SQL), RDS or Aurora is the right choice. [cite: 288-294, 527-528]"
+    }
+  },
+  {
+    "id": 89,
+    "type": "single",
+    "category": {
+      "de": "EFS",
+      "en": "EFS"
+    },
+    "question": {
+      "de": "Was ist ein wesentlicher Unterschied zwischen Amazon EBS und Amazon EFS?",
+      "en": "What is a major difference between Amazon EBS and Amazon EFS?"
+    },
+    "options": {
+      "de": [
+        "EBS ist teurer als EFS",
+        "EFS kann gleichzeitig von vielen Instanzen gemountet werden, EBS meist nur von einer",
+        "EBS ist objektbasiert, EFS blockbasiert",
+        "EFS ist an eine AZ gebunden, EBS regional"
+      ],
+      "en": [
+        "EBS is more expensive than EFS",
+        "EFS can be mounted by many instances simultaneously, EBS usually only by one",
+        "EBS is object-based, EFS is block-based",
+        "EFS is AZ-bound, EBS is regional"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "EBS ist wie eine lokale Festplatte (ein Server), EFS wie ein Netzlaufwerk (viele Server). [cite: 235, 253-260]",
+      "en": "EBS is like a local hard drive (one server), EFS like a network drive (many servers). [cite: 235, 253-260]"
+    }
+  },
+  {
+    "id": 90,
+    "type": "single",
+    "category": {
+      "de": "Aurora",
+      "en": "Aurora"
+    },
+    "question": {
+      "de": "Welche Aussage über Amazon Aurora Serverless ist korrekt?",
+      "en": "Which statement about Amazon Aurora Serverless is correct?"
+    },
+    "options": {
+      "de": [
+        "Man muss die Instanzgröße manuell wählen",
+        "Es skaliert die Kapazität automatisch basierend auf der Anwendungslast",
+        "Es unterstützt nur Oracle-Datenbanken",
+        "Es hat keine Backup-Funktion"
+      ],
+      "en": [
+        "You must manually choose the instance size",
+        "It automatically scales capacity based on application load",
+        "It only supports Oracle databases",
+        "It has no backup function"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Aurora Serverless ermöglicht automatisches Skalieren und pausiert sogar bei Nichtnutzung, um Kosten zu sparen. [cite: 376-377]",
+      "en": "Aurora Serverless enables automatic scaling and even pauses during non-use to save costs. [cite: 376-377]"
+    }
   }
 ]
