@@ -6554,5 +6554,485 @@
     "explanation": {
       "de": "Wie bei EC2 nutzen EFS-Mount-Targets Security Groups, um den Netzwerkzugriff zu regeln."
     }
+  },
+  {
+    "id": 186,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Welche Migrationsstrategie wird angewendet, wenn eine bestehende Anwendung durch ein SaaS-Produkt wie Salesforce ersetzt wird?",
+      "en": "Which migration strategy is used when replacing an existing application with a SaaS product like Salesforce?"
+    },
+    "options": {
+      "de": [
+        "Rehost",
+        "Replatform",
+        "Repurchase",
+        "Refactor"
+      ],
+      "en": [
+        "Rehost",
+        "Replatform",
+        "Repurchase",
+        "Refactor"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Repurchase (auch 'Drop and Shop') bedeutet den Wechsel zu einem völlig anderen Produkt, meist SaaS. [cite: 626]"
+    }
+  },
+  {
+    "id": 187,
+    "type": "single",
+    "category": {
+      "de": "Snow Family",
+      "en": "Snow Family"
+    },
+    "question": {
+      "de": "Welches Mitglied der AWS Snow Family bietet eine Kapazität von bis zu 100 Petabyte und wird in einem Schiffscontainer geliefert?",
+      "en": "Which member of the AWS Snow Family offers a capacity of up to 100 petabytes and is delivered in a shipping container?"
+    },
+    "options": {
+      "de": [
+        "AWS Snowcone",
+        "AWS Snowball Edge",
+        "AWS Snowmobile",
+        "AWS Direct Connect"
+      ],
+      "en": [
+        "AWS Snowcone",
+        "AWS Snowball Edge",
+        "AWS Snowmobile",
+        "AWS Direct Connect"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Snowmobile ist für extrem große Datenmigrationen im Exabyte-Bereich konzipiert. [cite: 637]"
+    }
+  },
+  {
+    "id": 188,
+    "type": "single",
+    "category": {
+      "de": "Governance",
+      "en": "Governance"
+    },
+    "question": {
+      "de": "Welcher Service bietet zentralen Zugriff auf Compliance-Berichte (z.B. ISO, PCI, SOC) von AWS?",
+      "en": "Which service provides central access to AWS compliance reports (e.g., ISO, PCI, SOC)?"
+    },
+    "options": {
+      "de": [
+        "AWS Config",
+        "AWS Artifact",
+        "AWS Shield",
+        "AWS Trusted Advisor"
+      ],
+      "en": [
+        "AWS Config",
+        "AWS Artifact",
+        "AWS Shield",
+        "AWS Trusted Advisor"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS Artifact ist das Portal für On-Demand-Zugriff auf Sicherheits- und Compliance-Dokumente."
+    }
+  },
+  {
+    "id": 189,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Was ist der Unterschied zwischen Rehost und Replatform?",
+      "en": "What is the difference between Rehost and Replatform?"
+    },
+    "options": {
+      "de": [
+        "Rehost ändert den Code, Replatform nicht",
+        "Rehost ist 1:1 (Lift & Shift), Replatform nimmt kleine Optimierungen vor (z.B. Wechsel auf Managed DB)",
+        "Es gibt keinen Unterschied",
+        "Replatform schaltet die Anwendung ab"
+      ],
+      "en": [
+        "Rehost changes the code, Replatform doesn't",
+        "Rehost is 1:1 (Lift & Shift), Replatform makes small optimizations (e.g., switching to Managed DB)",
+        "There is no difference",
+        "Replatform retires the application"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Replatform optimiert die Cloud-Nutzung geringfügig, ohne die Kernarchitektur zu ändern. [cite: 624, 627]"
+    }
+  },
+  {
+    "id": 190,
+    "type": "single",
+    "category": {
+      "de": "Governance",
+      "en": "Governance"
+    },
+    "question": {
+      "de": "Mit welchem Feature kann ein Unternehmen mehrere AWS-Accounts zentral verwalten und gemeinsame Abrechnungen (Consolidated Billing) nutzen?",
+      "en": "With which feature can a company centrally manage multiple AWS accounts and use consolidated billing?"
+    },
+    "options": {
+      "de": [
+        "AWS Control Tower",
+        "AWS Organizations",
+        "AWS IAM",
+        "AWS Budgets"
+      ],
+      "en": [
+        "AWS Control Tower",
+        "AWS Organizations",
+        "AWS IAM",
+        "AWS Budgets"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS Organizations ermöglicht die zentrale Verwaltung und Kostenbündelung mehrerer Accounts. "
+    }
+  },
+  {
+    "id": 191,
+    "type": "single",
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
+    "question": {
+      "de": "Welcher AWS-Dienst schützt Webanwendungen vor gängigen Web-Exploits wie SQL-Injection oder Cross-Site Scripting (XSS)?",
+      "en": "Which AWS service protects web applications from common web exploits like SQL injection or cross-site scripting (XSS)?"
+    },
+    "options": {
+      "de": [
+        "AWS Shield",
+        "AWS WAF",
+        "Amazon GuardDuty",
+        "AWS KMS"
+      ],
+      "en": [
+        "AWS Shield",
+        "AWS WAF",
+        "Amazon GuardDuty",
+        "AWS KMS"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS WAF filtert Traffic auf Layer 7 basierend auf Sicherheitsregeln. [cite: 647, 732, 782]"
+    }
+  },
+  {
+    "id": 192,
+    "type": "single",
+    "category": {
+      "de": "Snow Family",
+      "en": "Snow Family"
+    },
+    "question": {
+      "de": "Welches Snow-Gerät ist am besten geeignet, wenn nur geringe Datenmengen (ca. 10 TB) an einem sehr abgelegenen Ort gesammelt werden müssen?",
+      "en": "Which Snow device is best suited when only small amounts of data (approx. 10 TB) need to be collected at a very remote location?"
+    },
+    "options": {
+      "de": [
+        "AWS Snowmobile",
+        "AWS Snowball Edge",
+        "AWS Snowcone",
+        "AWS Storage Gateway"
+      ],
+      "en": [
+        "AWS Snowmobile",
+        "AWS Snowball Edge",
+        "AWS Snowcone",
+        "AWS Storage Gateway"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Snowcone ist das kleinste und tragbarste Gerät der Snow-Familie. [cite: 635]"
+    }
+  },
+  {
+    "id": 193,
+    "type": "single",
+    "category": {
+      "de": "Governance",
+      "en": "Governance"
+    },
+    "question": {
+      "de": "Wie heißen die zentralen Richtlinien in AWS Organizations, mit denen man maximale Berechtigungen für Account-Gruppen festlegen kann?",
+      "en": "What are the central policies in AWS Organizations called that allow you to set maximum permissions for account groups?"
+    },
+    "options": {
+      "de": [
+        "IAM Policies",
+        "Service Control Policies (SCPs)",
+        "Bucket Policies",
+        "Security Groups"
+      ],
+      "en": [
+        "IAM Policies",
+        "Service Control Policies (SCPs)",
+        "Bucket Policies",
+        "Security Groups"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "SCPs legen die 'Leitplanken' fest, was in den Unter-Accounts überhaupt erlaubt ist."
+    }
+  },
+  {
+    "id": 194,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Ein Unternehmen entscheidet sich, eine alte Legacy-Anwendung komplett abzuschalten, da sie nicht mehr benötigt wird. Welches 'R' ist das?",
+      "en": "A company decides to completely shut down an old legacy application because it is no longer needed. Which 'R' is this?"
+    },
+    "options": {
+      "de": [
+        "Retain",
+        "Retire",
+        "Refactor",
+        "Rehost"
+      ],
+      "en": [
+        "Retain",
+        "Retire",
+        "Refactor",
+        "Rehost"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Retire beschreibt das Identifizieren und Abschalten von Komponenten, die keinen Geschäftswert mehr haben. [cite: 622]"
+    }
+  },
+  {
+    "id": 195,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Was ist der Vorteil von 'Consolidated Billing' in AWS Organizations?",
+      "en": "What is the advantage of 'Consolidated Billing' in AWS Organizations?"
+    },
+    "options": {
+      "de": [
+        "Man bekommt eine Rechnung pro Account",
+        "Volumenrabatte werden über alle Accounts hinweg kombiniert",
+        "AWS übernimmt die Steuererklärung",
+        "Es gibt keine Gebühren für Datenübertragung"
+      ],
+      "en": [
+        "You get one invoice per account",
+        "Volume discounts are combined across all accounts",
+        "AWS handles the tax return",
+        "There are no data transfer fees"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Durch das Zusammenfassen der Nutzung können höhere Rabattstufen schneller erreicht werden."
+    }
+  },
+  {
+    "id": 196,
+    "type": "single",
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
+    "question": {
+      "de": "Welcher Service bietet einen automatischen Schutz gegen die gängigsten DDoS-Angriffe für alle AWS-Kunden ohne zusätzliche Kosten?",
+      "en": "Which service provides automatic protection against the most common DDoS attacks for all AWS customers at no additional cost?"
+    },
+    "options": {
+      "de": [
+        "AWS Shield Advanced",
+        "AWS Shield Standard",
+        "AWS WAF",
+        "AWS KMS"
+      ],
+      "en": [
+        "AWS Shield Advanced",
+        "AWS Shield Standard",
+        "AWS WAF",
+        "AWS KMS"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Shield Standard ist für alle Kunden aktiviert und schützt auf Layer 3 und 4. [cite: 647, 691]"
+    }
+  },
+  {
+    "id": 197,
+    "type": "single",
+    "category": {
+      "de": "Support",
+      "en": "Support"
+    },
+    "question": {
+      "de": "Welcher AWS Support Plan ist der günstigste, der Zugriff auf die volle Liste der Trusted Advisor Checks bietet?",
+      "en": "Which AWS Support Plan is the cheapest that provides access to the full list of Trusted Advisor checks?"
+    },
+    "options": {
+      "de": [
+        "Basic",
+        "Developer",
+        "Business",
+        "Enterprise"
+      ],
+      "en": [
+        "Basic",
+        "Developer",
+        "Business",
+        "Enterprise"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Erst ab dem Business-Level sind alle Prüfungen des Trusted Advisor freigeschaltet."
+    }
+  },
+  {
+    "id": 198,
+    "type": "single",
+    "category": {
+      "de": "Migration",
+      "en": "Migration"
+    },
+    "question": {
+      "de": "Welche Migrationsstrategie erfordert den höchsten Aufwand, bietet aber das größte Potenzial für Cloud-Vorteile (z.B. Serverless)?",
+      "en": "Which migration strategy requires the most effort but offers the greatest potential for cloud benefits (e.g., serverless)?"
+    },
+    "options": {
+      "de": [
+        "Rehost",
+        "Replatform",
+        "Refactor",
+        "Retain"
+      ],
+      "en": [
+        "Rehost",
+        "Replatform",
+        "Refactor",
+        "Retain"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Refactor bedeutet eine komplette Neuentwicklung für die Cloud. [cite: 628]"
+    }
+  },
+  {
+    "id": 199,
+    "type": "single",
+    "category": {
+      "de": "Betrieb",
+      "en": "Operations"
+    },
+    "question": {
+      "de": "Was ist der Zweck des AWS Service Health Dashboards?",
+      "en": "What is the purpose of the AWS Service Health Dashboard?"
+    },
+    "options": {
+      "de": [
+        "Anzeige der CPU-Last meiner Instanzen",
+        "Allgemeiner Status aller AWS-Dienste weltweit",
+        "Verwaltung von Passwörtern",
+        "Analyse der Kosten"
+      ],
+      "en": [
+        "Display of the CPU load of my instances",
+        "General status of all AWS services worldwide",
+        "Password management",
+        "Cost analysis"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Es zeigt den Status der AWS-Infrastruktur insgesamt an (öffentlich zugänglich)."
+    }
+  },
+  {
+    "id": 200,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Was bedeutet 'Agilität' im Kontext der Cloud-Vorteile?",
+      "en": "What does 'agility' mean in the context of cloud benefits?"
+    },
+    "options": {
+      "de": [
+        "Niedrige Latenz weltweit",
+        "Die Fähigkeit, schnell zu experimentieren und IT-Ressourcen sofort bereitzustellen",
+        "Das System vor Ausfällen schützen",
+        "Kosten sparen durch Spot-Instanzen"
+      ],
+      "en": [
+        "Low latency worldwide",
+        "The ability to experiment quickly and provision IT resources immediately",
+        "Protecting the system from failure",
+        "Saving costs through spot instances"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Agilität reduziert die Zeit für die Bereitstellung von Ressourcen drastisch. [cite: 599]"
+    }
   }
 ]
