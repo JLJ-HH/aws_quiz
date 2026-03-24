@@ -3312,5 +3312,501 @@
       "de": "Measured Service bedeutet, dass die Cloud-Systeme die Nutzung automatisch messen und transparent abrechnen. [cite: 581, 582, 587]",
       "en": "Measured Service means cloud systems automatically measure usage and provide transparent billing. [cite: 581, 582, 587]"
     }
+  },
+  {
+    "id": 101,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Welches Design-Prinzip empfiehlt, Kapazitätsbedarfe nicht mehr zu schätzen, sondern Ressourcen automatisch anzupassen?",
+      "en": "Which design principle recommends to stop guessing capacity needs and adjust resources automatically?"
+    },
+    "options": {
+      "de": [
+        "Stop guessing your capacity needs",
+        "Design for Failure",
+        "Scale horizontally",
+        "Build monolithic apps"
+      ],
+      "en": [
+        "Stop guessing your capacity needs",
+        "Design for Failure",
+        "Scale horizontally",
+        "Build monolithic apps"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "In der Cloud entfällt das Schätzen von Hardware-Käufen durch automatische Skalierung (Auto Scaling). [cite: 598]",
+      "en": "In the cloud, guessing hardware purchases is eliminated through automatic scaling (Auto Scaling). [cite: 598]"
+    }
+  },
+  {
+    "id": 102,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Was versteht man unter dem Prinzip 'Design for Failure'?",
+      "en": "What is meant by the principle 'Design for Failure'?"
+    },
+    "options": {
+      "de": [
+        "Systeme so bauen, dass sie niemals ausfallen",
+        "Davon ausgehen, dass alles irgendwann ausfällt und automatische Heilung planen",
+        "Fehler ignorieren",
+        "Manuelle Backups bei jedem Ausfall"
+      ],
+      "en": [
+        "Building systems so they never fail",
+        "Assuming everything fails eventually and planning for automatic recovery",
+        "Ignoring errors",
+        "Manual backups for every failure"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Zuverlässige Systeme nutzen Multi-AZ-Setups, um sich bei Fehlern automatisch zu erholen. [cite: 649, 680]",
+      "en": "Reliable systems use Multi-AZ setups to automatically recover from failures. [cite: 649, 680]"
+    }
+  },
+  {
+    "id": 103,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Warum ist 'Scale Horizontally' (Skalierung nach außen) einem 'Vertical Scaling' vorzuziehen?",
+      "en": "Why is 'Scale Horizontally' preferred over 'Vertical Scaling'?"
+    },
+    "options": {
+      "de": [
+        "Es ist immer billiger",
+        "Es erhöht die Verfügbarkeit durch die Verteilung auf mehrere kleinere Instanzen",
+        "Es ist einfacher zu konfigurieren",
+        "Man braucht keinen Load Balancer"
+      ],
+      "en": [
+        "It is always cheaper",
+        "It increases availability by distributing across multiple smaller instances",
+        "It is easier to configure",
+        "No load balancer is needed"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Horizontale Skalierung fügt mehr Instanzen hinzu. Fällt eine aus, übernehmen die anderen. [cite: 649, 665]",
+      "en": "Horizontal scaling adds more instances. If one fails, the others take over. [cite: 649, 665]"
+    }
+  },
+  {
+    "id": 104,
+    "type": "single",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "Wer ist laut Shared Responsibility Model für die physische Sicherheit der AWS-Rechenzentren verantwortlich?",
+      "en": "Who is responsible for the physical security of AWS data centers according to the Shared Responsibility Model?"
+    },
+    "options": {
+      "de": [
+        "Der Kunde",
+        "AWS",
+        "Der Sicherheitsdienst vor Ort",
+        "Die lokale Regierung"
+      ],
+      "en": [
+        "The customer",
+        "AWS",
+        "The local security service",
+        "The local government"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS verantwortet die Sicherheit 'OFF der Cloud', wozu Hardware und Gebäude gehören. ",
+      "en": "AWS is responsible for security 'OF the cloud', which includes hardware and buildings. "
+    }
+  },
+  {
+    "id": 105,
+    "type": "single",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "Ein Kunde startet eine Amazon EC2-Instanz. Wer ist für das Installieren von Sicherheits-Patches im Gast-Betriebssystem zuständig?",
+      "en": "A customer starts an Amazon EC2 instance. Who is responsible for installing security patches in the guest operating system?"
+    },
+    "options": {
+      "de": [
+        "AWS",
+        "Der Kunde",
+        "Der Betriebssystem-Hersteller (z.B. Microsoft)",
+        "Niemand"
+      ],
+      "en": [
+        "AWS",
+        "The customer",
+        "The OS vendor (e.g., Microsoft)",
+        "Nobody"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Bei IaaS (EC2) liegt die Verantwortung für das Betriebssystem beim Kunden. [cite: 604, 663]",
+      "en": "With IaaS (EC2), responsibility for the operating system lies with the customer. [cite: 604, 663]"
+    }
+  },
+  {
+    "id": 106,
+    "type": "single",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "Welche Aufgabe liegt in der Verantwortung von AWS bei der Nutzung von Amazon RDS?",
+      "en": "Which task is AWS's responsibility when using Amazon RDS?"
+    },
+    "options": {
+      "de": [
+        "Optimierung von SQL-Abfragen",
+        "Verwaltung der Datenbank-Benutzerrechte",
+        "Patchen der zugrunde liegenden Datenbank-Software",
+        "Erstellen des Datenbankschemas"
+      ],
+      "en": [
+        "Optimizing SQL queries",
+        "Managing database user permissions",
+        "Patching the underlying database software",
+        "Creating the database schema"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Bei Managed Services (RDS) übernimmt AWS das Patching der Software und Infrastruktur. [cite: 751-752]",
+      "en": "With managed services (RDS), AWS handles software and infrastructure patching. [cite: 751-752]"
+    }
+  },
+  {
+    "id": 107,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Was bedeutet 'Loose Coupling' (lose Kopplung) in einer Cloud-Architektur?",
+      "en": "What does 'Loose Coupling' mean in a cloud architecture?"
+    },
+    "options": {
+      "de": [
+        "Alle Komponenten hängen stark voneinander ab",
+        "Komponenten sind unabhängig, sodass der Ausfall einer Schicht nicht das gesamte System stoppt",
+        "Das System nutzt nur eine einzige Datenbank",
+        "Alle Server stehen in der gleichen AZ"
+      ],
+      "en": [
+        "All components depend heavily on each other",
+        "Components are independent so that a failure in one layer doesn't stop the whole system",
+        "The system uses only a single database",
+        "All servers are in the same AZ"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Lose Kopplung (z.B. via SQS) verhindert Kettenreaktionen bei Fehlern. [cite: 680]",
+      "en": "Loose coupling (e.g., via SQS) prevents chain reactions during failures. [cite: 680]"
+    }
+  },
+  {
+    "id": 108,
+    "type": "single",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "In welchem Bereich liegt die Verantwortung für die Konfiguration von Security Groups?",
+      "en": "In which area does the responsibility for configuring Security Groups lie?"
+    },
+    "options": {
+      "de": [
+        "AWS",
+        "Der Kunde",
+        "Internet Service Provider",
+        "Der Hardware-Hersteller"
+      ],
+      "en": [
+        "AWS",
+        "The customer",
+        "Internet Service Provider",
+        "The hardware manufacturer"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Security Groups sind die Firewall des Kunden 'IN der Cloud'. [cite: 663, 715]",
+      "en": "Security Groups are the customer's firewall 'IN the cloud'. [cite: 663, 715]"
+    }
+  },
+  {
+    "id": 109,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Welches Prinzip der 'Performance Efficiency' Säule rät dazu, Technologie-Entscheidungen demokratischer zu machen?",
+      "en": "Which principle of the 'Performance Efficiency' pillar advises making technology decisions more democratic?"
+    },
+    "options": {
+      "de": [
+        "Go Global in minutes",
+        "Use serverless architectures",
+        "Democratize advanced technologies",
+        "Mechanical Sympathy"
+      ],
+      "en": [
+        "Go Global in minutes",
+        "Use serverless architectures",
+        "Democratize advanced technologies",
+        "Mechanical Sympathy"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "AWS stellt komplexe Technologien (KI, Datenbanken) als Service bereit, sodass jeder sie einfach nutzen kann. [cite: 652]",
+      "en": "AWS provides complex technologies (AI, databases) as a service so everyone can easily use them. [cite: 652]"
+    }
+  },
+  {
+    "id": 110,
+    "type": "single",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "Wer ist für die Entsorgung alter Festplatten in AWS-Rechenzentren zuständig?",
+      "en": "Who is responsible for the disposal of old hard drives in AWS data centers?"
+    },
+    "options": {
+      "de": [
+        "Der Kunde per Fernzugriff",
+        "AWS",
+        "Ein Drittanbieter für Recycling",
+        "Die lokale Müllabfuhr"
+      ],
+      "en": [
+        "The customer via remote access",
+        "AWS",
+        "A third-party recycling vendor",
+        "The local waste management"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Die physische Sicherheit und Hardware-Wartung liegt zu 100 % bei AWS. ",
+      "en": "Physical security and hardware maintenance are 100% the responsibility of AWS. "
+    }
+  },
+  {
+    "id": 111,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Was bedeutet das Prinzip 'Mechanical Sympathy'?",
+      "en": "What does the principle 'Mechanical Sympathy' mean?"
+    },
+    "options": {
+      "de": [
+        "Hardware so zu behandeln, dass sie lange hält",
+        "Den passenden AWS-Service für den spezifischen Workload wählen",
+        "Nur billige Instanzen nutzen",
+        "Instanzen manuell warten"
+      ],
+      "en": [
+        "Treating hardware to last long",
+        "Choosing the right AWS service for the specific workload",
+        "Using only cheap instances",
+        "Manually maintaining instances"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Wähle z.B. 'Memory Optimized' für Datenbanken, um das Beste aus der Cloud herauszuholen. [cite: 670-675]",
+      "en": "Choose e.g. 'Memory Optimized' for databases to get the most out of the cloud. [cite: 670-675]"
+    }
+  },
+  {
+    "id": 112,
+    "type": "single",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "Ein Unternehmen nutzt Amazon S3. Wer ist dafür verantwortlich, dass die Zugriffsberechtigungen (Buckets Policies) nicht versehentlich 'Öffentlich' sind?",
+      "en": "A company uses Amazon S3. Who is responsible for ensuring that access permissions (bucket policies) are not accidentally 'Public'?"
+    },
+    "options": {
+      "de": [
+        "AWS",
+        "Der Kunde",
+        "Der ISP",
+        "Der Webbrowser"
+      ],
+      "en": [
+        "AWS",
+        "The customer",
+        "The ISP",
+        "The web browser"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Die Konfiguration von Zugriffsrechten und die Sicherheit der Daten liegen beim Kunden. ",
+      "en": "Configuration of access rights and data security lie with the customer. "
+    }
+  },
+  {
+    "id": 113,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Welches Prinzip der 'Operational Excellence' Säule hilft dabei, menschliche Fehler zu vermeiden?",
+      "en": "Which principle of the 'Operational Excellence' pillar helps to avoid human error?"
+    },
+    "options": {
+      "de": [
+        "Manual changes in the console",
+        "Perform operations as code (IaC)",
+        "Always use the largest instances",
+        "Wait for failures to occur"
+      ],
+      "en": [
+        "Manual changes in the console",
+        "Perform operations as code (IaC)",
+        "Always use the largest instances",
+        "Wait for failures to occur"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Automatisierung via CloudFormation reduziert manuelle Fehler. [cite: 642-643]",
+      "en": "Automation via CloudFormation reduces manual errors. [cite: 642-643]"
+    }
+  },
+  {
+    "id": 114,
+    "type": "multiple",
+    "category": {
+      "de": "Shared Responsibility",
+      "en": "Shared Responsibility"
+    },
+    "question": {
+      "de": "Welche ZWEI Aufgaben gehören zur Verantwortung des Kunden beim Betrieb einer Datenbank auf Amazon EC2 (Self-Managed)?",
+      "en": "Which TWO tasks are the customer's responsibility when running a database on Amazon EC2 (self-managed)?"
+    },
+    "options": {
+      "de": [
+        "Austausch defekter RAM-Riegel",
+        "Backup der Datenbank-Daten",
+        "Patchen des Betriebssystems",
+        "Kühlung des Servers"
+      ],
+      "en": [
+        "Replacing defective RAM sticks",
+        "Backing up database data",
+        "Patching the operating system",
+        "Server cooling"
+      ]
+    },
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": {
+      "de": "Bei EC2 trägt der Kunde die Verantwortung für ALLES oberhalb der Virtualisierungsschicht. ",
+      "en": "With EC2, the customer is responsible for EVERYTHING above the virtualization layer. "
+    }
+  },
+  {
+    "id": 115,
+    "type": "single",
+    "category": {
+      "de": "Design Prinzipien",
+      "en": "Design Principles"
+    },
+    "question": {
+      "de": "Welche Säule des Well-Architected Frameworks befasst sich mit der Nutzung von Serverless-Architekturen zur Effizienzsteigerung?",
+      "en": "Which pillar of the Well-Architected Framework deals with using serverless architectures for increased efficiency?"
+    },
+    "options": {
+      "de": [
+        "Security",
+        "Cost Optimization",
+        "Performance Efficiency",
+        "Sustainability"
+      ],
+      "en": [
+        "Security",
+        "Cost Optimization",
+        "Performance Efficiency",
+        "Sustainability"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Serverless erlaubt es, Ressourcen optimal und ohne Leerlauf für die Performance zu nutzen. [cite: 651-653]",
+      "en": "Serverless allows for optimal resource use for performance without idle time. [cite: 651-653]"
+    }
   }
 ]
