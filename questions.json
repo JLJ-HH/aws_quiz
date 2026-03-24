@@ -4138,5 +4138,501 @@
       "de": "Effizientes Speichern reduziert den physischen Platz- und Energiebedarf. [cite: 657-659]",
       "en": "Efficient storage reduces physical space and energy requirements. [cite: 657-659]"
     }
+  },
+  {
+    "id": 126,
+    "type": "single",
+    "category": {
+      "de": "Vorteile der Cloud",
+      "en": "Cloud Benefits"
+    },
+    "question": {
+      "de": "Welcher Vorteil der Cloud wird beschrieben, wenn man IT-Ressourcen in Minuten statt in Wochen bereitstellt?",
+      "en": "Which cloud benefit is described when provisioning IT resources in minutes instead of weeks?"
+    },
+    "options": {
+      "de": [
+        "Go Global in minutes",
+        "Increase speed and agility",
+        "Stop guessing capacity",
+        "Trade CapEx for OpEx"
+      ],
+      "en": [
+        "Go Global in minutes",
+        "Increase speed and agility",
+        "Stop guessing capacity",
+        "Trade CapEx for OpEx"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Agilität bedeutet, dass Entwickler sofort experimentieren können, ohne auf Hardware-Lieferungen zu warten. [cite: 599]",
+      "en": "Agility means developers can experiment immediately without waiting for hardware deliveries. [cite: 599]"
+    }
+  },
+  {
+    "id": 127,
+    "type": "single",
+    "category": {
+      "de": "CAF",
+      "en": "CAF"
+    },
+    "question": {
+      "de": "Welche Perspektive des AWS CAF konzentriert sich auf die Messung des Geschäftswerts und den Return on Investment (ROI)?",
+      "en": "Which AWS CAF perspective focuses on measuring business value and return on investment (ROI)?"
+    },
+    "options": {
+      "de": [
+        "Governance",
+        "Platform",
+        "Business",
+        "Operations"
+      ],
+      "en": [
+        "Governance",
+        "Platform",
+        "Business",
+        "Operations"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Die Business-Perspektive stellt sicher, dass die Cloud-Strategie die Geschäftsziele unterstützt. [cite: 615]",
+      "en": "The Business perspective ensures that the cloud strategy supports business goals. [cite: 615]"
+    }
+  },
+  {
+    "id": 128,
+    "type": "single",
+    "category": {
+      "de": "Reliability",
+      "en": "Reliability"
+    },
+    "question": {
+      "de": "Welcher AWS-Service unterstützt die Zuverlässigkeit (Reliability), indem er ungesunde Instanzen automatisch durch neue ersetzt?",
+      "en": "Which AWS service supports Reliability by automatically replacing unhealthy instances with new ones?"
+    },
+    "options": {
+      "de": [
+        "Amazon Route 53",
+        "AWS Auto Scaling",
+        "AWS CloudTrail",
+        "AWS Config"
+      ],
+      "en": [
+        "Amazon Route 53",
+        "AWS Auto Scaling",
+        "AWS CloudTrail",
+        "AWS Config"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Auto Scaling überwacht den Status der Instanzen und stellt sicher, dass die gewünschte Anzahl immer läuft. [cite: 648-650, 728]",
+      "en": "Auto Scaling monitors instance health and ensures the desired number is always running. [cite: 648-650, 728]"
+    }
+  },
+  {
+    "id": 129,
+    "type": "single",
+    "category": {
+      "de": "WAF - Cost",
+      "en": "WAF - Cost"
+    },
+    "question": {
+      "de": "Was ist das Hauptziel des 'Right-Sizing' im Rahmen der Kostenoptimierung?",
+      "en": "What is the primary goal of 'Right-Sizing' within Cost Optimization?"
+    },
+    "options": {
+      "de": [
+        "Immer die billigste Instanz wählen",
+        "Instanztypen und -größen so wählen, dass sie dem tatsächlichen Bedarf entsprechen",
+        "Alle Ressourcen in einer Region bündeln",
+        "Nur Spot-Instanzen nutzen"
+      ],
+      "en": [
+        "Always choosing the cheapest instance",
+        "Choosing instance types and sizes that match actual requirements",
+        "Bundling all resources in one region",
+        "Only using Spot instances"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Right-Sizing verhindert die Bezahlung für ungenutzte CPU- oder RAM-Kapazitäten. [cite: 655]",
+      "en": "Right-sizing prevents paying for unused CPU or RAM capacities. [cite: 655]"
+    }
+  },
+  {
+    "id": 130,
+    "type": "single",
+    "category": {
+      "de": "Vorteile der Cloud",
+      "en": "Cloud Benefits"
+    },
+    "question": {
+      "de": "Welcher Cloud-Vorteil ermöglicht es einem Unternehmen, von den massiven Einkaufsvolumina von AWS zu profitieren?",
+      "en": "Which cloud benefit allows a company to profit from AWS's massive purchasing volumes?"
+    },
+    "options": {
+      "de": [
+        "Trade CapEx for OpEx",
+        "Benefit from massive economies of scale",
+        "Go Global in minutes",
+        "Stop guessing capacity"
+      ],
+      "en": [
+        "Trade CapEx for OpEx",
+        "Benefit from massive economies of scale",
+        "Go Global in minutes",
+        "Stop guessing capacity"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "AWS gibt die durch Größe erzielten Kosteneinsparungen in Form von niedrigeren Preisen an Kunden weiter. [cite: 594, 597]",
+      "en": "AWS passes on cost savings achieved through scale to customers in the form of lower prices. [cite: 594, 597]"
+    }
+  },
+  {
+    "id": 131,
+    "type": "single",
+    "category": {
+      "de": "CAF",
+      "en": "CAF"
+    },
+    "question": {
+      "de": "Welche CAF-Perspektive befasst sich mit der Automatisierung von IT-Services und dem Incident Management?",
+      "en": "Which CAF perspective deals with the automation of IT services and incident management?"
+    },
+    "options": {
+      "de": [
+        "Governance",
+        "Operations",
+        "Platform",
+        "Security"
+      ],
+      "en": [
+        "Governance",
+        "Operations",
+        "Platform",
+        "Security"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Operations stellt sicher, dass Cloud-Dienste effizient geliefert und gewartet werden. [cite: 620]",
+      "en": "Operations ensures that cloud services are delivered and maintained efficiently. [cite: 620]"
+    }
+  },
+  {
+    "id": 132,
+    "type": "single",
+    "category": {
+      "de": "Reliability",
+      "en": "Reliability"
+    },
+    "question": {
+      "de": "Wie trägt Amazon Route 53 zur Säule 'Reliability' bei?",
+      "en": "How does Amazon Route 53 contribute to the 'Reliability' pillar?"
+    },
+    "options": {
+      "de": [
+        "Durch Verschlüsselung von Daten",
+        "Durch DNS-Health-Checks und automatisches Routing zu gesunden Endpunkten",
+        "Durch Reduzierung der Speicherkosten",
+        "Durch Erstellung von Backups"
+      ],
+      "en": [
+        "By encrypting data",
+        "Through DNS health checks and automatic routing to healthy endpoints",
+        "By reducing storage costs",
+        "By creating backups"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Route 53 kann Traffic bei einem Ausfall automatisch auf eine Standby-Region umleiten. [cite: 650]",
+      "en": "Route 53 can automatically redirect traffic to a standby region during an outage. [cite: 650]"
+    }
+  },
+  {
+    "id": 133,
+    "type": "single",
+    "category": {
+      "de": "WAF - Cost",
+      "en": "WAF - Cost"
+    },
+    "question": {
+      "de": "Was bedeutet das Prinzip 'Adopt a consumption model'?",
+      "en": "What does the principle 'Adopt a consumption model' mean?"
+    },
+    "options": {
+      "de": [
+        "Vorab für Ressourcen bezahlen",
+        "Nur für die Ressourcen bezahlen, die man tatsächlich verbraucht",
+        "Alle Mitarbeiter in Cloud-Kosten schulen",
+        "Immer Reserved Instances nutzen"
+      ],
+      "en": [
+        "Paying for resources upfront",
+        "Paying only for the resources you actually consume",
+        "Training all employees in cloud costs",
+        "Always using Reserved Instances"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Ein Verbrauchsmodell vermeidet Kosten für brachliegende Hardware. [cite: 655]",
+      "en": "A consumption model avoids costs for idle hardware. [cite: 655]"
+    }
+  },
+  {
+    "id": 134,
+    "type": "multiple",
+    "category": {
+      "de": "CAF",
+      "en": "CAF"
+    },
+    "question": {
+      "de": "Wähle ZWEI Perspektiven des AWS Cloud Adoption Framework (CAF).",
+      "en": "Choose TWO perspectives of the AWS Cloud Adoption Framework (CAF)."
+    },
+    "options": {
+      "de": [
+        "Sustainability",
+        "Governance",
+        "People",
+        "Reliability"
+      ],
+      "en": [
+        "Sustainability",
+        "Governance",
+        "People",
+        "Reliability"
+      ]
+    },
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": {
+      "de": "Das CAF besteht aus Business, People, Governance, Platform, Security und Operations. ",
+      "en": "CAF consists of Business, People, Governance, Platform, Security, and Operations. "
+    }
+  },
+  {
+    "id": 135,
+    "type": "single",
+    "category": {
+      "de": "Vorteile der Cloud",
+      "en": "Cloud Benefits"
+    },
+    "question": {
+      "de": "Ein Startup möchte weltweit Nutzer erreichen, ohne eigene Rechenzentren im Ausland zu bauen. Welchen Vorteil nutzen sie?",
+      "en": "A startup wants to reach global users without building its own data centers abroad. Which benefit are they using?"
+    },
+    "options": {
+      "de": [
+        "Go Global in minutes",
+        "Benefit from Economies of Scale",
+        "Stop spending money on data centers",
+        "Increase Speed"
+      ],
+      "en": [
+        "Go Global in minutes",
+        "Benefit from Economies of Scale",
+        "Stop spending money on data centers",
+        "Increase Speed"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "AWS ermöglicht die Bereitstellung in vielen Regionen mit wenigen Klicks. [cite: 601]",
+      "en": "AWS allows deployment in many regions with just a few clicks. [cite: 601]"
+    }
+  },
+  {
+    "id": 136,
+    "type": "single",
+    "category": {
+      "de": "Reliability",
+      "en": "Reliability"
+    },
+    "question": {
+      "de": "Warum ist 'Horizontal Scaling' besser für die Zuverlässigkeit als 'Vertical Scaling'?",
+      "en": "Why is 'Horizontal Scaling' better for reliability than 'Vertical Scaling'?"
+    },
+    "options": {
+      "de": [
+        "Es ist immer billiger",
+        "Man vermeidet einen Single Point of Failure (SPOF)",
+        "Die Instanzen werden leistungsfähiger",
+        "Man braucht keinen Load Balancer"
+      ],
+      "en": [
+        "It is always cheaper",
+        "You avoid a Single Point of Failure (SPOF)",
+        "The instances become more powerful",
+        "No load balancer is needed"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Durch das Hinzufügen mehrerer Instanzen bleibt das System beim Ausfall einer einzelnen Instanz online. [cite: 649, 665]",
+      "en": "By adding multiple instances, the system stays online if a single instance fails. [cite: 649, 665]"
+    }
+  },
+  {
+    "id": 137,
+    "type": "single",
+    "category": {
+      "de": "CAF",
+      "en": "CAF"
+    },
+    "question": {
+      "de": "Welche CAF-Perspektive befasst sich mit Risikomanagement und Compliance-Vorgaben?",
+      "en": "Which CAF perspective deals with risk management and compliance requirements?"
+    },
+    "options": {
+      "de": [
+        "Security",
+        "Business",
+        "Governance",
+        "Platform"
+      ],
+      "en": [
+        "Security",
+        "Business",
+        "Governance",
+        "Platform"
+      ]
+    },
+    "correct": [
+      2
+    ],
+    "explanation": {
+      "de": "Governance stellt sicher, dass Cloud-Investitionen mit organisatorischen Standards übereinstimmen. [cite: 617]",
+      "en": "Governance ensures cloud investments align with organizational standards. [cite: 617]"
+    }
+  },
+  {
+    "id": 138,
+    "type": "single",
+    "category": {
+      "de": "Vorteile der Cloud",
+      "en": "Cloud Benefits"
+    },
+    "question": {
+      "de": "Was bedeutet der Vorteil 'Trade CapEx for OpEx'?",
+      "en": "What does the benefit 'Trade CapEx for OpEx' mean?"
+    },
+    "options": {
+      "de": [
+        "Hohe Vorabinvestitionen in Hardware",
+        "Variable Betriebskosten statt fixer Investitionskosten",
+        "Geld in Rechenzentren investieren",
+        "Lange Abschreibungszyklen"
+      ],
+      "en": [
+        "High upfront investments in hardware",
+        "Variable operating costs instead of fixed investment costs",
+        "Investing money in data centers",
+        "Long depreciation cycles"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Es ermöglicht Unternehmen, nur für genutzte Ressourcen zu zahlen, statt Kapital in Hardware zu binden. [cite: 591, 596]",
+      "en": "It allows companies to pay only for resources used instead of tying up capital in hardware. [cite: 591, 596]"
+    }
+  },
+  {
+    "id": 139,
+    "type": "single",
+    "category": {
+      "de": "Reliability",
+      "en": "Reliability"
+    },
+    "question": {
+      "de": "Was ist das Ziel von 'Multi-AZ' Architekturen?",
+      "en": "What is the goal of 'Multi-AZ' architectures?"
+    },
+    "options": {
+      "de": [
+        "Höhere Performance",
+        "Schutz gegen den Ausfall eines gesamten Rechenzentrums (Hochverfügbarkeit)",
+        "Niedrigere Kosten",
+        "Weltweite Datenreplikation"
+      ],
+      "en": [
+        "Higher performance",
+        "Protection against the failure of an entire data center (High Availability)",
+        "Lower costs",
+        "Worldwide data replication"
+      ]
+    },
+    "correct": [
+      1
+    ],
+    "explanation": {
+      "de": "Multi-AZ stellt sicher, dass Dienste in einer anderen Zone weiterlaufen, wenn eine AZ ausfällt. [cite: 667]",
+      "en": "Multi-AZ ensures services continue in another zone if one AZ fails. [cite: 667]"
+    }
+  },
+  {
+    "id": 140,
+    "type": "single",
+    "category": {
+      "de": "WAF - Cost",
+      "en": "WAF - Cost"
+    },
+    "question": {
+      "de": "Welches Tool hilft dabei, ungenutzte Ressourcen (z. B. nicht genutzte Elastic IPs) zu finden, um Kosten zu sparen?",
+      "en": "Which tool helps to find unused resources (e.g., unused Elastic IPs) to save costs?"
+    },
+    "options": {
+      "de": [
+        "AWS Trusted Advisor",
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS Pricing Calculator"
+      ],
+      "en": [
+        "AWS Trusted Advisor",
+        "AWS Cost Explorer",
+        "AWS Budgets",
+        "AWS Pricing Calculator"
+      ]
+    },
+    "correct": [
+      0
+    ],
+    "explanation": {
+      "de": "Trusted Advisor gibt proaktive Empfehlungen zur Kostenoptimierung. [cite: 656]",
+      "en": "Trusted Advisor provides proactive recommendations for cost optimization. [cite: 656]"
+    }
   }
 ]
