@@ -6657,5 +6657,275 @@
       "de": "KMS ist ein verwalteter Service, der die Erstellung und Kontrolle von kryptografischen Schlüsseln erleichtert.",
       "en": "KMS is a managed service that makes it easy to create and control cryptographic keys."
     }
+  },
+  {
+    "id": 216,
+    "type": "single",
+    "category": { "de": "Networking", "en": "Networking" },
+    "question": {
+      "de": "Wie viele Internet Gateways (IGW) können maximal an eine einzelne VPC angeschlossen werden?",
+      "en": "What is the maximum number of Internet Gateways (IGW) that can be attached to a single VPC?"
+    },
+    "options": {
+      "de": ["Eines", "Zwei", "Eines pro AZ", "Unbegrenzt"],
+      "en": ["One", "Two", "One per AZ", "Unlimited"]
+    },
+    "correct": [0],
+    "explanation": {
+      "de": "Pro VPC ist genau ein Internet Gateway möglich, um die Verbindung zum Internet herzustellen. [cite: 249]",
+      "en": "Exactly one IGW per VPC is possible to establish an internet connection. [cite: 249]"
+    }
+  },
+  {
+    "id": 217,
+    "type": "single",
+    "category": { "de": "Networking", "en": "Networking" },
+    "question": {
+      "de": "In welchem Subnetz muss ein NAT Gateway platziert werden, damit Ressourcen im privaten Subnetz Updates laden können?",
+      "en": "In which subnet must a NAT Gateway be placed so that resources in the private subnet can download updates?"
+    },
+    "options": {
+      "de": [
+        "Im privaten Subnetz",
+        "Im öffentlichen Subnetz",
+        "Direkt am Internet Gateway",
+        "In einer anderen Region"
+      ],
+      "en": [
+        "In the private subnet",
+        "In the public subnet",
+        "Directly at the Internet Gateway",
+        "In another region"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Ein NAT Gateway muss in einem öffentlichen Subnetz liegen, da es selbst eine Route zum Internet Gateway benötigt. [cite: 270]",
+      "en": "A NAT Gateway must reside in a public subnet as it needs a route to the Internet Gateway itself. [cite: 270]"
+    }
+  },
+  {
+    "id": 218,
+    "type": "single",
+    "category": { "de": "Networking", "en": "Networking" },
+    "question": {
+      "de": "Was passiert mit dem Rückverkehr einer Anfrage bei einer Network ACL (NACL), wenn nur eine Inbound-Allow-Regel existiert?",
+      "en": "What happens to the return traffic of a request in a Network ACL (NACL) if only an inbound allow rule exists?"
+    },
+    "options": {
+      "de": [
+        "Er wird automatisch erlaubt (stateful)",
+        "Er wird blockiert, da NACLs stateless sind",
+        "Er wird nur erlaubt, wenn die Security Group es zulässt",
+        "Er wird an das NAT Gateway umgeleitet"
+      ],
+      "en": [
+        "It is automatically allowed (stateful)",
+        "It is blocked because NACLs are stateless",
+        "It is only allowed if the Security Group permits it",
+        "It is redirected to the NAT Gateway"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "NACLs sind stateless. Das bedeutet, für den Rückverkehr muss explizit eine Outbound-Regel existieren. [cite: 315, 338, 354]",
+      "en": "NACLs are stateless. This means an outbound rule must explicitly exist for the return traffic. [cite: 315, 338, 354]"
+    }
+  },
+  {
+    "id": 219,
+    "type": "single",
+    "category": { "de": "DNS", "en": "DNS" },
+    "question": {
+      "de": "Welche Route 53 Routing Policy leitet Nutzer basierend auf der geringsten Netzwerk-Verzögerung zum nächsten Endpunkt?",
+      "en": "Which Route 53 routing policy directs users to the nearest endpoint based on the lowest network delay?"
+    },
+    "options": {
+      "de": [
+        "Failover Routing",
+        "Latency-based Routing",
+        "Weighted Routing",
+        "Geolocation Routing"
+      ],
+      "en": [
+        "Failover Routing",
+        "Latency-based Routing",
+        "Weighted Routing",
+        "Geolocation Routing"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Latency-based Routing minimiert die Verzögerung für globale Nutzer durch Auswahl des performantesten Endpunkts. [cite: 409-413]",
+      "en": "Latency-based routing minimizes delay for global users by selecting the most performant endpoint. [cite: 409-413]"
+    }
+  },
+  {
+    "id": 220,
+    "type": "single",
+    "category": { "de": "Content Delivery", "en": "Content Delivery" },
+    "question": {
+      "de": "Was beschreibt ein 'Cache Miss' bei Amazon CloudFront?",
+      "en": "What describes a 'cache miss' in Amazon CloudFront?"
+    },
+    "options": {
+      "de": [
+        "Die Datei wurde in der Edge Location gefunden",
+        "Die Datei war nicht im Edge-Cache und muss vom Origin geholt werden",
+        "Der Origin-Server ist offline",
+        "Die TTL der Datei ist abgelaufen"
+      ],
+      "en": [
+        "The file was found in the edge location",
+        "The file was not in the edge cache and must be fetched from the origin",
+        "The origin server is offline",
+        "The file's TTL has expired"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Bei einem Cache Miss holt die Edge Location die Daten erst vom Origin (z.B. S3) und speichert sie dann für die Zukunft. [cite: 449]",
+      "en": "In a cache miss, the edge location first fetches the data from the origin (e.g., S3) and then stores it for the future. [cite: 449]"
+    }
+  },
+  {
+    "id": 221,
+    "type": "single",
+    "category": { "de": "Hybrid Connectivity", "en": "Hybrid Connectivity" },
+    "question": {
+      "de": "Welcher Service dient als zentraler Hub, um tausende VPCs und On-Premise-Netzwerke miteinander zu verbinden?",
+      "en": "Which service serves as a central hub to connect thousands of VPCs and on-premises networks together?"
+    },
+    "options": {
+      "de": [
+        "VPC Peering",
+        "AWS Direct Connect",
+        "AWS Transit Gateway",
+        "AWS PrivateLink"
+      ],
+      "en": [
+        "VPC Peering",
+        "AWS Direct Connect",
+        "AWS Transit Gateway",
+        "AWS PrivateLink"
+      ]
+    },
+    "correct": [2],
+    "explanation": {
+      "de": "Transit Gateway skaliert das Netzwerkmanagement durch eine Hub-and-Spoke-Architektur. ",
+      "en": "Transit Gateway scales network management through a hub-and-spoke architecture. "
+    }
+  },
+  {
+    "id": 222,
+    "type": "single",
+    "category": { "de": "Sicherheit", "en": "Security" },
+    "question": {
+      "de": "Was ist der Hauptunterschied zwischen einer Security Group und einer NACL bezüglich der Regeltypen?",
+      "en": "What is the main difference between a Security Group and a NACL regarding rule types?"
+    },
+    "options": {
+      "de": [
+        "SGs unterstützen Deny-Regeln, NACLs nicht",
+        "NACLs unterstützen Allow- und Deny-Regeln, SGs nur Allow",
+        "Es gibt keinen Unterschied",
+        "SGs gelten für das Subnetz, NACLs für die Instanz"
+      ],
+      "en": [
+        "SGs support deny rules, NACLs do not",
+        "NACLs support allow and deny rules, SGs only allow",
+        "There is no difference",
+        "SGs apply to the subnet, NACLs to the instance"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Security Groups können nur erlauben. NACLs können explizit IP-Adressen blockieren (Deny). [cite: 301, 316, 339]",
+      "en": "Security Groups can only allow. NACLs can explicitly block IP addresses (deny). [cite: 301, 316, 339]"
+    }
+  },
+  {
+    "id": 223,
+    "type": "single",
+    "category": { "de": "Compute & Networking", "en": "Compute & Networking" },
+    "question": {
+      "de": "Wo lebt ein Application Load Balancer (ALB) typischerweise in einer sicheren 3-Tier-Architektur?",
+      "en": "Where does an Application Load Balancer (ALB) typically reside in a secure 3-tier architecture?"
+    },
+    "options": {
+      "de": [
+        "Im privaten Subnetz",
+        "Im öffentlichen Subnetz",
+        "Außerhalb der VPC",
+        "Direkt auf der EC2-Instanz"
+      ],
+      "en": [
+        "In the private subnet",
+        "In the public subnet",
+        "Outside the VPC",
+        "Directly on the EC2 instance"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Der ELB lebt im öffentlichen Subnetz, um Traffic aus dem Internet zu empfangen und an private Instanzen zu verteilen. [cite: 501, 504]",
+      "en": "The ELB resides in the public subnet to receive traffic from the internet and distribute it to private instances. [cite: 501, 504]"
+    }
+  },
+  {
+    "id": 224,
+    "type": "single",
+    "category": { "de": "Konnektivität", "en": "Connectivity" },
+    "question": {
+      "de": "Welcher Service wird für REST-APIs genutzt und bietet Funktionen wie Rate Limiting und Versionierung?",
+      "en": "Which service is used for REST APIs and offers features like rate limiting and versioning?"
+    },
+    "options": {
+      "de": [
+        "AWS AppSync",
+        "Amazon API Gateway",
+        "AWS Device Farm",
+        "Amazon Route 53"
+      ],
+      "en": [
+        "AWS AppSync",
+        "Amazon API Gateway",
+        "AWS Device Farm",
+        "Amazon Route 53"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "API Gateway ist die 'Eingangstür' für APIs und verwaltet Authentifizierung und Drosselung. [cite: 550-561]",
+      "en": "API Gateway is the 'front door' for APIs, managing authentication and throttling. [cite: 550-561]"
+    }
+  },
+  {
+    "id": 225,
+    "type": "single",
+    "category": { "de": "Networking", "en": "Networking" },
+    "question": {
+      "de": "Wie viele Availability Zones (AZs) kann ein einzelnes Subnetz umspannen?",
+      "en": "How many Availability Zones (AZs) can a single subnet span?"
+    },
+    "options": {
+      "de": [
+        "Genau eine",
+        "Alle AZs der Region",
+        "Maximal zwei",
+        "Keine, Subnetze sind global"
+      ],
+      "en": [
+        "Exactly one",
+        "All AZs in the region",
+        "Maximum of two",
+        "None, subnets are global"
+      ]
+    },
+    "correct": [0],
+    "explanation": {
+      "de": "Ein Subnetz ist immer fest an genau eine Availability Zone gebunden. ",
+      "en": "A subnet is always strictly tied to exactly one Availability Zone. "
+    }
   }
 ]
