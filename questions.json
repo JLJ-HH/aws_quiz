@@ -6512,5 +6512,150 @@
       "de": "Durch die Bündelung der Nutzung über mehrere Accounts hinweg profitieren Kunden von den gestaffelten Preisen von AWS.",
       "en": "By bundling usage across multiple accounts, customers benefit from AWS tiered pricing."
     }
+  },
+  {
+    "id": 211,
+    "type": "single",
+    "category": {
+      "de": "Developer Tools",
+      "en": "Developer Tools"
+    },
+    "question": {
+      "de": "Welcher AWS-Service wird als verwaltete Quellcodeverwaltung (ähnlich wie GitHub) genutzt?",
+      "en": "Which AWS service is used as a managed source control service (similar to GitHub)?"
+    },
+    "options": {
+      "de": [
+        "AWS CodeBuild",
+        "AWS CodeCommit",
+        "AWS CodeDeploy",
+        "AWS CodePipeline"
+      ],
+      "en": [
+        "AWS CodeBuild",
+        "AWS CodeCommit",
+        "AWS CodeDeploy",
+        "AWS CodePipeline"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "CodeCommit ist ein sicherer, hochskalierbarer, verwalteter Quellcodeverwaltungsdienst für Git-Repositories.",
+      "en": "CodeCommit is a secure, highly scalable, managed source control service for Git repositories."
+    }
+  },
+  {
+    "id": 212,
+    "type": "single",
+    "category": {
+      "de": "Support Pläne",
+      "en": "Support Plans"
+    },
+    "question": {
+      "de": "Ab welchem Support-Level erhält ein Kunde Zugang zu einem Technical Account Manager (TAM)?",
+      "en": "At which support level does a customer gain access to a Technical Account Manager (TAM)?"
+    },
+    "options": {
+      "de": ["Developer", "Business", "Enterprise On-Ramp", "Enterprise"],
+      "en": ["Developer", "Business", "Enterprise On-Ramp", "Enterprise"]
+    },
+    "correct": [3],
+    "explanation": {
+      "de": "Nur der Enterprise-Support-Plan beinhaltet einen dedizierten TAM als primären Ansprechpartner.",
+      "en": "Only the Enterprise support plan includes a dedicated TAM as the primary point of contact."
+    }
+  },
+  {
+    "id": 213,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Wo können Kunden vorgefertigte Softwarelösungen von Drittanbietern finden, kaufen und sofort auf AWS bereitstellen?",
+      "en": "Where can customers find, buy, and immediately deploy third-party software solutions on AWS?"
+    },
+    "options": {
+      "de": [
+        "AWS Artifact",
+        "AWS Marketplace",
+        "AWS CloudFormation",
+        "AWS AppConfig"
+      ],
+      "en": [
+        "AWS Artifact",
+        "AWS Marketplace",
+        "AWS CloudFormation",
+        "AWS AppConfig"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Der AWS Marketplace ist ein digitaler Katalog mit Tausenden von Softwareangeboten von ISVs.",
+      "en": "The AWS Marketplace is a digital catalog with thousands of software listings from ISVs."
+    }
+  },
+  {
+    "id": 214,
+    "type": "single",
+    "category": {
+      "de": "Developer Tools",
+      "en": "Developer Tools"
+    },
+    "question": {
+      "de": "Welcher Service automatisiert die Phasen Release, Test und Deployment (CI/CD Pipeline)?",
+      "en": "Which service automates the release, test, and deployment phases (CI/CD pipeline)?"
+    },
+    "options": {
+      "de": [
+        "AWS CodeCommit",
+        "AWS CodePipeline",
+        "AWS CloudFormation",
+        "AWS Elastic Beanstalk"
+      ],
+      "en": [
+        "AWS CodeCommit",
+        "AWS CodePipeline",
+        "AWS CloudFormation",
+        "AWS Elastic Beanstalk"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "CodePipeline ist ein CD-Service für schnelle und zuverlässige Anwendungs- und Infrastruktur-Updates.",
+      "en": "CodePipeline is a CD service for fast and reliable application and infrastructure updates."
+    }
+  },
+  {
+    "id": 215,
+    "type": "single",
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
+    "question": {
+      "de": "Welcher Service ermöglicht es Kunden, Verschlüsselungsschlüssel zu erstellen und zu verwalten, um Daten in AWS-Services zu schützen?",
+      "en": "Which service allows customers to create and manage encryption keys to protect data in AWS services?"
+    },
+    "options": {
+      "de": [
+        "AWS CloudHSM",
+        "AWS Key Management Service (KMS)",
+        "AWS Secrets Manager",
+        "AWS Shield"
+      ],
+      "en": [
+        "AWS CloudHSM",
+        "AWS Key Management Service (KMS)",
+        "AWS Secrets Manager",
+        "AWS Shield"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "KMS ist ein verwalteter Service, der die Erstellung und Kontrolle von kryptografischen Schlüsseln erleichtert.",
+      "en": "KMS is a managed service that makes it easy to create and control cryptographic keys."
+    }
   }
 ]
