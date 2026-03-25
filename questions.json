@@ -26,11 +26,7 @@
         "Fixed Capacity"
       ]
     },
-    "correct": [
-      0,
-      2,
-      3
-    ],
+    "correct": [0, 2, 3],
     "explanation": {
       "de": "Die 5 NIST-Merkmale sind: On-demand, Broad Network Access, Resource Pooling, Rapid Elasticity, Measured Service.",
       "en": "The 5 NIST characteristics are: On-demand, Broad Network Access, Resource Pooling, Rapid Elasticity, Measured Service."
@@ -61,9 +57,7 @@
         "Rapid Elasticity"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Measured Service sorgt dafür, dass Ressourcen überwacht und nach Verbrauch abgerechnet werden.",
       "en": "Measured Service ensures that resources are monitored and billed based on consumption."
@@ -81,22 +75,10 @@
       "en": "Which model provides the most control?"
     },
     "options": {
-      "de": [
-        "SaaS",
-        "PaaS",
-        "IaaS",
-        "Serverless"
-      ],
-      "en": [
-        "SaaS",
-        "PaaS",
-        "IaaS",
-        "Serverless"
-      ]
+      "de": ["SaaS", "PaaS", "IaaS", "Serverless"],
+      "en": ["SaaS", "PaaS", "IaaS", "Serverless"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "IaaS (Infrastructure as a Service) bietet volle Kontrolle über VMs und Netzwerke.",
       "en": "IaaS (Infrastructure as a Service) provides full control over VMs and networking."
@@ -114,22 +96,10 @@
       "en": "Which model is 'Serverless'?"
     },
     "options": {
-      "de": [
-        "EC2",
-        "Lambda",
-        "EBS",
-        "RDS mit festen Instanzen"
-      ],
-      "en": [
-        "EC2",
-        "Lambda",
-        "EBS",
-        "RDS with fixed instances"
-      ]
+      "de": ["EC2", "Lambda", "EBS", "RDS mit festen Instanzen"],
+      "en": ["EC2", "Lambda", "EBS", "RDS with fixed instances"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS Lambda ist ein klassischer Serverless-Dienst (FaaS).",
       "en": "AWS Lambda is a classic serverless service (FaaS)."
@@ -160,9 +130,7 @@
         "One-time hardware costs"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Operating Expenses (OpEx) sind laufende Kosten, wie sie in der Cloud üblich sind.",
       "en": "Operating Expenses (OpEx) are ongoing costs, typical for cloud usage."
@@ -193,9 +161,7 @@
         "Time to Cloud Optimization"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "TCO umfasst alle Kosten über den gesamten Lebenszyklus einer Ressource.",
       "en": "TCO includes all costs over the entire lifecycle of a resource."
@@ -213,22 +179,10 @@
       "en": "Which 'R' describes 'Lift and Shift'?"
     },
     "options": {
-      "de": [
-        "Refactor",
-        "Replatform",
-        "Rehost",
-        "Retire"
-      ],
-      "en": [
-        "Refactor",
-        "Replatform",
-        "Rehost",
-        "Retire"
-      ]
+      "de": ["Refactor", "Replatform", "Rehost", "Retire"],
+      "en": ["Refactor", "Replatform", "Rehost", "Retire"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Rehost verschiebt Anwendungen ohne Änderungen ('as-is') in die Cloud.",
       "en": "Rehost moves applications to the cloud without changes ('as-is')."
@@ -246,23 +200,10 @@
       "en": "Choose two AWS CAF perspectives."
     },
     "options": {
-      "de": [
-        "Security",
-        "Scaling",
-        "Governance",
-        "Storage"
-      ],
-      "en": [
-        "Security",
-        "Scaling",
-        "Governance",
-        "Storage"
-      ]
+      "de": ["Security", "Scaling", "Governance", "Storage"],
+      "en": ["Security", "Scaling", "Governance", "Storage"]
     },
-    "correct": [
-      0,
-      2
-    ],
+    "correct": [0, 2],
     "explanation": {
       "de": "Die 6 CAF-Perspektiven sind: Business, People, Governance, Platform, Security, Operations.",
       "en": "The 6 CAF perspectives are: Business, People, Governance, Platform, Security, Operations."
@@ -293,9 +234,7 @@
         "A virtual network"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Eine Region besteht aus mindestens drei isolierten Availability Zones.",
       "en": "A region consists of at least three isolated Availability Zones."
@@ -313,12 +252,7 @@
       "en": "Who is responsible for patching guest operating systems? (Shared Responsibility)"
     },
     "options": {
-      "de": [
-        "AWS",
-        "Der Kunde",
-        "Beide gemeinsam",
-        "Der Hardware-Hersteller"
-      ],
+      "de": ["AWS", "Der Kunde", "Beide gemeinsam", "Der Hardware-Hersteller"],
       "en": [
         "AWS",
         "The customer",
@@ -326,9 +260,7 @@
         "The hardware manufacturer"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS ist 'of the cloud' verantwortlich, der Kunde 'in the cloud'.",
       "en": "AWS is responsible 'of the cloud', the customer is 'in the cloud'."
@@ -359,9 +291,7 @@
         "AWS Migration Hub"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Der Pricing Calculator dient der Kostenschätzung für die Zukunft, während der Cost Explorer vergangene Kosten analysiert. [cite: 675, 753]",
       "en": "The Pricing Calculator is for future cost estimation, while Cost Explorer analyzes past costs. [cite: 675, 753]"
@@ -392,9 +322,7 @@
         "Running heavy compute workloads"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Edge Locations fungieren als Caching-Punkte für Amazon CloudFront, um Latenzen weltweit zu senken. [cite: 480-482]",
       "en": "Edge Locations act as caching points for Amazon CloudFront to reduce latency globally. [cite: 480-482]"
@@ -425,9 +353,7 @@
         "Savings Plans"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Spot-Instanzen nutzen freie Kapazitäten und sind extrem günstig, können aber kurzfristig zurückgefordert werden. [cite: 724-727]",
       "en": "Spot Instances use spare capacity and are very cheap but can be reclaimed with short notice. [cite: 724-727]"
@@ -458,9 +384,7 @@
         "Automate cloud operations"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "In der Envision-Phase wird der geschäftliche Nutzen quantifiziert und Stakeholder gewonnen. [cite: 847-850]",
       "en": "The Envision phase involves quantifying business value and gaining stakeholders. [cite: 847-850]"
@@ -491,9 +415,7 @@
         "AWS Direct Connect"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Snowmobile ist ein LKW-Container für extrem große Datenmigrationen im Exabyte-Bereich. [cite: 1038-1041]",
       "en": "Snowmobile is a truck-based container for extremely large data migrations at exabyte scale. [cite: 1038-1041]"
@@ -524,9 +446,7 @@
         "Not deductible at all"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Im Gegensatz zu CapEx sind OpEx-Kosten sofort als Betriebsausgaben absetzbar. [cite: 614-616]",
       "en": "Unlike CapEx, OpEx costs are immediately deductible as operational expenses. [cite: 614-616]"
@@ -544,22 +464,10 @@
       "en": "Which migration strategy is called 'Drop and Shop' because you switch to a SaaS model?"
     },
     "options": {
-      "de": [
-        "Rehost",
-        "Refactor",
-        "Repurchase",
-        "Replatform"
-      ],
-      "en": [
-        "Rehost",
-        "Refactor",
-        "Repurchase",
-        "Replatform"
-      ]
+      "de": ["Rehost", "Refactor", "Repurchase", "Replatform"],
+      "en": ["Rehost", "Refactor", "Repurchase", "Replatform"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Repurchase bedeutet, eine bestehende Lizenz durch ein SaaS-Produkt (z.B. Salesforce) zu ersetzen. [cite: 886-888, 925-931]",
       "en": "Repurchase means replacing an existing license with a SaaS product (e.g., Salesforce). [cite: 886-888, 925-931]"
@@ -590,9 +498,7 @@
         "Color of the data centers"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Compliance (Datenschutz) ist eines der vier Hauptkriterien für die Regionswahl. [cite: 486-490]",
       "en": "Compliance (data protection) is one of the four main criteria for region selection. [cite: 486-490]"
@@ -623,10 +529,7 @@
         "Software licenses"
       ]
     },
-    "correct": [
-      1,
-      2
-    ],
+    "correct": [1, 2],
     "explanation": {
       "de": "Strom, Kühlung und Personalaufwand werden oft bei der TCO-Betrachtung unterschätzt. [cite: 669-671]",
       "en": "Power, cooling, and staffing costs are often underestimated in TCO analysis. [cite: 669-671]"
@@ -657,9 +560,7 @@
         "AWS DataSync"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "DMS ist spezialisiert auf die Migration von Datenbanken, auch zwischen verschiedenen Engines. [cite: 988-989, 1100]",
       "en": "DMS specializes in migrating databases, even between different engines. [cite: 988-989, 1100]"
@@ -692,11 +593,7 @@
         "Network Isolation"
       ]
     },
-    "correct": [
-      0,
-      1,
-      3
-    ],
+    "correct": [0, 1, 3],
     "explanation": {
       "de": "Das Framework besteht aus 6 Säulen: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization und Sustainability. [cite: 52, 67-90]",
       "en": "The framework consists of 6 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability. [cite: 52, 67-90]"
@@ -727,9 +624,7 @@
         "Cost Optimization"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Operational Excellence betont das Ausführen von Operationen als Code (IaC), um Fehler zu minimieren und Prozesse zu automatisieren. [cite: 102, 118]",
       "en": "Operational Excellence emphasizes performing operations as code (IaC) to minimize errors and automate processes. [cite: 102, 118]"
@@ -760,9 +655,7 @@
         "Planning manual restarts for every error"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Reliability bedeutet, Ausfälle einzuplanen (Design for Failure) und Multi-AZ-Architekturen zur automatischen Heilung zu nutzen. [cite: 78, 220, 225]",
       "en": "Reliability means planning for failures (Design for Failure) and using Multi-AZ architectures for self-healing. [cite: 78, 220, 225]"
@@ -793,9 +686,7 @@
         "General Purpose (t-series)"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Memory Optimized Instanzen (z. B. r5, x2) bieten extrem viel RAM für speicherintensive Anwendungen. [cite: 325-329]",
       "en": "Memory Optimized instances (e.g., r5, x2) provide a huge amount of RAM for memory-intensive applications. [cite: 325-329]"
@@ -826,9 +717,7 @@
         "AWS Nitro System"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS Graviton (ARM-basiert) ist effizienter und bietet ein besseres Preis-Leistungs-Verhältnis bei geringerem Energiebedarf. [cite: 414, 424-427]",
       "en": "AWS Graviton (ARM-based) is more efficient and provides a better price-performance ratio with lower energy consumption. [cite: 414, 424-427]"
@@ -859,9 +748,7 @@
         "Generating invoices"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Das Tool hilft Kunden, ihre Workloads anhand eines Fragebogens zu bewerten und Risiken zu identifizieren. [cite: 489-494]",
       "en": "The tool helps customers assess their workloads using a questionnaire and identify risks. [cite: 489-494]"
@@ -892,10 +779,7 @@
         "Management of IAM users"
       ]
     },
-    "correct": [
-      0,
-      2
-    ],
+    "correct": [0, 2],
     "explanation": {
       "de": "AWS ist für die Sicherheit 'of the cloud' (Hardware, globale Infrastruktur) verantwortlich. [cite: 163-168, 537-538]",
       "en": "AWS is responsible for security 'of the cloud' (hardware, global infrastructure). [cite: 163-168, 537-538]"
@@ -926,9 +810,7 @@
         "Using manual scaling instead of Auto Scaling"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Right-Sizing vermeidet Verschwendung, indem Instanzen weder zu groß noch zu klein gewählt werden. [cite: 372, 380-382]",
       "en": "Right-sizing avoids waste by ensuring instances are neither over-provisioned nor under-provisioned. [cite: 372, 380-382]"
@@ -959,9 +841,7 @@
         "Compliance with local laws"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Multi-AZ bedeutet die Verteilung über mehrere Availability Zones, um die Ausfallsicherheit zu erhöhen. [cite: 236, 266, 286]",
       "en": "Multi-AZ means distributing across multiple Availability Zones to increase fault tolerance. [cite: 236, 266, 286]"
@@ -992,9 +872,7 @@
         "Performance Efficiency"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Die Säule Security befasst sich mit dem Schutz von Daten und Systemen, unter anderem durch IAM und Least Privilege. [cite: 71-74, 152]",
       "en": "The Security pillar deals with protecting data and systems, including through IAM and Least Privilege. [cite: 71-74, 152]"
@@ -1025,9 +903,7 @@
         "Improve through game days"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "In der Cloud können Sie on-demand eine Umgebung in Produktionsgröße erstellen, testen und dann wieder löschen, um reale Ergebnisse zu erhalten. [cite: 452, 459]",
       "en": "In the cloud, you can create a production-scale environment on demand, test it, and then delete it to get real-world results. [cite: 452, 459]"
@@ -1058,9 +934,7 @@
         "AWS Transit Gateway"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "ELB (z. B. ALB oder NLB) sorgt für Hochverfügbarkeit, indem es Traffic nur an gesunde Instanzen weiterleitet. [cite: 237-242, 274-275]",
       "en": "ELB (e.g., ALB or NLB) ensures high availability by routing traffic only to healthy instances. [cite: 237-242, 274-275]"
@@ -1091,9 +965,7 @@
         "Replacing an instance with a Spot instance"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Horizontale Skalierung (Scaling Out) bedeutet das Hinzufügen weiterer Ressourcen (Instanzen) und ist ein Cloud-Best-Practice. [cite: 216, 248]",
       "en": "Horizontal scaling (scaling out) means adding more resources (instances) and is a cloud best practice. [cite: 216, 248]"
@@ -1124,9 +996,7 @@
         "Less reliability for more sustainability"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "Multi-AZ-Setups sind teurer als Single-AZ, bieten aber Schutz gegen den Ausfall eines gesamten Rechenzentrums. [cite: 473-477]",
       "en": "Multi-AZ setups are more expensive than single-AZ but provide protection against the failure of an entire data center. [cite: 473-477]"
@@ -1157,9 +1027,7 @@
         "I-family (Storage Optimized)"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Die C-Familie (z. B. c5, c6g) bietet ein hohes Verhältnis von CPU zu Speicher. [cite: 320-324]",
       "en": "The C-family (e.g., c5, c6g) provides a high ratio of CPU to memory. [cite: 320-324]"
@@ -1190,9 +1058,7 @@
         "AWS Systems Manager"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS Config trackt Konfigurationsänderungen und hilft bei der Compliance-Überprüfung. [cite: 131-132]",
       "en": "AWS Config tracks configuration changes and helps with compliance auditing. [cite: 131-132]"
@@ -1223,9 +1089,7 @@
         "Third-party auditors"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS ist für die Sicherheit 'of the cloud' verantwortlich, wozu auch die globale Infrastruktur (Regionen, AZs, Edge) gehört. [cite: 163-168, 537-538]",
       "en": "AWS is responsible for security 'of the cloud', which includes the global infrastructure (Regions, AZs, Edge). [cite: 163-168, 537-538]"
@@ -1256,10 +1120,7 @@
         "Manual provisioning of servers"
       ]
     },
-    "correct": [
-      1,
-      2
-    ],
+    "correct": [1, 2],
     "explanation": {
       "de": "Effiziente Datenspeicherung und hohe Auslastung reduzieren den Energieverbrauch pro Nutzeinheit. [cite: 409, 416, 435]",
       "en": "Efficient data storage and high utilization reduce energy consumption per unit of utility. [cite: 409, 416, 435]"
@@ -1290,9 +1151,7 @@
         "Making all data publicly accessible"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Reliability fokussiert sich darauf, Ausfälle zu überstehen und die Verfügbarkeit sicherzustellen. [cite: 206-207, 212]",
       "en": "Reliability focuses on surviving outages and ensuring availability. [cite: 206-207, 212]"
@@ -1323,9 +1182,7 @@
         "AWS Artifact"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Trusted Advisor prüft die Umgebung auf Best Practices in den Bereichen Kosten, Sicherheit, Toleranz und Performance. [cite: 391, 526]",
       "en": "Trusted Advisor checks the environment for best practices in cost, security, fault tolerance, and performance. [cite: 391, 526]"
@@ -1356,9 +1213,7 @@
         "Amazon CloudWatch"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "CloudFormation ermöglicht 'Infrastructure as Code' (IaC), ein Kernprinzip der Operational Excellence. [cite: 102, 119]",
       "en": "CloudFormation enables 'Infrastructure as Code' (IaC), a core principle of Operational Excellence. [cite: 102, 119]"
@@ -1389,9 +1244,7 @@
         "Economies of scale"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS ermöglicht die weltweite Bereitstellung von Anwendungen in Minuten durch seine globale Infrastruktur. [cite: 575]",
       "en": "AWS enables worldwide application deployment in minutes through its global infrastructure. [cite: 575]"
@@ -1422,9 +1275,7 @@
         "Data transfers between regions are always free"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Durch die enorme Größe von AWS sinken die variablen Kosten, was als Preisvorteil weitergegeben wird. [cite: 568, 571]",
       "en": "Due to the massive scale of AWS, variable costs decrease, which is passed on as a price advantage. [cite: 568, 571]"
@@ -1442,12 +1293,7 @@
       "en": "Under whose responsibility does encrypting customer data 'at rest' fall?"
     },
     "options": {
-      "de": [
-        "AWS",
-        "Der Kunde",
-        "Beide (Shared)",
-        "Der Hardware-Hersteller"
-      ],
+      "de": ["AWS", "Der Kunde", "Beide (Shared)", "Der Hardware-Hersteller"],
       "en": [
         "AWS",
         "The customer",
@@ -1455,9 +1301,7 @@
         "The hardware manufacturer"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Der Kunde ist für die Sicherheit 'IN der Cloud' verantwortlich, wozu die Verschlüsselung seiner Daten gehört. [cite: 171, 175, 544]",
       "en": "The customer is responsible for security 'IN the cloud,' which includes encrypting their data. [cite: 171, 175, 544]"
@@ -1481,16 +1325,9 @@
         "Skalierbarkeit",
         "Elastizität"
       ],
-      "en": [
-        "Agility",
-        "High Availability",
-        "Scalability",
-        "Elasticity"
-      ]
+      "en": ["Agility", "High Availability", "Scalability", "Elasticity"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Hochverfügbarkeit (oft durch Multi-AZ erreicht) stellt sicher, dass das System bei Ausfällen weiterläuft. [cite: 236, 266]",
       "en": "High availability (often achieved through Multi-AZ) ensures the system continues to function during failures. [cite: 236, 266]"
@@ -1521,9 +1358,7 @@
         "Stop guessing capacity"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "Ein Verbrauchsmodell (Pay-as-you-go) stellt sicher, dass man nur für tatsächlich genutzte Ressourcen zahlt. [cite: 367, 561]",
       "en": "A consumption model (Pay-as-you-go) ensures you only pay for resources actually used. [cite: 367, 561]"
@@ -1554,9 +1389,7 @@
         "The customer must take care of hardware cooling"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "Managed Services erlauben es AWS, Ressourcen für viele Kunden zu bündeln und die Hardware-Effizienz zu maximieren. [cite: 411, 541]",
       "en": "Managed services allow AWS to pool resources for many customers and maximize hardware efficiency. [cite: 411, 541]"
@@ -1574,22 +1407,10 @@
       "en": "A company wants to move an application to the cloud without any code changes. Which strategy is this?"
     },
     "options": {
-      "de": [
-        "Refactor",
-        "Replatform",
-        "Rehost",
-        "Repurchase"
-      ],
-      "en": [
-        "Refactor",
-        "Replatform",
-        "Rehost",
-        "Repurchase"
-      ]
+      "de": ["Refactor", "Replatform", "Rehost", "Repurchase"],
+      "en": ["Refactor", "Replatform", "Rehost", "Repurchase"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Rehost (auch Lift-and-Shift) ist der 1:1 Umzug ohne Code-Änderungen. [cite: 598]",
       "en": "Rehost (also known as Lift-and-Shift) is a 1:1 move without code changes. [cite: 598]"
@@ -1620,9 +1441,7 @@
         "Increasing the CPU performance of the primary database"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AZs sind physisch getrennt. Fällt eine AZ aus, bleibt die Datenbank in der anderen AZ verfügbar. [cite: 232-236, 605]",
       "en": "AZs are physically isolated. If one AZ fails, the database remains available in the other AZ. [cite: 232-236, 605]"
@@ -1640,22 +1459,10 @@
       "en": "Which perspective of the AWS Cloud Adoption Framework (CAF) focuses on employee training?"
     },
     "options": {
-      "de": [
-        "Business",
-        "People",
-        "Governance",
-        "Platform"
-      ],
-      "en": [
-        "Business",
-        "People",
-        "Governance",
-        "Platform"
-      ]
+      "de": ["Business", "People", "Governance", "Platform"],
+      "en": ["Business", "People", "Governance", "Platform"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Die People-Perspektive befasst sich mit Kompetenzentwicklung, Training und Kulturwandel. [cite: 590]",
       "en": "The People perspective deals with skills development, training, and cultural change. [cite: 590]"
@@ -1686,9 +1493,7 @@
         "Availability of latest features"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Compliance schlägt alles andere: Rechtliche Anforderungen überstimmen Performance und Kosten. [cite: 178, 191]",
       "en": "Compliance beats everything else: Legal requirements override performance and costs. [cite: 178, 191]"
@@ -1719,9 +1524,7 @@
         "Dedicated Hosts"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Reserved Instances bieten hohe Rabatte (bis zu 72 %) bei einer langfristigen Bindung für stabile Workloads. [cite: 311-315]",
       "en": "Reserved Instances offer high discounts (up to 72%) for long-term commitments for stable workloads. [cite: 311-315]"
@@ -1752,9 +1555,7 @@
         "Performance Efficiency"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Operational Excellence konzentriert sich auf effizienten Betrieb und kontinuierliche Verbesserung durch Automatisierung (IaC). [cite: 65-66]",
       "en": "Operational Excellence focuses on efficient operations and continuous improvement through automation (IaC). [cite: 65-66]"
@@ -1785,9 +1586,7 @@
         "Globally available"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Das 'g' steht für AWS Graviton Prozessoren (ARM), die bis zu 40 % günstiger sein können. [cite: 291-294]",
       "en": "The 'g' stands for AWS Graviton processors (ARM), which can be up to 40% cheaper. [cite: 291-294]"
@@ -1818,9 +1617,7 @@
         "Amazon CloudFront"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Wavelength Zones platzieren AWS-Infrastruktur direkt in den Rechenzentren von Mobilfunkanbietern für AR/VR oder autonomes Fahren. [cite: 201-205]",
       "en": "Wavelength Zones place AWS infrastructure directly within telecommunications providers' data centers for AR/VR or autonomous driving. [cite: 201-205]"
@@ -1838,22 +1635,10 @@
       "en": "Which service provides a 'serverless' solution for running Docker containers without EC2 management?"
     },
     "options": {
-      "de": [
-        "Amazon ECS",
-        "Amazon EKS",
-        "AWS Fargate",
-        "AWS Lambda"
-      ],
-      "en": [
-        "Amazon ECS",
-        "Amazon EKS",
-        "AWS Fargate",
-        "AWS Lambda"
-      ]
+      "de": ["Amazon ECS", "Amazon EKS", "AWS Fargate", "AWS Lambda"],
+      "en": ["Amazon ECS", "Amazon EKS", "AWS Fargate", "AWS Lambda"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Fargate ist die serverlose Engine für ECS und EKS; der Kunde zahlt nur für vCPU und RAM. [cite: 453, 456-458]",
       "en": "Fargate is the serverless engine for ECS and EKS; the customer only pays for vCPU and RAM. [cite: 453, 456-458]"
@@ -1884,9 +1669,7 @@
         "AWS Batch"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Elastic Beanstalk übernimmt das Deployment und Management (EC2, ELB, ASG) automatisch. [cite: 28, 255-257]",
       "en": "Elastic Beanstalk automatically handles the deployment and management (EC2, ELB, ASG). [cite: 28, 255-257]"
@@ -1917,9 +1700,7 @@
         "They protect the entire subnet."
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Security Groups sind stateful und erlauben nur Allow-Regeln (Standard: eingehend blockiert). [cite: 348-353]",
       "en": "Security Groups are stateful and only allow 'Allow' rules (Default: inbound blocked). [cite: 348-353]"
@@ -1950,9 +1731,7 @@
         "Data is encrypted."
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Bei 'Stop' bleiben EBS-Daten erhalten, es fallen keine Compute-Kosten an, aber Storage-Kosten. [cite: 342-343]",
       "en": "In 'Stop' state, EBS data remains intact; no compute costs are incurred, but storage costs apply. [cite: 342-343]"
@@ -1983,9 +1762,7 @@
         "Gateway Load Balancer (GWLB)"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "ALB arbeitet auf Layer 7 und ist ideal für Web-Apps und Microservices. [cite: 550-554]",
       "en": "ALB operates at Layer 7 and is ideal for web apps and microservices. [cite: 550-554]"
@@ -2016,9 +1793,7 @@
         "General Purpose (m5)"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Die R- und X-Familien (Memory Optimized) bieten den höchsten RAM pro vCPU. [cite: 97, 280]",
       "en": "The R and X families (Memory Optimized) provide the highest RAM per vCPU. [cite: 97, 280]"
@@ -2049,9 +1824,7 @@
         "For monitoring CPU metrics"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Das Tool hilft, Workloads systematisch zu bewerten und basierend auf den 6 Säulen zu verbessern. [cite: 62-63]",
       "en": "The tool helps systematically evaluate workloads and improve them based on the 6 pillars. [cite: 62-63]"
@@ -2069,22 +1842,10 @@
       "en": "Which pillar of the framework emphasizes 'Design for Failure'?"
     },
     "options": {
-      "de": [
-        "Security",
-        "Reliability",
-        "Cost Optimization",
-        "Sustainability"
-      ],
-      "en": [
-        "Security",
-        "Reliability",
-        "Cost Optimization",
-        "Sustainability"
-      ]
+      "de": ["Security", "Reliability", "Cost Optimization", "Sustainability"],
+      "en": ["Security", "Reliability", "Cost Optimization", "Sustainability"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Zuverlässigkeit (Reliability) bedeutet, dass Systeme Ausfälle überstehen und sich automatisch erholen. [cite: 71-72]",
       "en": "Reliability means that systems survive outages and recover automatically. [cite: 71-72]"
@@ -2102,22 +1863,10 @@
       "en": "What is the maximum execution time of an AWS Lambda function per call?"
     },
     "options": {
-      "de": [
-        "1 Minute",
-        "5 Minuten",
-        "15 Minuten",
-        "Unbegrenzt"
-      ],
-      "en": [
-        "1 minute",
-        "5 minutes",
-        "15 minutes",
-        "Unlimited"
-      ]
+      "de": ["1 Minute", "5 Minuten", "15 Minuten", "Unbegrenzt"],
+      "en": ["1 minute", "5 minutes", "15 minutes", "Unlimited"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Lambda ist für kurze, event-getriebene Aufgaben gedacht (Limit: 15 Minuten). [cite: 394, 416]",
       "en": "Lambda is intended for short, event-driven tasks (Limit: 15 minutes). [cite: 394, 416]"
@@ -2135,22 +1884,10 @@
       "en": "Which service is best suited for simple websites with fixed monthly prices (Simple Hosting)?"
     },
     "options": {
-      "de": [
-        "Amazon EC2",
-        "AWS Batch",
-        "Amazon Lightsail",
-        "AWS App Runner"
-      ],
-      "en": [
-        "Amazon EC2",
-        "AWS Batch",
-        "Amazon Lightsail",
-        "AWS App Runner"
-      ]
+      "de": ["Amazon EC2", "AWS Batch", "Amazon Lightsail", "AWS App Runner"],
+      "en": ["Amazon EC2", "AWS Batch", "Amazon Lightsail", "AWS App Runner"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Lightsail ist die einfachste Cloud-Plattform mit vorhersehbaren Kosten für Einsteiger. [cite: 492, 508]",
       "en": "Lightsail is the simplest cloud platform with predictable costs for beginners. [cite: 492, 508]"
@@ -2181,9 +1918,7 @@
         "Connecting on-premise hardware to the cloud"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AZs sind physisch getrennte Rechenzentren innerhalb einer Region zur Absicherung gegen lokale Ausfälle. [cite: 158-162, 90]",
       "en": "AZs are physically separate data centers within a region for protection against local outages. [cite: 158-162, 90]"
@@ -2214,10 +1949,7 @@
         "Savings Plans"
       ]
     },
-    "correct": [
-      1,
-      3
-    ],
+    "correct": [1, 3],
     "explanation": {
       "de": "Sowohl RI als auch Savings Plans erfordern eine 1- oder 3-jährige Bindung im Austausch für Rabatte. [cite: 311-315, 321-325]",
       "en": "Both RI and Savings Plans require a 1- or 3-year commitment in exchange for discounts. [cite: 311-315, 321-325]"
@@ -2248,9 +1980,7 @@
         "Only using reserved instances."
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Right-Sizing ist ein Kernprinzip der Kostenoptimierung, um Ressourcenverschwendung zu vermeiden. [cite: 78]",
       "en": "Right-sizing is a core principle of cost optimization to avoid wasting resources. [cite: 78]"
@@ -2268,22 +1998,10 @@
       "en": "Which AWS service is operated at 'Edge Locations' to quickly deliver static content worldwide?"
     },
     "options": {
-      "de": [
-        "Amazon EBS",
-        "AWS Shield",
-        "Amazon CloudFront",
-        "AWS Config"
-      ],
-      "en": [
-        "Amazon EBS",
-        "AWS Shield",
-        "Amazon CloudFront",
-        "AWS Config"
-      ]
+      "de": ["Amazon EBS", "AWS Shield", "Amazon CloudFront", "AWS Config"],
+      "en": ["Amazon EBS", "AWS Shield", "Amazon CloudFront", "AWS Config"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "CloudFront ist das CDN (Content Delivery Network) von AWS und nutzt Edge Locations für Caching. [cite: 55, 166]",
       "en": "CloudFront is the AWS CDN (Content Delivery Network) and uses Edge Locations for caching. [cite: 55, 166]"
@@ -2314,9 +2032,7 @@
         "The framework is a physical service; AWS WAF is documentation only."
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Vorsicht vor der Abkürzung: AWS WAF (Web Application Firewall) vs. Well-Architected Framework (Architektur-Bewertung). [cite: 617-631]",
       "en": "Watch out for the acronym: AWS WAF (Web Application Firewall) vs. Well-Architected Framework (architecture assessment). [cite: 617-631]"
@@ -2334,22 +2050,10 @@
       "en": "What is the promised durability of data in Amazon S3 Standard?"
     },
     "options": {
-      "de": [
-        "99,9 %",
-        "99,99 %",
-        "99,999999999 % (11 Neunen)",
-        "100 %"
-      ],
-      "en": [
-        "99.9%",
-        "99.99%",
-        "99.999999999% (11 nines)",
-        "100%"
-      ]
+      "de": ["99,9 %", "99,99 %", "99,999999999 % (11 Neunen)", "100 %"],
+      "en": ["99.9%", "99.99%", "99.999999999% (11 nines)", "100%"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "S3 ist auf eine extrem hohe Haltbarkeit von 11 Neunen ausgelegt, indem Daten über mindestens 3 AZs repliziert werden. [cite: 85-86]",
       "en": "S3 is designed for extremely high durability of 11 nines by replicating data across at least 3 AZs. [cite: 85-86]"
@@ -2380,9 +2084,7 @@
         "S3 Glacier Deep Archive"
       ]
     },
-    "correct": [
-      3
-    ],
+    "correct": [3],
     "explanation": {
       "de": "Glacier Deep Archive ist die günstigste Klasse für Langzeitarchive mit Abrufzeiten bis zu 12 Stunden. [cite: 110-113]",
       "en": "Glacier Deep Archive is the cheapest class for long-term archives with retrieval times up to 12 hours. [cite: 110-113]"
@@ -2413,9 +2115,7 @@
         "S3 Object Lock"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Lifecycle Policies ermöglichen automatisierte Regeln zum Verschieben oder Löschen von Daten nach X Tagen. [cite: 142-147]",
       "en": "Lifecycle Policies enable automated rules for moving or deleting data after X days. [cite: 142-147]"
@@ -2446,9 +2146,7 @@
         "Copy it via an S3 bucket"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EBS ist an eine AZ gebunden. Ein Snapshot ist nötig, um die Daten AZ-übergreifend oder regional zu bewegen. [cite: 202-209, 216]",
       "en": "EBS is tied to an AZ. A snapshot is required to move data across AZs or regions. [cite: 202-209, 216]"
@@ -2466,22 +2164,10 @@
       "en": "Which service provides a managed file system (NFS) that hundreds of EC2 instances can access simultaneously?"
     },
     "options": {
-      "de": [
-        "Amazon EBS",
-        "Amazon S3",
-        "Amazon EFS",
-        "Amazon FSx for Windows"
-      ],
-      "en": [
-        "Amazon EBS",
-        "Amazon S3",
-        "Amazon EFS",
-        "Amazon FSx for Windows"
-      ]
+      "de": ["Amazon EBS", "Amazon S3", "Amazon EFS", "Amazon FSx for Windows"],
+      "en": ["Amazon EBS", "Amazon S3", "Amazon EFS", "Amazon FSx for Windows"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "EFS ist ein regionaler Service für Linux-Instanzen, der parallelen Zugriff über das NFS-Protokoll erlaubt. [cite: 222-227, 235]",
       "en": "EFS is a regional service for Linux instances that allows parallel access via the NFS protocol. [cite: 222-227, 235]"
@@ -2512,9 +2198,7 @@
         "AWS DataSync"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Storage Gateway verbindet lokale Anwendungen über Standard-Protokolle mit S3, EBS oder Glacier. [cite: 264-276]",
       "en": "Storage Gateway connects local applications to S3, EBS, or Glacier via standard protocols. [cite: 264-276]"
@@ -2545,9 +2229,7 @@
         "Data encryption"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Read Replicas dienen der Entlastung der Primärdatenbank bei leseintensiven Workloads. [cite: 356-363]",
       "en": "Read Replicas are used to offload the primary database for read-intensive workloads. [cite: 356-363]"
@@ -2578,9 +2260,7 @@
         "Storage Auto-Scaling"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Multi-AZ sorgt für Hochverfügbarkeit durch automatisches Failover auf eine synchrone Kopie in einer anderen AZ. [cite: 349-355]",
       "en": "Multi-AZ ensures high availability through automatic failover to a synchronous copy in another AZ. [cite: 349-355]"
@@ -2611,9 +2291,7 @@
         "11 times globally"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Aurora speichert 6 Kopien der Daten verteilt über 3 Availability Zones für maximale Fehlertoleranz. [cite: 374]",
       "en": "Aurora stores 6 copies of data distributed across 3 Availability Zones for maximum fault tolerance. [cite: 374]"
@@ -2644,9 +2322,7 @@
         "Data Warehouse"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "DynamoDB ist eine serverlose NoSQL-Datenbank für Key-Value- und Dokumenten-Datenmodelle. [cite: 406-409]",
       "en": "DynamoDB is a serverless NoSQL database for key-value and document data models. [cite: 406-409]"
@@ -2677,9 +2353,7 @@
         "Amazon Aurora"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Redshift ist für Business Intelligence und analytische Abfragen optimiert, nicht für Transaktionen. [cite: 466-474, 480]",
       "en": "Redshift is optimized for business intelligence and analytical queries, not for transactions. [cite: 466-474, 480]"
@@ -2710,9 +2384,7 @@
         "Amazon DocumentDB"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "ElastiCache unterstützt Redis und Memcached, um häufige Abfragen blitzschnell aus dem RAM zu beantworten. [cite: 485-491]",
       "en": "ElastiCache supports Redis and Memcached to answer frequent queries at lightning speed from RAM. [cite: 485-491]"
@@ -2736,16 +2408,9 @@
         "Amazon QLDB",
         "Amazon Timestream"
       ],
-      "en": [
-        "Amazon RDS",
-        "Amazon Neptune",
-        "Amazon QLDB",
-        "Amazon Timestream"
-      ]
+      "en": ["Amazon RDS", "Amazon Neptune", "Amazon QLDB", "Amazon Timestream"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Neptune ist eine Graph-Datenbank für komplexe Beziehungsstrukturen. [cite: 502-506]",
       "en": "Neptune is a graph database for complex relationship structures. [cite: 502-506]"
@@ -2776,9 +2441,7 @@
         "Amazon DocumentDB"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "QLDB (Quantum Ledger Database) wird für Audit-Trails genutzt, wo Daten niemals gelöscht werden dürfen. [cite: 507-511]",
       "en": "QLDB (Quantum Ledger Database) is used for audit trails where data must never be deleted. [cite: 507-511]"
@@ -2809,9 +2472,7 @@
         "Graph data"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Timestream ist eine Zeitreihen-Datenbank für Milliarden von Events pro Tag, z.B. von IoT-Geräten. [cite: 517-521]",
       "en": "Timestream is a time-series database for billions of events per day, e.g., from IoT devices. [cite: 517-521]"
@@ -2842,9 +2503,7 @@
         "S3 Glacier"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Intelligent-Tiering verschiebt Daten automatisch zwischen Ebenen, um Kosten ohne Performance-Verlust zu sparen. [cite: 120-125]",
       "en": "Intelligent-Tiering automatically moves data between tiers to save costs without performance loss. [cite: 120-125]"
@@ -2875,9 +2534,7 @@
         "Manual scaling possible"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "On-Demand skaliert sofort auf Millionen Anfragen ohne Vorab-Konfiguration. [cite: 426-429]",
       "en": "On-demand scales instantly to millions of requests without upfront configuration. [cite: 426-429]"
@@ -2908,9 +2565,7 @@
         "Amazon ElastiCache"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Für strukturierte Daten mit Beziehungen (SQL) ist RDS oder Aurora die richtige Wahl. [cite: 288-294, 527-528]",
       "en": "For structured data with relationships (SQL), RDS or Aurora is the right choice. [cite: 288-294, 527-528]"
@@ -2941,9 +2596,7 @@
         "EFS is AZ-bound, EBS is regional"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EBS ist wie eine lokale Festplatte (ein Server), EFS wie ein Netzlaufwerk (viele Server). [cite: 235, 253-260]",
       "en": "EBS is like a local hard drive (one server), EFS like a network drive (many servers). [cite: 235, 253-260]"
@@ -2974,9 +2627,7 @@
         "It has no backup function"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Aurora Serverless ermöglicht automatisches Skalieren und pausiert sogar bei Nichtnutzung, um Kosten zu sparen. [cite: 376-377]",
       "en": "Aurora Serverless enables automatic scaling and even pauses during non-use to save costs. [cite: 376-377]"
@@ -3007,9 +2658,7 @@
         "Measured Service"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Resource Pooling (Multi-Tenancy) bedeutet, dass sich viele Kunden dieselbe physische Infrastruktur teilen. [cite: 581, 582, 585]",
       "en": "Resource Pooling (multi-tenancy) means that many customers share the same physical infrastructure. [cite: 581, 582, 585]"
@@ -3040,9 +2689,7 @@
         "Broad Network Access"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Rapid Elasticity beschreibt die Fähigkeit, Ressourcen schnell nach oben oder unten zu skalieren. [cite: 581, 582, 586]",
       "en": "Rapid Elasticity describes the ability to scale resources up or down quickly. [cite: 581, 582, 586]"
@@ -3073,9 +2720,7 @@
         "Physical presence in the data center"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Broad Network Access bedeutet, dass Dienste über das Netzwerk mit Standardmechanismen für verschiedene Client-Plattformen verfügbar sind. [cite: 581, 582, 584]",
       "en": "Broad Network Access means services are available over the network using standard mechanisms for various client platforms. [cite: 581, 582, 584]"
@@ -3093,22 +2738,10 @@
       "en": "In which service model is the customer responsible for patching the operating system?"
     },
     "options": {
-      "de": [
-        "SaaS",
-        "PaaS",
-        "IaaS",
-        "FaaS (Serverless)"
-      ],
-      "en": [
-        "SaaS",
-        "PaaS",
-        "IaaS",
-        "FaaS (Serverless)"
-      ]
+      "de": ["SaaS", "PaaS", "IaaS", "FaaS (Serverless)"],
+      "en": ["SaaS", "PaaS", "IaaS", "FaaS (Serverless)"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "In IaaS (z.B. EC2) hat der Kunde die Kontrolle über das Betriebssystem und muss es selbst warten. [cite: 603, 604, 663]",
       "en": "In IaaS (e.g., EC2), the customer has control over the operating system and must maintain it themselves. [cite: 603, 604, 663]"
@@ -3126,22 +2759,10 @@
       "en": "A company uses Microsoft 365 or Salesforce. Which cloud model is this?"
     },
     "options": {
-      "de": [
-        "IaaS",
-        "PaaS",
-        "SaaS",
-        "On-Premise"
-      ],
-      "en": [
-        "IaaS",
-        "PaaS",
-        "SaaS",
-        "On-Premise"
-      ]
+      "de": ["IaaS", "PaaS", "SaaS", "On-Premise"],
+      "en": ["IaaS", "PaaS", "SaaS", "On-Premise"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "SaaS bietet fertige Anwendungen, bei denen der Anbieter die gesamte Infrastruktur verwaltet. [cite: 603, 606]",
       "en": "SaaS provides ready-to-use applications where the provider manages the entire infrastructure. [cite: 603, 606]"
@@ -3172,9 +2793,7 @@
         "Hardware as a Service"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "PaaS nimmt dem Kunden das Management von Infrastruktur und OS ab, lässt aber Kontrolle über den Code. [cite: 603, 605, 700]",
       "en": "PaaS relieves the customer of infrastructure and OS management but allows control over the code. [cite: 603, 605, 700]"
@@ -3205,9 +2824,7 @@
         "You don't need to configure security groups"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Serverless-Dienste wie Lambda rechnen exakt nach tatsächlicher Nutzungszeit ab. [cite: 603, 607, 717]",
       "en": "Serverless services like Lambda bill exactly based on actual usage time. [cite: 603, 607, 717]"
@@ -3238,10 +2855,7 @@
         "Costs are shared with other companies"
       ]
     },
-    "correct": [
-      0,
-      2
-    ],
+    "correct": [0, 2],
     "explanation": {
       "de": "On-demand Self-service bedeutet: Ressourcen auf Abruf buchen, ohne dass ein Mitarbeiter des Anbieters eingreifen muss. [cite: 581, 582, 583]",
       "en": "On-demand Self-service means: provision resources on demand without a provider employee needing to intervene. [cite: 581, 582, 583]"
@@ -3272,9 +2886,7 @@
         "Nobody"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Bei SaaS übernimmt der Anbieter fast die gesamte Verantwortung für Infrastruktur und App. [cite: 603, 606, 660, 663]",
       "en": "In SaaS, the provider takes almost all responsibility for the infrastructure and app. [cite: 603, 606, 660, 663]"
@@ -3305,9 +2917,7 @@
         "Broad Network Access"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Measured Service bedeutet, dass die Cloud-Systeme die Nutzung automatisch messen und transparent abrechnen. [cite: 581, 582, 587]",
       "en": "Measured Service means cloud systems automatically measure usage and provide transparent billing. [cite: 581, 582, 587]"
@@ -3338,9 +2948,7 @@
         "Build monolithic apps"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "In der Cloud entfällt das Schätzen von Hardware-Käufen durch automatische Skalierung (Auto Scaling). [cite: 598]",
       "en": "In the cloud, guessing hardware purchases is eliminated through automatic scaling (Auto Scaling). [cite: 598]"
@@ -3371,9 +2979,7 @@
         "Manual backups for every failure"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Zuverlässige Systeme nutzen Multi-AZ-Setups, um sich bei Fehlern automatisch zu erholen. [cite: 649, 680]",
       "en": "Reliable systems use Multi-AZ setups to automatically recover from failures. [cite: 649, 680]"
@@ -3404,9 +3010,7 @@
         "No load balancer is needed"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Horizontale Skalierung fügt mehr Instanzen hinzu. Fällt eine aus, übernehmen die anderen. [cite: 649, 665]",
       "en": "Horizontal scaling adds more instances. If one fails, the others take over. [cite: 649, 665]"
@@ -3437,9 +3041,7 @@
         "The local government"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS verantwortet die Sicherheit 'OFF der Cloud', wozu Hardware und Gebäude gehören. ",
       "en": "AWS is responsible for security 'OF the cloud', which includes hardware and buildings. "
@@ -3463,16 +3065,9 @@
         "Der Betriebssystem-Hersteller (z.B. Microsoft)",
         "Niemand"
       ],
-      "en": [
-        "AWS",
-        "The customer",
-        "The OS vendor (e.g., Microsoft)",
-        "Nobody"
-      ]
+      "en": ["AWS", "The customer", "The OS vendor (e.g., Microsoft)", "Nobody"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Bei IaaS (EC2) liegt die Verantwortung für das Betriebssystem beim Kunden. [cite: 604, 663]",
       "en": "With IaaS (EC2), responsibility for the operating system lies with the customer. [cite: 604, 663]"
@@ -3503,9 +3098,7 @@
         "Creating the database schema"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Bei Managed Services (RDS) übernimmt AWS das Patching der Software und Infrastruktur. [cite: 751-752]",
       "en": "With managed services (RDS), AWS handles software and infrastructure patching. [cite: 751-752]"
@@ -3536,9 +3129,7 @@
         "All servers are in the same AZ"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Lose Kopplung (z.B. via SQS) verhindert Kettenreaktionen bei Fehlern. [cite: 680]",
       "en": "Loose coupling (e.g., via SQS) prevents chain reactions during failures. [cite: 680]"
@@ -3569,9 +3160,7 @@
         "The hardware manufacturer"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Security Groups sind die Firewall des Kunden 'IN der Cloud'. [cite: 663, 715]",
       "en": "Security Groups are the customer's firewall 'IN the cloud'. [cite: 663, 715]"
@@ -3602,9 +3191,7 @@
         "Mechanical Sympathy"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "AWS stellt komplexe Technologien (KI, Datenbanken) als Service bereit, sodass jeder sie einfach nutzen kann. [cite: 652]",
       "en": "AWS provides complex technologies (AI, databases) as a service so everyone can easily use them. [cite: 652]"
@@ -3635,9 +3222,7 @@
         "The local waste management"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Die physische Sicherheit und Hardware-Wartung liegt zu 100 % bei AWS. ",
       "en": "Physical security and hardware maintenance are 100% the responsibility of AWS. "
@@ -3668,9 +3253,7 @@
         "Manually maintaining instances"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Wähle z.B. 'Memory Optimized' für Datenbanken, um das Beste aus der Cloud herauszuholen. [cite: 670-675]",
       "en": "Choose e.g. 'Memory Optimized' for databases to get the most out of the cloud. [cite: 670-675]"
@@ -3688,22 +3271,10 @@
       "en": "A company uses Amazon S3. Who is responsible for ensuring that access permissions (bucket policies) are not accidentally 'Public'?"
     },
     "options": {
-      "de": [
-        "AWS",
-        "Der Kunde",
-        "Der ISP",
-        "Der Webbrowser"
-      ],
-      "en": [
-        "AWS",
-        "The customer",
-        "The ISP",
-        "The web browser"
-      ]
+      "de": ["AWS", "Der Kunde", "Der ISP", "Der Webbrowser"],
+      "en": ["AWS", "The customer", "The ISP", "The web browser"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Die Konfiguration von Zugriffsrechten und die Sicherheit der Daten liegen beim Kunden. ",
       "en": "Configuration of access rights and data security lie with the customer. "
@@ -3734,9 +3305,7 @@
         "Wait for failures to occur"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Automatisierung via CloudFormation reduziert manuelle Fehler. [cite: 642-643]",
       "en": "Automation via CloudFormation reduces manual errors. [cite: 642-643]"
@@ -3767,10 +3336,7 @@
         "Server cooling"
       ]
     },
-    "correct": [
-      1,
-      2
-    ],
+    "correct": [1, 2],
     "explanation": {
       "de": "Bei EC2 trägt der Kunde die Verantwortung für ALLES oberhalb der Virtualisierungsschicht. ",
       "en": "With EC2, the customer is responsible for EVERYTHING above the virtualization layer. "
@@ -3801,9 +3367,7 @@
         "Sustainability"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Serverless erlaubt es, Ressourcen optimal und ohne Leerlauf für die Performance zu nutzen. [cite: 651-653]",
       "en": "Serverless allows for optimal resource use for performance without idle time. [cite: 651-653]"
@@ -3834,9 +3398,7 @@
         "AWS Trusted Advisor"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "CloudTrail zeichnet auf, WER, WANN und von WO eine Aktion (API-Aufruf) durchgeführt hat. ",
       "en": "CloudTrail records WHO, WHEN, and from WHERE an action (API call) was performed. "
@@ -3867,9 +3429,7 @@
         "Amazon EC2 Auto Scaling"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "CloudFormation setzt das Prinzip 'Operations as Code' (IaC) um. [cite: 643-644, 697]",
       "en": "CloudFormation implements the principle of 'Operations as Code' (IaC). [cite: 643-644, 697]"
@@ -3900,9 +3460,7 @@
         "AWS Trusted Advisor"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "CloudWatch ist der zentrale Monitoring-Service für Metriken und Alarme. ",
       "en": "CloudWatch is the central monitoring service for metrics and alarms. "
@@ -3933,9 +3491,7 @@
         "AWS Budgets"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Das Well-Architected Tool ist kostenlos in der Konsole verfügbar und dient der systematischen Bewertung. [cite: 639-640]",
       "en": "The Well-Architected Tool is available for free in the console and is used for systematic assessment. [cite: 639-640]"
@@ -3966,9 +3522,7 @@
         "AWS Artifact"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "Systems Manager (besonders der Patch Manager) hilft beim operativen Management von Instanzen. [cite: 620]",
       "en": "Systems Manager (especially Patch Manager) helps with the operational management of instances. [cite: 620]"
@@ -3999,9 +3553,7 @@
         "Performance Efficiency"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "GuardDuty ist ein Security-Service, der nach verdächtigen Aktivitäten sucht. [cite: 645-647]",
       "en": "GuardDuty is a security service that looks for suspicious activities. [cite: 645-647]"
@@ -4032,9 +3584,7 @@
         "AWS Config"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Das Personal Health Dashboard zeigt Ereignisse an, die spezifisch den eigenen Account betreffen.",
       "en": "The Personal Health Dashboard shows events specifically affecting your own account."
@@ -4065,9 +3615,7 @@
         "Reliability"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Das Finden und Löschen ungenutzter Ressourcen ist ein Kernprinzip der Kostenoptimierung. [cite: 654-656]",
       "en": "Finding and deleting unused resources is a core principle of cost optimization. [cite: 654-656]"
@@ -4098,9 +3646,7 @@
         "AWS Trusted Advisor"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS Config überwacht die Einhaltung von Richtlinien und Änderungen an Ressourcen. ",
       "en": "AWS Config monitors compliance with policies and changes to resources. "
@@ -4131,9 +3677,7 @@
         "Going global in minutes"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Effizientes Speichern reduziert den physischen Platz- und Energiebedarf. [cite: 657-659]",
       "en": "Efficient storage reduces physical space and energy requirements. [cite: 657-659]"
@@ -4164,9 +3708,7 @@
         "Trade CapEx for OpEx"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Agilität bedeutet, dass Entwickler sofort experimentieren können, ohne auf Hardware-Lieferungen zu warten. [cite: 599]",
       "en": "Agility means developers can experiment immediately without waiting for hardware deliveries. [cite: 599]"
@@ -4184,22 +3726,10 @@
       "en": "Which AWS CAF perspective focuses on measuring business value and return on investment (ROI)?"
     },
     "options": {
-      "de": [
-        "Governance",
-        "Platform",
-        "Business",
-        "Operations"
-      ],
-      "en": [
-        "Governance",
-        "Platform",
-        "Business",
-        "Operations"
-      ]
+      "de": ["Governance", "Platform", "Business", "Operations"],
+      "en": ["Governance", "Platform", "Business", "Operations"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Die Business-Perspektive stellt sicher, dass die Cloud-Strategie die Geschäftsziele unterstützt. [cite: 615]",
       "en": "The Business perspective ensures that the cloud strategy supports business goals. [cite: 615]"
@@ -4230,9 +3760,7 @@
         "AWS Config"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Auto Scaling überwacht den Status der Instanzen und stellt sicher, dass die gewünschte Anzahl immer läuft. [cite: 648-650, 728]",
       "en": "Auto Scaling monitors instance health and ensures the desired number is always running. [cite: 648-650, 728]"
@@ -4263,9 +3791,7 @@
         "Only using Spot instances"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Right-Sizing verhindert die Bezahlung für ungenutzte CPU- oder RAM-Kapazitäten. [cite: 655]",
       "en": "Right-sizing prevents paying for unused CPU or RAM capacities. [cite: 655]"
@@ -4296,9 +3822,7 @@
         "Stop guessing capacity"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS gibt die durch Größe erzielten Kosteneinsparungen in Form von niedrigeren Preisen an Kunden weiter. [cite: 594, 597]",
       "en": "AWS passes on cost savings achieved through scale to customers in the form of lower prices. [cite: 594, 597]"
@@ -4316,22 +3840,10 @@
       "en": "Which CAF perspective deals with the automation of IT services and incident management?"
     },
     "options": {
-      "de": [
-        "Governance",
-        "Operations",
-        "Platform",
-        "Security"
-      ],
-      "en": [
-        "Governance",
-        "Operations",
-        "Platform",
-        "Security"
-      ]
+      "de": ["Governance", "Operations", "Platform", "Security"],
+      "en": ["Governance", "Operations", "Platform", "Security"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Operations stellt sicher, dass Cloud-Dienste effizient geliefert und gewartet werden. [cite: 620]",
       "en": "Operations ensures that cloud services are delivered and maintained efficiently. [cite: 620]"
@@ -4362,9 +3874,7 @@
         "By creating backups"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Route 53 kann Traffic bei einem Ausfall automatisch auf eine Standby-Region umleiten. [cite: 650]",
       "en": "Route 53 can automatically redirect traffic to a standby region during an outage. [cite: 650]"
@@ -4395,9 +3905,7 @@
         "Always using Reserved Instances"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Ein Verbrauchsmodell vermeidet Kosten für brachliegende Hardware. [cite: 655]",
       "en": "A consumption model avoids costs for idle hardware. [cite: 655]"
@@ -4415,23 +3923,10 @@
       "en": "Choose TWO perspectives of the AWS Cloud Adoption Framework (CAF)."
     },
     "options": {
-      "de": [
-        "Sustainability",
-        "Governance",
-        "People",
-        "Reliability"
-      ],
-      "en": [
-        "Sustainability",
-        "Governance",
-        "People",
-        "Reliability"
-      ]
+      "de": ["Sustainability", "Governance", "People", "Reliability"],
+      "en": ["Sustainability", "Governance", "People", "Reliability"]
     },
-    "correct": [
-      1,
-      2
-    ],
+    "correct": [1, 2],
     "explanation": {
       "de": "Das CAF besteht aus Business, People, Governance, Platform, Security und Operations. ",
       "en": "CAF consists of Business, People, Governance, Platform, Security, and Operations. "
@@ -4462,9 +3957,7 @@
         "Increase Speed"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "AWS ermöglicht die Bereitstellung in vielen Regionen mit wenigen Klicks. [cite: 601]",
       "en": "AWS allows deployment in many regions with just a few clicks. [cite: 601]"
@@ -4495,9 +3988,7 @@
         "No load balancer is needed"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Durch das Hinzufügen mehrerer Instanzen bleibt das System beim Ausfall einer einzelnen Instanz online. [cite: 649, 665]",
       "en": "By adding multiple instances, the system stays online if a single instance fails. [cite: 649, 665]"
@@ -4515,22 +4006,10 @@
       "en": "Which CAF perspective deals with risk management and compliance requirements?"
     },
     "options": {
-      "de": [
-        "Security",
-        "Business",
-        "Governance",
-        "Platform"
-      ],
-      "en": [
-        "Security",
-        "Business",
-        "Governance",
-        "Platform"
-      ]
+      "de": ["Security", "Business", "Governance", "Platform"],
+      "en": ["Security", "Business", "Governance", "Platform"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Governance stellt sicher, dass Cloud-Investitionen mit organisatorischen Standards übereinstimmen. [cite: 617]",
       "en": "Governance ensures cloud investments align with organizational standards. [cite: 617]"
@@ -4561,9 +4040,7 @@
         "Long depreciation cycles"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Es ermöglicht Unternehmen, nur für genutzte Ressourcen zu zahlen, statt Kapital in Hardware zu binden. [cite: 591, 596]",
       "en": "It allows companies to pay only for resources used instead of tying up capital in hardware. [cite: 591, 596]"
@@ -4594,9 +4071,7 @@
         "Worldwide data replication"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Multi-AZ stellt sicher, dass Dienste in einer anderen Zone weiterlaufen, wenn eine AZ ausfällt. [cite: 667]",
       "en": "Multi-AZ ensures services continue in another zone if one AZ fails. [cite: 667]"
@@ -4627,9 +4102,7 @@
         "AWS Pricing Calculator"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "Trusted Advisor gibt proaktive Empfehlungen zur Kostenoptimierung. [cite: 656]",
       "en": "Trusted Advisor provides proactive recommendations for cost optimization. [cite: 656]"
@@ -4660,9 +4133,7 @@
         "AWS CodeDeploy"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "CloudFormation ermöglicht die Bereitstellung von Ressourcen über YAML/JSON-Templates. [cite: 697]"
     }
@@ -4692,9 +4163,7 @@
         "Gateway Load Balancer (GWLB)"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Der NLB ist für Performance und statische IPs auf Netzwerk-Ebene optimiert. [cite: 726]"
     }
@@ -4724,9 +4193,7 @@
         "They can only be used for backups"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EBS-Volumes verhalten sich wie physische Festplatten und existieren innerhalb einer AZ. [cite: 738-739, 769]"
     }
@@ -4743,22 +4210,10 @@
       "en": "Which protocol does Amazon EFS use to provide file access for Linux-based EC2 instances?"
     },
     "options": {
-      "de": [
-        "SMB",
-        "iSCSI",
-        "NFS (Network File System)",
-        "HTTP/HTTPS"
-      ],
-      "en": [
-        "SMB",
-        "iSCSI",
-        "NFS (Network File System)",
-        "HTTP/HTTPS"
-      ]
+      "de": ["SMB", "iSCSI", "NFS (Network File System)", "HTTP/HTTPS"],
+      "en": ["SMB", "iSCSI", "NFS (Network File System)", "HTTP/HTTPS"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "EFS ist ein verwaltetes NFS-Dateisystem für Linux-Workloads. [cite: 742, 770]"
     }
@@ -4788,9 +4243,7 @@
         "11 copies in 3 AZs"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Aurora bietet extreme Fehlertoleranz durch 6-fache Replikation über 3 AZs hinweg. [cite: 753]"
     }
@@ -4820,9 +4273,7 @@
         "AWS Amplify"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Elastic Beanstalk übernimmt das Management der Infrastruktur, während der Kunde nur den Code hochlädt. [cite: 605, 700]"
     }
@@ -4852,9 +4303,7 @@
         "Amazon Route 53"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Direct Connect umgeht das öffentliche Internet für stabilere Performance und Sicherheit. [cite: 177]"
     }
@@ -4884,9 +4333,7 @@
         "The volume is automatically terminated"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Bei einem 'Stop' bleiben EBS-Daten erhalten, während nur die Compute-Kosten pausiert werden. [cite: 707]"
     }
@@ -4916,9 +4363,7 @@
         "AWS Storage Gateway"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "FSx for Windows ist die Lösung für Windows-spezifische Protokolle (SMB). [cite: 231-234]"
     }
@@ -4935,22 +4380,10 @@
       "en": "How many read replicas can Amazon Aurora provide at maximum to scale read performance?"
     },
     "options": {
-      "de": [
-        "Bis zu 5",
-        "Bis zu 10",
-        "Bis zu 15",
-        "Unbegrenzt"
-      ],
-      "en": [
-        "Up to 5",
-        "Up to 10",
-        "Up to 15",
-        "Unlimited"
-      ]
+      "de": ["Bis zu 5", "Bis zu 10", "Bis zu 15", "Unbegrenzt"],
+      "en": ["Up to 5", "Up to 10", "Up to 15", "Unlimited"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Im Gegensatz zu Standard-RDS (5) erlaubt Aurora bis zu 15 Read Replicas. [cite: 378]"
     }
@@ -4980,9 +4413,7 @@
         "AWS Global Accelerator"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Der ALB ist für pfadbasiertes Routing auf Applikations-Ebene (Layer 7) zuständig. [cite: 725]"
     }
@@ -5012,9 +4443,7 @@
         "AWS CloudFormation"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Das CDK wandelt Code in CloudFormation-Templates um. [cite: 699]"
     }
@@ -5044,9 +4473,7 @@
         "sc1 (Cold HDD)"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "gp3 bietet ein ausgewogenes Verhältnis von Preis und Leistung für SSD-Speicher. [cite: 195, 199]"
     }
@@ -5076,9 +4503,7 @@
         "It does not require an internet connection"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EFS ermöglicht gemeinsamen Dateizugriff über die gesamte Region hinweg. [cite: 742, 770]"
     }
@@ -5108,9 +4533,7 @@
         "MariaDB and MySQL"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Aurora ist voll kompatibel zu Open-Source-MySQL und PostgreSQL. [cite: 370, 753]"
     }
@@ -5140,9 +4563,7 @@
         "AWS CodeDeploy"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "CloudFormation ermöglicht die Bereitstellung von Ressourcen über YAML/JSON-Templates. [cite: 697]"
     }
@@ -5172,9 +4593,7 @@
         "Gateway Load Balancer (GWLB)"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Der NLB ist für Performance und statische IPs auf Netzwerk-Ebene optimiert. [cite: 726]"
     }
@@ -5204,9 +4623,7 @@
         "They can only be used for backups"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EBS-Volumes verhalten sich wie physische Festplatten und existieren innerhalb einer AZ. [cite: 738-739, 769]"
     }
@@ -5223,22 +4640,10 @@
       "en": "Which protocol does Amazon EFS use to provide file access for Linux-based EC2 instances?"
     },
     "options": {
-      "de": [
-        "SMB",
-        "iSCSI",
-        "NFS (Network File System)",
-        "HTTP/HTTPS"
-      ],
-      "en": [
-        "SMB",
-        "iSCSI",
-        "NFS (Network File System)",
-        "HTTP/HTTPS"
-      ]
+      "de": ["SMB", "iSCSI", "NFS (Network File System)", "HTTP/HTTPS"],
+      "en": ["SMB", "iSCSI", "NFS (Network File System)", "HTTP/HTTPS"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "EFS ist ein verwaltetes NFS-Dateisystem für Linux-Workloads. [cite: 742, 770]"
     }
@@ -5268,9 +4673,7 @@
         "11 copies in 3 AZs"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Aurora bietet extreme Fehlertoleranz durch 6-fache Replikation über 3 AZs hinweg. [cite: 753]"
     }
@@ -5300,9 +4703,7 @@
         "AWS Amplify"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Elastic Beanstalk übernimmt das Management der Infrastruktur, während der Kunde nur den Code hochlädt. [cite: 605, 700]"
     }
@@ -5332,9 +4733,7 @@
         "Amazon Route 53"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Direct Connect umgeht das öffentliche Internet für stabilere Performance und Sicherheit. [cite: 177]"
     }
@@ -5364,9 +4763,7 @@
         "The volume is automatically terminated"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Bei einem 'Stop' bleiben EBS-Daten erhalten, während nur die Compute-Kosten pausiert werden. [cite: 707]"
     }
@@ -5396,9 +4793,7 @@
         "AWS Storage Gateway"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "FSx for Windows ist die Lösung für Windows-spezifische Protokolle (SMB). [cite: 231-234]"
     }
@@ -5415,22 +4810,10 @@
       "en": "How many read replicas can Amazon Aurora provide at maximum to scale read performance?"
     },
     "options": {
-      "de": [
-        "Bis zu 5",
-        "Bis zu 10",
-        "Bis zu 15",
-        "Unbegrenzt"
-      ],
-      "en": [
-        "Up to 5",
-        "Up to 10",
-        "Up to 15",
-        "Unlimited"
-      ]
+      "de": ["Bis zu 5", "Bis zu 10", "Bis zu 15", "Unbegrenzt"],
+      "en": ["Up to 5", "Up to 10", "Up to 15", "Unlimited"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Im Gegensatz zu Standard-RDS (5) erlaubt Aurora bis zu 15 Read Replicas. [cite: 378]"
     }
@@ -5460,9 +4843,7 @@
         "AWS Global Accelerator"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Der ALB ist für pfadbasiertes Routing auf Applikations-Ebene (Layer 7) zuständig. [cite: 725]"
     }
@@ -5492,9 +4873,7 @@
         "AWS CloudFormation"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Das CDK wandelt Code in CloudFormation-Templates um. [cite: 699]"
     }
@@ -5524,9 +4903,7 @@
         "sc1 (Cold HDD)"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "gp3 bietet ein ausgewogenes Verhältnis von Preis und Leistung für SSD-Speicher. [cite: 195, 199]"
     }
@@ -5556,9 +4933,7 @@
         "It does not require an internet connection"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EFS ermöglicht gemeinsamen Dateizugriff über die gesamte Region hinweg. [cite: 742, 770]"
     }
@@ -5588,9 +4963,7 @@
         "MariaDB and MySQL"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Aurora ist voll kompatibel zu Open-Source-MySQL und PostgreSQL. [cite: 370, 753]"
     }
@@ -5620,9 +4993,7 @@
         "TTL"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "DAX ist ein verwalteter In-Memory-Cache speziell für DynamoDB, um die Performance massiv zu steigern. [cite: 434]"
     }
@@ -5652,9 +5023,7 @@
         "It is a NoSQL database"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Redshift ist ein Data Warehouse, das für komplexe Analysen (OLAP) im Petabyte-Bereich gebaut wurde. [cite: 469-472, 761]"
     }
@@ -5684,9 +5053,7 @@
         "Oracle and MariaDB"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "ElastiCache bietet verwaltete Redis- und Memcached-Umgebungen für In-Memory-Caching an. [cite: 487, 762]"
     }
@@ -5716,9 +5083,7 @@
         "Amazon Redshift"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Neptune ist eine Graph-Datenbank, die speziell für hochvernetzte Datensätze entwickelt wurde. "
     }
@@ -5748,9 +5113,7 @@
         "It is used for caching websites"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "QLDB fungiert als Ledger (Hauptbuch), bei dem Historien nicht gelöscht oder manipuliert werden können. "
     }
@@ -5767,22 +5130,10 @@
       "en": "Which feature allows DynamoDB to automatically replicate data across multiple AWS regions?"
     },
     "options": {
-      "de": [
-        "DAX",
-        "Global Tables",
-        "DynamoDB Streams",
-        "Partition Keys"
-      ],
-      "en": [
-        "DAX",
-        "Global Tables",
-        "DynamoDB Streams",
-        "Partition Keys"
-      ]
+      "de": ["DAX", "Global Tables", "DynamoDB Streams", "Partition Keys"],
+      "en": ["DAX", "Global Tables", "DynamoDB Streams", "Partition Keys"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Global Tables ermöglichen Multi-Region-Replikation für global verfügbare Anwendungen. [cite: 433]"
     }
@@ -5812,9 +5163,7 @@
         "Block storage"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Spaltenorientierte Speicherung reduziert den I/O-Aufwand bei Analysen massiv, da nur relevante Spalten gelesen werden. [cite: 471-472]"
     }
@@ -5837,16 +5186,9 @@
         "Im Arbeitsspeicher (RAM)",
         "In S3-Buckets"
       ],
-      "en": [
-        "On SSDs",
-        "On magnetic disks",
-        "In memory (RAM)",
-        "In S3 buckets"
-      ]
+      "en": ["On SSDs", "On magnetic disks", "In memory (RAM)", "In S3 buckets"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Als In-Memory-Datenbank nutzt ElastiCache den RAM für extrem schnelle Zugriffe. [cite: 486-491, 762]"
     }
@@ -5876,9 +5218,7 @@
         "Amazon DynamoDB"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Graph-Datenbanken wie Neptune sind ideal, um Muster in komplexen Beziehungsnetzwerken zu finden. "
     }
@@ -5908,9 +5248,7 @@
         "Graph Processing Engine"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "QLDB ist eine Ledger-Datenbank, die speziell für Audit-Logs und Transaktionshistorien entwickelt wurde. "
     }
@@ -5940,9 +5278,7 @@
         "Expiration Date"
       ]
     },
-    "correct": [
-      0
-    ],
+    "correct": [0],
     "explanation": {
       "de": "TTL ermöglicht es, Items ohne zusätzliche Kosten automatisch nach Ablauf eines Timestamps zu entfernen. [cite: 436]"
     }
@@ -5972,9 +5308,7 @@
         "Redshift does not scale"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Redshift nutzt Massively Parallel Processing (MPP), um Abfragen über viele Knoten hinweg zu verteilen. [cite: 473]"
     }
@@ -6004,9 +5338,7 @@
         "For big data analysis"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Durch das Cachen häufiger Abfragen sinkt die Last auf der relationalen Datenbank (RDS). [cite: 490, 762]"
     }
@@ -6036,9 +5368,7 @@
         "JSON and XML"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Neptune ist kompatibel mit den gängigen Graph-Standards Gremlin und SPARQL."
     }
@@ -6068,9 +5398,7 @@
         "Not at all, blockchain is always better"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "QLDB bietet die Unveränderbarkeit eines Ledgers ohne die Komplexität und Langsamkeit dezentraler Blockchains. [cite: 507-511]"
     }
@@ -6100,9 +5428,7 @@
         "Amazon Neptune"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Timestream ist eine Zeitreihen-Datenbank (Time-Series), die automatisch Daten nach Alter sortiert und komprimiert. [cite: 517-521, 760]"
     }
@@ -6132,9 +5458,7 @@
         "Amazon Redshift"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Aurora bietet eine höhere Performance als Standard-RDS und skaliert den Speicher automatisch. [cite: 368-374, 381]"
     }
@@ -6164,9 +5488,7 @@
         "EFS provides block storage"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EFS ist regional und erlaubt den gleichzeitigen Zugriff von hunderten Instanzen aus verschiedenen AZs. [cite: 226, 742, 770]"
     }
@@ -6196,9 +5518,7 @@
         "Not at all, the price is always the same"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Timestream verschiebt ältere Daten automatisch in eine günstigere Speicherebene. [cite: 521]"
     }
@@ -6228,9 +5548,7 @@
         "Amazon Neptune"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "DynamoDB ist eine NoSQL-Datenbank, die für Geschwindigkeit und Flexibilität ohne festes Schema optimiert ist. [cite: 409-412, 756-757]"
     }
@@ -6260,9 +5578,7 @@
         "Backup of local hard drives"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Da viele Server gleichzeitig zugreifen können, ist EFS ideal für Shared Content oder CMS-Systeme. [cite: 259, 742]"
     }
@@ -6292,9 +5608,7 @@
         "Amazon Timestream"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Redshift ist das Data Warehouse für komplexe, langfristige Analysen. [cite: 466-474, 575, 761]"
     }
@@ -6324,9 +5638,7 @@
         "It only scales through snapshots"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "EFS ist elastisch und passt die Größe (und Abrechnung) automatisch an den Inhalt an. [cite: 224, 256]"
     }
@@ -6356,9 +5668,7 @@
         "Document management"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Überall dort, wo Daten mit einem Zeitstempel (Time-Series) anfallen, wie Sensoren oder Log-Metriken. [cite: 519-520, 756]"
     }
@@ -6375,22 +5685,10 @@
       "en": "Which database engine is NOT one of the six standard engines of Amazon RDS?"
     },
     "options": {
-      "de": [
-        "MySQL",
-        "Oracle",
-        "IBM DB2",
-        "PostgreSQL"
-      ],
-      "en": [
-        "MySQL",
-        "Oracle",
-        "IBM DB2",
-        "PostgreSQL"
-      ]
+      "de": ["MySQL", "Oracle", "IBM DB2", "PostgreSQL"],
+      "en": ["MySQL", "Oracle", "IBM DB2", "PostgreSQL"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "RDS unterstützt MySQL, PostgreSQL, MariaDB, Oracle, SQL Server und Aurora. [cite: 338-344, 751]"
     }
@@ -6420,9 +5718,7 @@
         "Archive storage"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "EFS ist ein klassischer File Storage (NFS). [cite: 44, 238, 742]"
     }
@@ -6452,9 +5748,7 @@
         "Amazon ElastiCache"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "DynamoDB im On-Demand Modus ist serverlos und rechnet nach Anfragen ab. [cite: 427-429, 758]"
     }
@@ -6484,9 +5778,7 @@
         "Only if the data is in S3"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Trotz Zeitreihen-Fokus können Nutzer vertrautes SQL für die Analyse in Timestream verwenden."
     }
@@ -6516,9 +5808,7 @@
         "AWS Lambda"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Lightsail ist das einfachste Paket für Einsteiger mit vorhersehbaren Preisen. [cite: 65, 730]"
     }
@@ -6548,9 +5838,7 @@
         "Via IAM user passwords directly in code"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Wie bei EC2 nutzen EFS-Mount-Targets Security Groups, um den Netzwerkzugriff zu regeln."
     }
@@ -6567,22 +5855,10 @@
       "en": "Which migration strategy is used when replacing an existing application with a SaaS product like Salesforce?"
     },
     "options": {
-      "de": [
-        "Rehost",
-        "Replatform",
-        "Repurchase",
-        "Refactor"
-      ],
-      "en": [
-        "Rehost",
-        "Replatform",
-        "Repurchase",
-        "Refactor"
-      ]
+      "de": ["Rehost", "Replatform", "Repurchase", "Refactor"],
+      "en": ["Rehost", "Replatform", "Repurchase", "Refactor"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Repurchase (auch 'Drop and Shop') bedeutet den Wechsel zu einem völlig anderen Produkt, meist SaaS. [cite: 626]"
     }
@@ -6612,9 +5888,7 @@
         "AWS Direct Connect"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Snowmobile ist für extrem große Datenmigrationen im Exabyte-Bereich konzipiert. [cite: 637]"
     }
@@ -6631,22 +5905,10 @@
       "en": "Which service provides central access to AWS compliance reports (e.g., ISO, PCI, SOC)?"
     },
     "options": {
-      "de": [
-        "AWS Config",
-        "AWS Artifact",
-        "AWS Shield",
-        "AWS Trusted Advisor"
-      ],
-      "en": [
-        "AWS Config",
-        "AWS Artifact",
-        "AWS Shield",
-        "AWS Trusted Advisor"
-      ]
+      "de": ["AWS Config", "AWS Artifact", "AWS Shield", "AWS Trusted Advisor"],
+      "en": ["AWS Config", "AWS Artifact", "AWS Shield", "AWS Trusted Advisor"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS Artifact ist das Portal für On-Demand-Zugriff auf Sicherheits- und Compliance-Dokumente."
     }
@@ -6676,9 +5938,7 @@
         "Replatform retires the application"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Replatform optimiert die Cloud-Nutzung geringfügig, ohne die Kernarchitektur zu ändern. [cite: 624, 627]"
     }
@@ -6701,16 +5961,9 @@
         "AWS IAM",
         "AWS Budgets"
       ],
-      "en": [
-        "AWS Control Tower",
-        "AWS Organizations",
-        "AWS IAM",
-        "AWS Budgets"
-      ]
+      "en": ["AWS Control Tower", "AWS Organizations", "AWS IAM", "AWS Budgets"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS Organizations ermöglicht die zentrale Verwaltung und Kostenbündelung mehrerer Accounts. "
     }
@@ -6727,22 +5980,10 @@
       "en": "Which AWS service protects web applications from common web exploits like SQL injection or cross-site scripting (XSS)?"
     },
     "options": {
-      "de": [
-        "AWS Shield",
-        "AWS WAF",
-        "Amazon GuardDuty",
-        "AWS KMS"
-      ],
-      "en": [
-        "AWS Shield",
-        "AWS WAF",
-        "Amazon GuardDuty",
-        "AWS KMS"
-      ]
+      "de": ["AWS Shield", "AWS WAF", "Amazon GuardDuty", "AWS KMS"],
+      "en": ["AWS Shield", "AWS WAF", "Amazon GuardDuty", "AWS KMS"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "AWS WAF filtert Traffic auf Layer 7 basierend auf Sicherheitsregeln. [cite: 647, 732, 782]"
     }
@@ -6772,9 +6013,7 @@
         "AWS Storage Gateway"
       ]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Snowcone ist das kleinste und tragbarste Gerät der Snow-Familie. [cite: 635]"
     }
@@ -6804,9 +6043,7 @@
         "Security Groups"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "SCPs legen die 'Leitplanken' fest, was in den Unter-Accounts überhaupt erlaubt ist."
     }
@@ -6823,22 +6060,10 @@
       "en": "A company decides to completely shut down an old legacy application because it is no longer needed. Which 'R' is this?"
     },
     "options": {
-      "de": [
-        "Retain",
-        "Retire",
-        "Refactor",
-        "Rehost"
-      ],
-      "en": [
-        "Retain",
-        "Retire",
-        "Refactor",
-        "Rehost"
-      ]
+      "de": ["Retain", "Retire", "Refactor", "Rehost"],
+      "en": ["Retain", "Retire", "Refactor", "Rehost"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Retire beschreibt das Identifizieren und Abschalten von Komponenten, die keinen Geschäftswert mehr haben. [cite: 622]"
     }
@@ -6868,9 +6093,7 @@
         "There are no data transfer fees"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Durch das Zusammenfassen der Nutzung können höhere Rabattstufen schneller erreicht werden."
     }
@@ -6893,16 +6116,9 @@
         "AWS WAF",
         "AWS KMS"
       ],
-      "en": [
-        "AWS Shield Advanced",
-        "AWS Shield Standard",
-        "AWS WAF",
-        "AWS KMS"
-      ]
+      "en": ["AWS Shield Advanced", "AWS Shield Standard", "AWS WAF", "AWS KMS"]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Shield Standard ist für alle Kunden aktiviert und schützt auf Layer 3 und 4. [cite: 647, 691]"
     }
@@ -6919,22 +6135,10 @@
       "en": "Which AWS Support Plan is the cheapest that provides access to the full list of Trusted Advisor checks?"
     },
     "options": {
-      "de": [
-        "Basic",
-        "Developer",
-        "Business",
-        "Enterprise"
-      ],
-      "en": [
-        "Basic",
-        "Developer",
-        "Business",
-        "Enterprise"
-      ]
+      "de": ["Basic", "Developer", "Business", "Enterprise"],
+      "en": ["Basic", "Developer", "Business", "Enterprise"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Erst ab dem Business-Level sind alle Prüfungen des Trusted Advisor freigeschaltet."
     }
@@ -6951,22 +6155,10 @@
       "en": "Which migration strategy requires the most effort but offers the greatest potential for cloud benefits (e.g., serverless)?"
     },
     "options": {
-      "de": [
-        "Rehost",
-        "Replatform",
-        "Refactor",
-        "Retain"
-      ],
-      "en": [
-        "Rehost",
-        "Replatform",
-        "Refactor",
-        "Retain"
-      ]
+      "de": ["Rehost", "Replatform", "Refactor", "Retain"],
+      "en": ["Rehost", "Replatform", "Refactor", "Retain"]
     },
-    "correct": [
-      2
-    ],
+    "correct": [2],
     "explanation": {
       "de": "Refactor bedeutet eine komplette Neuentwicklung für die Cloud. [cite: 628]"
     }
@@ -6996,9 +6188,7 @@
         "Cost analysis"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Es zeigt den Status der AWS-Infrastruktur insgesamt an (öffentlich zugänglich)."
     }
@@ -7028,11 +6218,299 @@
         "Saving costs through spot instances"
       ]
     },
-    "correct": [
-      1
-    ],
+    "correct": [1],
     "explanation": {
       "de": "Agilität reduziert die Zeit für die Bereitstellung von Ressourcen drastisch. [cite: 599]"
+    }
+  },
+  {
+    "id": 201,
+    "type": "single",
+    "category": {
+      "de": "Analytik",
+      "en": "Analytics"
+    },
+    "question": {
+      "de": "Welcher AWS-Service wird primär für ETL-Prozesse (Extract, Transform, Load) genutzt, um Daten für die Analyse vorzubereiten?",
+      "en": "Which AWS service is primarily used for ETL (Extract, Transform, Load) processes to prepare data for analysis?"
+    },
+    "options": {
+      "de": ["Amazon Athena", "AWS Glue", "Amazon Redshift", "AWS DataSync"],
+      "en": ["Amazon Athena", "AWS Glue", "Amazon Redshift", "AWS DataSync"]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "AWS Glue ist ein serverloser Datenintegrationsservice, der das Finden, Vorbereiten und Kombinieren von Daten vereinfacht.",
+      "en": "AWS Glue is a serverless data integration service that makes it easy to discover, prepare, and combine data."
+    }
+  },
+  {
+    "id": 202,
+    "type": "single",
+    "category": {
+      "de": "Analytik",
+      "en": "Analytics"
+    },
+    "question": {
+      "de": "Mit welchem Service können Daten direkt in Amazon S3 mithilfe von Standard-SQL abgefragt werden, ohne dass Server verwaltet werden müssen?",
+      "en": "Which service allows querying data directly in Amazon S3 using standard SQL without managing any servers?"
+    },
+    "options": {
+      "de": [
+        "Amazon RDS",
+        "Amazon EMR",
+        "Amazon Athena",
+        "Amazon Redshift Spectrum"
+      ],
+      "en": [
+        "Amazon RDS",
+        "Amazon EMR",
+        "Amazon Athena",
+        "Amazon Redshift Spectrum"
+      ]
+    },
+    "correct": [2],
+    "explanation": {
+      "de": "Amazon Athena ist ein interaktiver Abfrageservice, der es einfach macht, Daten in S3 mit SQL zu analysieren.",
+      "en": "Amazon Athena is an interactive query service that makes it easy to analyze data in S3 using SQL."
+    }
+  },
+  {
+    "id": 203,
+    "type": "single",
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
+    "question": {
+      "de": "Welcher Service nutzt Machine Learning, um sensible Daten wie Kreditkartennummern oder PII automatisch in Amazon S3 zu entdecken und zu schützen?",
+      "en": "Which service uses machine learning to automatically discover and protect sensitive data like credit card numbers or PII in Amazon S3?"
+    },
+    "options": {
+      "de": ["Amazon Inspector", "AWS Shield", "Amazon Macie", "AWS WAF"],
+      "en": ["Amazon Inspector", "AWS Shield", "Amazon Macie", "AWS WAF"]
+    },
+    "correct": [2],
+    "explanation": {
+      "de": "Amazon Macie ist ein Datenschutz- und Datensicherheitsservice, der ML nutzt, um sensible Daten in S3 zu identifizieren.",
+      "en": "Amazon Macie is a data privacy and security service that uses ML to identify sensitive data in S3."
+    }
+  },
+  {
+    "id": 204,
+    "type": "single",
+    "category": {
+      "de": "Sicherheit",
+      "en": "Security"
+    },
+    "question": {
+      "de": "Welcher Dienst führt automatisierte Sicherheitsbewertungen für Amazon EC2-Instanzen durch, um Schwachstellen und Abweichungen von Best Practices zu finden?",
+      "en": "Which service performs automated security assessments for Amazon EC2 instances to find vulnerabilities and deviations from best practices?"
+    },
+    "options": {
+      "de": [
+        "Amazon GuardDuty",
+        "Amazon Inspector",
+        "AWS Trusted Advisor",
+        "AWS Config"
+      ],
+      "en": [
+        "Amazon GuardDuty",
+        "Amazon Inspector",
+        "AWS Trusted Advisor",
+        "AWS Config"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Amazon Inspector scannt Workloads (EC2, Container, Lambda) automatisch auf Software-Schwachstellen.",
+      "en": "Amazon Inspector automatically scans workloads (EC2, containers, Lambda) for software vulnerabilities."
+    }
+  },
+  {
+    "id": 205,
+    "type": "single",
+    "category": {
+      "de": "Machine Learning",
+      "en": "Machine Learning"
+    },
+    "question": {
+      "de": "Welcher vollverwaltete Service bietet Entwicklern die Möglichkeit, Machine-Learning-Modelle schnell zu erstellen, zu trainieren und bereitzustellen?",
+      "en": "Which fully managed service provides developers with the ability to quickly build, train, and deploy machine learning models?"
+    },
+    "options": {
+      "de": [
+        "Amazon Rekognition",
+        "Amazon Lex",
+        "Amazon SageMaker",
+        "Amazon Polly"
+      ],
+      "en": [
+        "Amazon Rekognition",
+        "Amazon Lex",
+        "Amazon SageMaker",
+        "Amazon Polly"
+      ]
+    },
+    "correct": [2],
+    "explanation": {
+      "de": "Amazon SageMaker ist die zentrale Plattform für den gesamten ML-Lebenszyklus in AWS.",
+      "en": "Amazon SageMaker is the central platform for the entire ML lifecycle in AWS."
+    }
+  },
+  {
+    "id": 206,
+    "type": "single",
+    "category": {
+      "de": "Machine Learning",
+      "en": "Machine Learning"
+    },
+    "question": {
+      "de": "Ein Unternehmen möchte Gesichter und Objekte in Millionen von Bildern automatisch erkennen. Welchen Service sollten sie nutzen?",
+      "en": "A company wants to automatically recognize faces and objects in millions of images. Which service should they use?"
+    },
+    "options": {
+      "de": [
+        "Amazon Rekognition",
+        "Amazon Comprehend",
+        "Amazon Textract",
+        "Amazon Rekognition Video"
+      ],
+      "en": [
+        "Amazon Rekognition",
+        "Amazon Comprehend",
+        "Amazon Textract",
+        "Amazon Rekognition Video"
+      ]
+    },
+    "correct": [0],
+    "explanation": {
+      "de": "Amazon Rekognition ermöglicht Bild- und Videoanalysen mittels Computer Vision.",
+      "en": "Amazon Rekognition enables image and video analysis using computer vision."
+    }
+  },
+  {
+    "id": 207,
+    "type": "single",
+    "category": {
+      "de": "Machine Learning",
+      "en": "Machine Learning"
+    },
+    "question": {
+      "de": "Welcher Service wird genutzt, um interaktive Chatbots mit Sprach- und Texterkennung zu bauen (die gleiche Technologie wie Amazon Alexa)?",
+      "en": "Which service is used to build interactive chatbots with voice and text recognition (the same technology as Amazon Alexa)?"
+    },
+    "options": {
+      "de": [
+        "Amazon Polly",
+        "Amazon Transcribe",
+        "Amazon Lex",
+        "Amazon Translate"
+      ],
+      "en": [
+        "Amazon Polly",
+        "Amazon Transcribe",
+        "Amazon Lex",
+        "Amazon Translate"
+      ]
+    },
+    "correct": [2],
+    "explanation": {
+      "de": "Amazon Lex bietet die Werkzeuge zum Erstellen von Conversational AI (Chatbots).",
+      "en": "Amazon Lex provides the tools for building conversational AI (chatbots)."
+    }
+  },
+  {
+    "id": 208,
+    "type": "single",
+    "category": {
+      "de": "Machine Learning",
+      "en": "Machine Learning"
+    },
+    "question": {
+      "de": "Welcher AWS-Service bietet Zugriff auf eine Vielzahl von Foundation-Modellen (FMs) für den Aufbau generativer KI-Anwendungen?",
+      "en": "Which AWS service provides access to a variety of foundation models (FMs) for building generative AI applications?"
+    },
+    "options": {
+      "de": [
+        "Amazon SageMaker",
+        "Amazon Bedrock",
+        "AWS DeepLens",
+        "Amazon Kendra"
+      ],
+      "en": [
+        "Amazon SageMaker",
+        "Amazon Bedrock",
+        "AWS DeepLens",
+        "Amazon Kendra"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Amazon Bedrock ist der einfachste Weg, generative KI-Anwendungen mit FMs über eine API zu erstellen.",
+      "en": "Amazon Bedrock is the easiest way to build generative AI applications using FMs via an API."
+    }
+  },
+  {
+    "id": 209,
+    "type": "single",
+    "category": {
+      "de": "Analytik",
+      "en": "Analytics"
+    },
+    "question": {
+      "de": "Ein Unternehmen möchte Text aus gescannten Dokumenten und Formularen automatisch extrahieren (OCR). Welchen Service nutzen sie?",
+      "en": "A company wants to automatically extract text from scanned documents and forms (OCR). Which service do they use?"
+    },
+    "options": {
+      "de": [
+        "Amazon Comprehend",
+        "Amazon Textract",
+        "Amazon Rekognition",
+        "AWS Glue"
+      ],
+      "en": [
+        "Amazon Comprehend",
+        "Amazon Textract",
+        "Amazon Rekognition",
+        "AWS Glue"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Amazon Textract geht über einfaches OCR hinaus und erkennt auch Tabellen und Formulare.",
+      "en": "Amazon Textract goes beyond simple OCR and also recognizes tables and forms."
+    }
+  },
+  {
+    "id": 210,
+    "type": "single",
+    "category": {
+      "de": "Wirtschaftlichkeit",
+      "en": "Economics"
+    },
+    "question": {
+      "de": "Wie wirkt sich die Nutzung von 'Consolidated Billing' auf die Kosteneinsparungen aus?",
+      "en": "How does using 'Consolidated Billing' affect cost savings?"
+    },
+    "options": {
+      "de": [
+        "Es senkt die monatliche Grundgebühr",
+        "Es kombiniert die Nutzung aller Konten, um Mengenrabatte (Volume Discounts) schneller zu erreichen",
+        "Es eliminiert alle Datenübertragungsgebühren",
+        "Es reduziert die Kosten für Support-Pläne automatisch um 50%"
+      ],
+      "en": [
+        "It lowers the monthly base fee",
+        "It combines usage from all accounts to reach volume discounts faster",
+        "It eliminates all data transfer charges",
+        "It automatically reduces support plan costs by 50%"
+      ]
+    },
+    "correct": [1],
+    "explanation": {
+      "de": "Durch die Bündelung der Nutzung über mehrere Accounts hinweg profitieren Kunden von den gestaffelten Preisen von AWS.",
+      "en": "By bundling usage across multiple accounts, customers benefit from AWS tiered pricing."
     }
   }
 ]
